@@ -1,0 +1,84 @@
+<html>
+    <header>
+        <title>The Virtual Reality Experience by Brandon Lin</title>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </header>
+    <script>
+        AFRAME.registerComponent('modify-materials', {
+            init: function () {
+            // Wait for model to load.
+            this.el.addEventListener('model-loaded', () => {
+                // Grab the mesh / scene.
+                const obj = this.el.getObject3D('mesh');
+                // Go over the submeshes and modify materials we want.
+                obj.traverse(node => {
+                if (node.name.indexOf('ship') !== -1) {
+                    node.material.color.set('red');
+                }
+                });
+            });
+            }
+        });
+    </script>
+
+    <body style="text-align: center">
+        <br>
+        <h1>The Name by Brandon Lin</h1>
+        <h4>So far this is just the first demo of what ever this is</h4>
+        <a-scene>
+            <a-assets>
+                <img src="Feaky.jpg" id="texture">
+                <a-asset-item id="ichibanKasuga" src="ichiban_kasuga_sonic_racing_crossworlds/scene.gltf"></a-asset-item>
+            </a-assets>
+            <a-sky color="#ECECEC"></a-sky>
+            <a-entity position="10 0 -5">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-sphere position="0 1 0" scale="1.5 1 2"></a-sphere>
+            </a-entity>
+            <a-entity position="5 0 -5">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-entity position="0 0 0" gltf-model="#ichibanKasuga" modify-materials></a-entity>
+            </a-entity>
+            <a-entity position="0 0 -5"id="textest">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-box position="0 1 0" width="5" depth=".5" color="green">
+                    <a-text position="-2 0 .25" value="This is a story about a man named Stanley" color="black"></a-text>
+                </a-box>
+            </a-entity>
+            <a-entity position="0 0 0">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-sphere side="double" position="0 1.5 0" radius="1.25"color="#ffd7a6"></a-sphere>
+                <a-sphere position="-.4 1.5 1.2" radius=".15"color="#FFFFFF"></a-sphere>
+                <a-sphere position=".4 1.5 1.2" radius=".15"color="#FFFFFF"></a-sphere>
+                <a-sphere position="-.4 1.5 1.35" radius=".05"color="#000000"></a-sphere>
+                <a-sphere position=".4 1.5 1.35" radius=".05"color="#000000"></a-sphere>
+                <a-sphere position="0 .80 1.23" radius=".15" phi-length="180" height="12" color="#641f99"></a-sphere>
+                <a-box position="0 1.9 1.1" rotation ="0 90 0"width=".2" height=".2" color="#945b00"></a-box>
+                <a-plane position="0 1 1.25" rotation="12 0 90" width=".5" height=".7" color="#ff0000"></a-plane>
+                <a-plane position="0 1 1.23" rotation="12 0 90" width=".6" height=".8" color="#d93b07"></a-plane>
+            </a-entity>
+            <a-entity position="5 0 0" id="car">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-cylinder position="-1.5 .2 1" rotation="-90 0 0" radius=".2" height=".2" color="#01171c"></a-cylinder>
+                <a-cylinder position="-1.5 .2 -.5" rotation="-90 0 0" radius=".2" height=".2" color="#01171c"></a-cylinder>
+                <a-cylinder position="1.5 .2 1" rotation="-90 0 0" radius=".2" height=".2" color="#01171c"></a-cylinder>
+                <a-cylinder position="1.5 .2 -.5" rotation="-90 0 0" radius=".2" height=".2" color="#01171c"></a-cylinder>
+                <a-cylinder position="-1.5 .2 .3" rotation="-90 0 0" radius=".1" height="1.5" color="#919191"></a-cylinder>
+                <a-cylinder position="1.5 .2 .3" rotation="-90 0 0" radius=".1" height="1.5" color="#919191"></a-cylinder>
+                <a-cylinder position="0 .2 .3" rotation="-90 0 90" radius=".1" height="3" color="#919191"></a-cylinder>
+            </a-entity>
+            <a-entity position="10 0 0">
+                <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+                <a-box position="0, 0, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="1, 0, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="-1, 0, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="0, 1, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="1, 1, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="-1, 1, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="0, 2, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="1, 2, 0" width="1" depth="0.1" height="1"></a-box>
+                <a-box position="-1, 2, 0" width="1" depth="0.1" height="1"></a-box>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
