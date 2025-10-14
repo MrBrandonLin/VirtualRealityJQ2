@@ -12,6 +12,11 @@ window.addEventListener("DOMContentLoaded",function() {
     let z = rnd(-20,20);
     createTree(x,0,z);
   }
+  for(let i = 0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    createCloud(x,6,z);
+  }
    //Task 2: Use the createCloud(...)  to add several clouds to the scene at various positions.
 
    //Task 4: Use the createHouse(...)  to add several houses to the scene at various positions.
@@ -54,5 +59,21 @@ function createTree(x, y, z){
   scene.append( tree )
 }
 
+function createCloud(x, y, z){
+  let cloud = document.createElement("a-entity");
+  
+  let cloud1 = document.createElement("a-sphere");
+  cloud1.setAttribute("position","0 0 0");
+  cloud.append( cloud1 );
 
+  let cloud2 = document.createElement("a-sphere");
+  cloud2.setAttribute("position","1.5 0 0");
+  cloud.append( cloud2 );
+  let cloud3 = document.createElement("a-sphere");
+  cloud3.setAttribute("position",".5 .5 0");
+  cloud.append( cloud3 );
 
+  cloud.setAttribute("position",{x:x, y:y, z:z});
+  cloud.setAttribute("rotation",{x:x, y:y, z:z});
+  scene.append( cloud )
+}
