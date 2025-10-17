@@ -7,7 +7,7 @@
     <a-scene>
       <a-sphere id="sun" position="0 5 -15" color="yellow"></a-sphere>
 
-      <a-entity id="pokemonball" position="0 1 -4">
+      <a-entity id="pokeball" position="0 1 -4">
         <a-sphere phi-start="0" radius="0.5" phi-length="180" rotation="-90 0 0" side="double" color="red"></a-sphere>
         <a-sphere phi-start="0" radius="0.5" phi-length="180" rotation="90 0 0" side="double"></a-sphere>
         <a-cylinder color="black" height="0.99" radius="0.175" rotation="90 0 0"></a-cylinder>
@@ -46,10 +46,10 @@
         <a-sphere id = "r_front_light" position="0.7 0.9 -3.2" color = "yellow" radius = "0.15"></a-sphere>
         <a-sphere id = "l_front_light" position="-0.7 0.9 -3.2" color = "yellow" radius = "0.15"></a-sphere>
         <a-entity id = "windows">
-          <a-plane position = "1.29 1.6 -5.5" rotation="0 90 0" width = "1.5" height = "0.75" color = "#C6E2E3"></a-plane>
-          <a-plane position = "-1.29 1.6 -5.5" rotation="0 270 0" width = "1.5" height = "0.75" color = "#C6E2E3"></a-plane>
-          <a-plane position = "0 1.6 -4.74" rotation="0 0 0" width = "2.5" height = "0.8" color = "#C6E2E3"></a-plane>
-          <a-plane position = "0 1.6 -6.26" rotation="180 0 0" width = "2.5" height = "0.8" color = "#C6E2E3"></a-plane>
+          <a-plane position = "1.29 1.6 -5.5" rotation="0 90 0" width = "1.5" height = "0.75" color = "#C6E2E3" opacity=".7"></a-plane>
+          <a-plane position = "-1.29 1.6 -5.5" rotation="0 270 0" width = "1.5" height = "0.75" color = "#C6E2E3" opacity=".7"></a-plane>
+          <a-plane position = "0 1.6 -4.74" rotation="0 0 0" width = "2.5" height = "0.8" color = "#C6E2E3" opacity=".7"></a-plane>
+          <a-plane position = "0 1.6 -6.26" rotation="180 0 0" width = "2.5" height = "0.8" color = "#C6E2E3" opacity=".7"></a-plane>
         </a-entity>
         <a-entity id = "window_frame">
           <a-box position="1.26 1.6 -4.8" rotation="0 0 0" width="0.01" height="0.8" depth = "0.15" color = "cyan"></a-box>
