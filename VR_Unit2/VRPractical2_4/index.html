@@ -2,6 +2,8 @@
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="script.js"></script>
+    <script src="rocket.js"></script>
+    <script src="alienpasture.js"></script>
   </head>
   <body>
       <a-scene>
@@ -10,7 +12,9 @@
         
       
       <!-- Camera is added so that you do not "spawn" at the origin -->
-      <a-camera position="0 1.3 4"></a-camera>
+      <a-plane color="#666666" width="100" height="100" rotation="-90 0 0"></a-plane>
+      <a-sky color="#2288ff"></a-sky>
+      <a-camera position="0 12 60"></a-camera>
     </a-scene>
   </body>
 </html>

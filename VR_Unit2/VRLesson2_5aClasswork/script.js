@@ -8,6 +8,9 @@ window.addEventListener("DOMContentLoaded",function() {
     let tree = new Tree(rnd(-20,20), 0 , rnd(-20,20));
     tree.scale(rnd(1,4));
   }
+  for(let i = 0; i < 20; i++){
+    let cloud = new Cloud(rnd(-20,20), 7 , rnd(-20,20));
+  }
   snowman = new Snowman(-5,0);
   //Challenge 3: Create a cloud at some high position. Don't forget to declare the variable up top.
 
@@ -17,6 +20,7 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function loop(){
   snowman.spin();
+  cloud.fly();
   //Challenge 4: Make the cloud fly
   //Challenge 8: Make the snowflake fall
   window.requestAnimationFrame(loop);
