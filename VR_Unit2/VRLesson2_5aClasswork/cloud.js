@@ -1,8 +1,8 @@
-class Cloud{
+class cloud{
   constructor(x,y,z){
     this.obj = document.createElement("a-entity");
     let shapes = ["a-dodecahedron","a-icosahedron","a-octahedron","a-tetrahedron"];
-    this.x = x, this.dx=.5;
+    this.x = x, this.dx=1;
     for(let i = -1; i <= 1; i++){
       let r = rnd(0,shapes.length);
       let puff = document.createElement(shapes[r]);
