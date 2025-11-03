@@ -1,6 +1,6 @@
 class rocket{
-    constructor(x, y, z){
-        this.a = y, this.da = 0.14, this.x = x, this.z = z;
+    constructor(x, y, z, s){
+        this.a = y, this.da = s, this.x = x, this.z = z, this.y = y;
         this.rocket = document.createElement("a-entity");
         this.body = document.createElement("a-cylinder");
         this.lowerbody = document.createElement("a-cylinder");
@@ -32,6 +32,9 @@ class rocket{
         scene.append(this.rocket)
     }
     launch(){
+        if(this.a >= this.y+150){
+            this.rocket.setAttribute("scale", "0 0 0")
+        }
         this.a+=this.da;
         this.rocket.setAttribute("position", {x:this.x, y:this.a, z:this.z})
     }
