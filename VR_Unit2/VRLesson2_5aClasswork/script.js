@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene;
+let scene, clouds = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene"); //CSS Selector
@@ -10,6 +10,7 @@ window.addEventListener("DOMContentLoaded",function() {
   }
   for(let i = 0; i < 20; i++){
     let cloud = new Cloud(rnd(-20,20), 7 , rnd(-20,20));
+    clouds.push(cloud);
   }
   snowman = new Snowman(-5,0);
   //Challenge 3: Create a cloud at some high position. Don't forget to declare the variable up top.
@@ -19,8 +20,9 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function loop(){
-  snowman.spin();
-  cloud.fly();
+  for(let a = 0; a<clouds.length; a++){
+    clouds[a].fly();
+  }
   //Challenge 4: Make the cloud fly
   //Challenge 8: Make the snowflake fall
   window.requestAnimationFrame(loop);
