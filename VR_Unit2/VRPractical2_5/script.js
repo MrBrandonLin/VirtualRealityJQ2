@@ -1,48 +1,42 @@
-/* Challenge 1
-   Add appropriate classes to use as objects in your maze.  Choose characters to represent these objects and 
-   position them in the maze.   In Challenge 3 and 4, you will generate the maze along with any other object 
-   you chose to put in the maze.  Get Creative!
-*/
-
 let maze = [
+  "3---1-----------------",
   "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "3---------------------",
+  "---------------------",
+  "3--1--------------------",
+  "--0------------------",
+  "3-1-1-1-------------------",
+  "-2-2-0-2-2",
+  "--3-3-3-3",
 ];
 
-/* Challenge 2
-   Add appropriate classes to use as objects in your map.  Choose characters to represent these objects and position them on the map.   In Challenge 5 and 6, you will generate the map using the character representation of the objects you chose to place in the world. Get Creative!
-*/
-
-let scene;
+let scene, labryinth = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
 
-  //for(let r = 0; r < maze.length; r++){
-    /* Challenge 3
-      Choose a technique to traverse the each character in the string.
-    */ 
-    /* Challenge 4
-       Make an appropriate decision based on the characters you chose to enter 
-       in the maze.  Create an instance of the corresponding object.
-    */
-  //}
-  sexmachine = new daedalusparts("true", 1, -10, -5);
+  for(let r = 0; r < maze.length; r++){
+    let mazesegment = maze[r];
+    for(let c = 0; c < mazesegment.length; c++){
+      if(mazesegment.substring(c, c+1) == "0"){
+        sexmachine = new daedalusparts("true", "normal", c*2, 0, r*2);
+      } else if(mazesegment.substring(c, c+1) == "1"){
+        sexmachine = new daedalusparts("true", "norm", c*2, 0, r*2);
+      } else if(mazesegment.substring(c, c+1) == "2"){
+        sexmachine = new daedalusparts("tru", "normal", c*2, 0, r*2);
+      } else if(mazesegment.substring(c, c+1) == "3"){
+        sexmachine = new daedalusparts("tru", "norm", c*2, 0, r*2);
+      }
+      labryinth.push(sexmachine);
+    }
+  }
   loop();
 })
 
 function loop(){
-  sexmachine.observation();
+  for(let i = 0; i<labryinth.length; i++){
+    labryinth[i].observation();
+  }
 
   window.requestAnimationFrame( loop );
 }
