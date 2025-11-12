@@ -7,11 +7,10 @@
   <body>
     <a-scene>
       <a-assets>
-        <!-- Challenge
-             Upload a picture to use as the texture for the walls of your maze if you want
-        -->
+        <img src="smoothstone.jpg" id="smoothstone">
+        <img src="dirt.jpg" id="dirt">
       </a-assets>
-      <a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" color="#AAFFAA"></a-plane>
-      <a-camera position="12 8 28" id="secam"></a-camera>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" src="#dirt" repeat="25 25"></a-plane>
+      <a-camera position="12 1.3 28" id="secam"></a-camera>
       <a-sky color="blue"></a-sky>
 </html>
