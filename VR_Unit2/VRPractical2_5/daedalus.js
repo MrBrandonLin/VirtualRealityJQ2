@@ -5,21 +5,21 @@ class daedalusparts{
         this.z = z; 
         this.m = 0.2;
         this.cat = schrodinger;
-        this.wallcom = [], this.wallpar;
+        this.wallcom = document.createElement("a-entity"), this.wallpar;
         for(let i = 0; i < 9; i++){
+            
             this.wallpar = document.createElement("a-box");
             this.wallpar.setAttribute("position", {x:this.x, y:i, z:this.z});
-            this.wallcom.push(this.wallpar);
-            scene.append(this.wallcom[i])
+            this.wallcom.append(this.wallpar);
         }
+
+        scene.append(this.wallcom)
     }
     observation(){
         this.secam = document.getElementById("secam");
-        if(this.cat == "true" && (this.secam.object3D.position.x > this.x-5 || this.secam.object3D.position.x < this.x+5) && (this.secam.object3D.position.z > this.z-5 || this.secam.object3D.position.z < this.z+5)){
+        if(this.cat == "true" && (this.secam.object3D.position.X > this.x-5 || this.secam.object3D.position.X < this.x+5) && (this.secam.object3D.position.Z > this.z-5 || this.secam.object3D.position.Z < this.z+5)){
             this.y += this.m;
-            for(let i = 0; i < 9; i++){
-                this.wallcom[i].setAttribute("position", {x:this.x, y:this.y, z:this.z});
-            }
+            this.wallcom.setAttribute("position", {x:this.x, y:this.y, z:this.z});
         }
         console.log(this.secam.object3D.position.x);
     }
