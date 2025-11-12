@@ -32,6 +32,7 @@ window.addEventListener("DOMContentLoaded",function() {
       labryinth.push(sexmachine);
     }
   }
+  frost = new barrier(12, 0, 12);
   loop();
 })
 
