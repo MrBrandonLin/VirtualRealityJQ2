@@ -21,6 +21,7 @@ class daedalusparts{
                 this.wallcom[i].setAttribute("position", {x:this.x, y:this.y, z:this.z});
             }
         }
+        console.log(this.secam.object3D.position.x);
     }
 }
 
