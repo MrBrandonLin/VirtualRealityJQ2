@@ -33,6 +33,7 @@ window.addEventListener("DOMContentLoaded",function() {
     }
   }
   frost = new barrier(12, 2, 12);
+  colum = new column(0, 0, 0);
   loop();
 })
 
