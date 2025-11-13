@@ -12,8 +12,10 @@ class barrier{
         for(let i = 0; i < 18; i++){
             this.finalpos = this.x**2 + this.z**2;
             this.barrierp = document.createElement("a-box");
-            this.barrierp.setAttribute("position", {x:this.xr[i]*3 ,y:7 ,z:this.zr[i]*3});
+            this.barrierp.setAttribute("position", {x:this.xr[i]*3 ,y:this.y ,z:this.zr[i]*3});
             this.barrierp.setAttribute("rotation", {x:0 ,y:(i*-20) ,z:0});
+            this.barrierp.setAttribute("scale", "3 9 8");
+            this.barrierp.setAttribute("src", "#smoothstone");
             this.barrierf.append(this.barrierp);
         }
         this.barrierf.setAttribute("position", {x:this.x, y:this.y, z:this.z});
