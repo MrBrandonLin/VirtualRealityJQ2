@@ -1,4 +1,4 @@
-let maze = [
+let maze1 = [
   "22222---2222",
   "2-2-2-0-2-2-2",
   "-3-1-3-1-1-3",
@@ -12,13 +12,27 @@ let maze = [
   "-3-3-3-3-3-3"
 ];
 
+let maze2 = [
+  "-",
+  "-0-0-0-0-0-0",
+  "-",
+  "-0-0-0-0-0-0",
+  "-",
+  "-0-0-0-0-0-0",
+  "-",
+  "-0-0-0-0-0-0",
+  "-",
+  "-0-0-0-0-0-0",
+  "-",
+];
+
 let scene, labryinth = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
 
-  for(let r = 0; r < maze.length; r++){
-    let mazesegment = maze[r];
+  for(let r = 0; r < maze1.length; r++){
+    let mazesegment = maze1[r];
     for(let c = 0; c < mazesegment.length; c++){
       if(mazesegment.substring(c, c+1) == "0"){
         sexmachine = new daedalusparts("true", "normal", c*2, -1, r*2);
@@ -31,9 +45,16 @@ window.addEventListener("DOMContentLoaded",function() {
       }
       labryinth.push(sexmachine);
     }
+    for(let r = 0; r < maze2.length; r++){
+      let mazesegment = maze2[r];
+      for(let c = 0; c < mazesegment.length; c++){
+        if(mazesegment.substring(c,c+1)==0){
+          columns = new column(c*2, 3, r*2);
+        }
+      } 
+    }
   }
   frost = new barrier(12, 2, 12);
-  colum = new column(0, 0, 0);
   loop();
 })
 
