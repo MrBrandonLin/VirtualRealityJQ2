@@ -29,6 +29,7 @@ class daedalusparts{
             this.wallpar = document.createElement("a-box");
             this.wallpar.setAttribute("position", {x:this.blockbuilderx, y:this.blockbuildery, z:0});
             this.wallpar.setAttribute("src", "#smoothstone");
+            this.wallpar.setAttribute("side", "double");
             this.wallcom.append(this.wallpar);
         }
         if(this.orientation != "normal"){

@@ -1,15 +1,14 @@
 let maze1 = [
-  "22222---2222",
-  "2-2-2-0-2-2-2",
+  "32222---22223",
+  "--2-2-0-2-2",
   "-3-1-3-1-1-3",
-  "2-0-2-2-0-0-2",
+  "--0-2-2-0-0",
   "-3-1-1-1-3-3",
-  "2-2-2-2-0-2-2",
+  "--2-2-2-0-2",
   "-3-1-3-1-1-3",
-  "2-0-2-0-0-0-2",
+  "--0-2-0-0-0",
   "-3-1-1-1-3-3",
-  "2-2-2-0-2-2-2",
-  "-3-3-3-3-3-3"
+  "--2-2-0-2-2--",
 ];
 
 let maze2 = [
@@ -42,6 +41,8 @@ window.addEventListener("DOMContentLoaded",function() {
         sexmachine = new daedalusparts("tru", "normal", c*2, -1, r*2);
       } else if(mazesegment.substring(c, c+1) == "3"){
         sexmachine = new daedalusparts("tru", "norm", c*2, -1, r*2);
+      } else if(mazesegment.substring(c, c+1) == "-"){
+        console.log("im taking up ram AND MEMORY");
       }
       labryinth.push(sexmachine);
     }
@@ -49,7 +50,7 @@ window.addEventListener("DOMContentLoaded",function() {
       let mazesegment = maze2[r];
       for(let c = 0; c < mazesegment.length; c++){
         if(mazesegment.substring(c,c+1)==0){
-          columns = new column(c*2, 3, r*2);
+          columns = new column(c*2, 1.5, r*2);
         }
       } 
     }
