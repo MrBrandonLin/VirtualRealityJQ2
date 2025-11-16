@@ -11,17 +11,17 @@ class pong{
         this.pongwall.append(this.pongwall1);
         scene.append(this.pongwall);
     }
-    upndown(){
-        if(this.secam.object3D.position.z > 0){
-            this.y += this.m;
-            this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
-        } else if(this.secam.object3D.position.z < 0){
-            this.y -= this.m;
-            this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
-        }
-    }
+
     up(){
         this.y += this.m;
+        this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+    }
+    down(){
+        this.y -= this.m;
+        this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+    }
+    neutral(){
+        this.y += 0;
         this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
     }
 }
@@ -37,7 +37,7 @@ class ball{
     }
     movement(){
         this.x -= this.m;
-        if(((this.x < this.pongwall.object3D.position.x+2 && this.x > this.pongwall.object3D.position.x-2)&& (this.y < this.pongwall.object3D.position.y+4 && this.y > this.pongwall.object3D.position.y-4)) || this.x > 20){
+        if(((this.x < this.pongwall.object3D.position.x+2 && this.x > this.pongwall.object3D.position.x-2) && (this.y < this.pongwall.object3D.position.y+6 && this.y > this.pongwall.object3D.position.y-6)) || this.x > 20){
             this.m = -this.m;
         }
         if(this.x < -50){
