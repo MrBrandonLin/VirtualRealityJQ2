@@ -20,6 +20,10 @@ class pong{
             this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
         }
     }
+    up(){
+        this.y += this.m;
+        this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+    }
 }
 
 class ball{
@@ -40,15 +44,5 @@ class ball{
             this.x=9;
         }
         this.ball.setAttribute("position", {x:this.x, y:this.y, z:this.z});
-    }
-}
-
-class button{
-    constructor(x, y, z){
-        this.button = document.createElement("a-box");
-        this.button.setAttribute("position", {x:x, y:y, z:z});
-        this.button.setAttribute("scale", {x:2, y:2, z:1});
-        scene.append(this.button);
-
     }
 }

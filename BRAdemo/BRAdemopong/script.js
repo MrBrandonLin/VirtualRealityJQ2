@@ -2,13 +2,14 @@ window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   marco = new pong(-30, 0, -28);
   polo = new ball(0, 0, -28);
-  buttonup = new button(-34, 2, -28);
-  buttondown = new button(-34, -2, -28);
+  let buttonup = document.querySelector("#buttonup");
+  let buttondown = document.querySelector("#buttondown");
+  buttonup.addEventListener("click",function(){
+    this.setAttribute("height",2);
+  })
   natural();
-  buttonup.addEventListener("mouseenter", function(){
-    marco.upndown();
-  });
-})
+
+});
 
 function natural(){
   polo.movement();
