@@ -33,9 +33,22 @@ class ball{
     }
     movement(){
         this.x -= this.m;
-        if((this.x < this.pongwall.object3D.position.x+2 && (this.y < this.pongwall.object3D.position.y+2 && this.y > this.pongwall.object3D.position.y-2)) || this.x > 10){
+        if(((this.x < this.pongwall.object3D.position.x+2 && this.x > this.pongwall.object3D.position.x-2)&& (this.y < this.pongwall.object3D.position.y+4 && this.y > this.pongwall.object3D.position.y-4)) || this.x > 20){
             this.m = -this.m;
         }
+        if(this.x < -50){
+            this.x=9;
+        }
         this.ball.setAttribute("position", {x:this.x, y:this.y, z:this.z});
+    }
+}
+
+class button{
+    constructor(x, y, z){
+        this.button = document.createElement("a-box");
+        this.button.setAttribute("position", {x:x, y:y, z:z});
+        this.button.setAttribute("scale", {x:2, y:2, z:1});
+        scene.append(this.button);
+
     }
 }
