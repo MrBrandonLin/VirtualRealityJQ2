@@ -1,3 +1,5 @@
+let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
+
 class pong{
     constructor(x, y, z){
         this.x = x, this.y = y, this.z = z;
@@ -14,10 +16,16 @@ class pong{
 
     up(){
         this.y += this.m;
+        if(this.y > 25){
+            this.y = 24.5;
+        }
         this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
     }
     down(){
         this.y -= this.m;
+        if(this.y < -25){
+            this.y = -24.5;
+        }
         this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
     }
     neutral(){
@@ -29,7 +37,8 @@ class pong{
 class ball{
     constructor(x, y, z){
         this.x = x, this.y = y, this.z = z;
-        this.m = 0.5;
+        this.m = 0.4;
+        this.my = 0;
         this.pongwall = document.getElementById("wall");
         this.ball = document.createElement("a-sphere");
         this.ball.setAttribute("position", {x:this.x, y:this.y, z:this.z});
@@ -37,11 +46,16 @@ class ball{
     }
     movement(){
         this.x -= this.m;
-        if(((this.x < this.pongwall.object3D.position.x+2 && this.x > this.pongwall.object3D.position.x-2) && (this.y < this.pongwall.object3D.position.y+6 && this.y > this.pongwall.object3D.position.y-6)) || this.x > 20){
+        this.y -= this.my/100;
+        if(((this.x < this.pongwall.object3D.position.x+2 && this.x > this.pongwall.object3D.position.x-2) && (this.y < this.pongwall.object3D.position.y+6 && this.y > this.pongwall.object3D.position.y-6)) || this.x > 30){
             this.m = -this.m;
+            this.my = rnd(-50, 50)
         }
         if(this.x < -50){
-            this.x=9;
+            this.x=28;
+        }
+        if(this.y <-30 || this.y>30){
+            this.my = -this.my;
         }
         this.ball.setAttribute("position", {x:this.x, y:this.y, z:this.z});
     }

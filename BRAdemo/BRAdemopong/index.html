@@ -7,11 +7,12 @@
     </header>
     <body>
         <a-scene>
-            <a-box position = "-7 -10 -28" scale="10 5 1" id="buttonup"></a-box>
-            <a-box position = "7 -10 -28" scale="10 5 1" id="buttondown"></a-box>
-            <a-plane position="0 0 -30" width="100" height="40" rotation="0 0 0"color="#eeff99"></a-plane>
+            <a-box position = "-7 0 -28" scale="6 10 1" id="buttonup"></a-box>
+            <a-box position = "7 0 -28" scale="6 10 1" id="buttondown"></a-box>
+            <a-plane position="0 0 -30" width="100" height="60" rotation="0 0 0"color="#eeff99"></a-plane>
+            <a-plane position="0 0 -30.1" width="110" height="70" rotation="0 0 0"color="#99ff99"></a-plane>
             <a-sky color="#1865ee"></a-sky>
-            <a-camera id="secam">
+            <a-camera position="0 0 10"id="secam">
                 <a-cursor></a-cursor>
             </a-camera>
         </a-scene>
