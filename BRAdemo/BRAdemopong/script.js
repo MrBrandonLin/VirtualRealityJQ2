@@ -5,27 +5,23 @@ window.addEventListener("DOMContentLoaded",function() {
   let buttonup = document.querySelector("#buttonup");
   let buttondown = document.querySelector("#buttondown");
   buttonup.addEventListener("mouseenter",function(){
-    moveup();
+    marco.state = "up";
   })
   buttondown.addEventListener("mouseenter" ,function(){
-    movedown();
+    marco.state = "down";
+  })
+  buttonup.addEventListener("mouseleave",function(){
+    marco.state = "neutral";
+  })
+  buttondown.addEventListener("mouseleave" ,function(){
+    marco.state = "neutral";
   })
   natural();
 
 })
-function moveup(){
-  marco.up();
-  window.requestAnimationFrame( moveup );
-}
-function movedown(){
-  marco.down();
-  window.requestAnimationFrame( movedown );
-}
-function moveno(){
-  marco.neutral();
-  window.requestAnimationFrame( moveno );
-}
+
 function natural(){
   polo.movement();
+  marco.upndown();
   window.requestAnimationFrame( natural );
 }

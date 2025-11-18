@@ -4,6 +4,7 @@ class pong{
     constructor(x, y, z){
         this.x = x, this.y = y, this.z = z;
         this.m = 0.3;
+        this.state = "neutral";
         this.secam = document.getElementById("secam");
         this.pongwall = document.createElement("a-entity");
         this.pongwall1 = document.createElement("a-box");
@@ -14,22 +15,21 @@ class pong{
         scene.append(this.pongwall);
     }
 
-    up(){
+    upndown(){
+        if(this.state == "neutral"){
+            this.m = 0;
+        } else if(this.state == "up"){
+            this.m = 0.3
+        } else if(this.state == "down"){
+            this.m = -0.3
+        }
         this.y += this.m;
         if(this.y > 25){
             this.y = 24.5;
         }
-        this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
-    }
-    down(){
-        this.y -= this.m;
         if(this.y < -25){
             this.y = -24.5;
         }
-        this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
-    }
-    neutral(){
-        this.y += 0;
         this.pongwall.setAttribute("position", {x:this.x, y:this.y, z:this.z});
     }
 }
