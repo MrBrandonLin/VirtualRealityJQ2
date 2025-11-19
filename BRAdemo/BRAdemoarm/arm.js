@@ -35,6 +35,7 @@ class arm{
 
     }
     bend(){
+        this.secam = document.getElementById("secam");
         if(this.action == "punch"){
             if(this.r1 < -90 || this.r1 > -30){
                 this.rt1 = -this.rt1;
@@ -51,11 +52,13 @@ class arm{
             this.r2 -= this.rt2;
             console.log(this.curen);
         }
-        this.arm1.setAttribute("rotation", {x:0, y:270, z:this.r1});
+        this.arm1.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y, z:this.r1});
         this.arm2.setAttribute("rotation", {x:0, y:0, z:this.r2});
     }
     follow(){
         this.secam = document.getElementById("secam");
         this.arm1.setAttribute("position", {x:this.secam.object3D.position.x+1,y:2.8,z:this.secam.object3D.position.z-.3});
+        this.arm1.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:this.r1});
+
     }
 }
