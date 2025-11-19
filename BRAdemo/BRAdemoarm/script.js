@@ -5,9 +5,9 @@ window.addEventListener("DOMContentLoaded",function() {
     heavensgrace.action = "punch";
     heavensgrace.curen = 0;
     heavensgrace.r1 = -30;
-    heavensgrace.rt1 = 1.5;
+    heavensgrace.rt1 = 4.5;
     heavensgrace.r2 = 80;
-    heavensgrace.rt2 = -2.5;
+    heavensgrace.rt2 = -7.5;
   })
   natural();
 })

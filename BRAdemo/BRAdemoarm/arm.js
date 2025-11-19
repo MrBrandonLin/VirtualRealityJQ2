@@ -28,9 +28,9 @@ class arm{
         scene.append(this.arm1);
 
         this.r1 = -30;
-        this.rt1 = 1.5;
+        this.rt1 = 4.5;
         this.r2 = 80;
-        this.rt2 = -2.5;
+        this.rt2 = -7.5;
         this.curen = 0;
 
     }
@@ -56,6 +56,6 @@ class arm{
     }
     follow(){
         this.secam = document.getElementById("secam");
-        this.arm1.setAttribute("position", {x:this.secam.object3D.position.x+1,y:3,z:this.secam.object3D.position.z-.5});
+        this.arm1.setAttribute("position", {x:this.secam.object3D.position.x+1,y:2.8,z:this.secam.object3D.position.z-.3});
     }
 }
