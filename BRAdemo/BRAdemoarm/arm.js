@@ -8,7 +8,9 @@ class arm{
         this.armfore = document.createElement("a-box");
         this.rotary1 = document.createElement("a-cylinder");
         this.rotary2 = document.createElement("a-cylinder");
+        this.fist = document.createElement("a-sphere");
 
+        this.arm2.setAttribute("position", "0 -1.6 0")
         this.armupper.setAttribute("position", "0 -.8 0");
         this.armupper.setAttribute("scale", ".4 1 .3");
         this.armfore.setAttribute("position", "0 .8 0");
@@ -18,16 +20,19 @@ class arm{
         this.rotary2.setAttribute("rotation", "90 0 0")
         this.rotary2.setAttribute("scale", ".4 .4 .4")
         this.rotary2.setAttribute("position", "0 -1.6 0");
-        this.arm2.setAttribute("position", "0 -1.6 0")
+        this.fist.setAttribute("position", "0 1.5 0");
+        this.fist.setAttribute("scale", ".7 .4 .5");
+        
 
         this.arm1.append(this.rotary1);
         this.arm1.append(this.armupper);
         this.arm1.append(this.rotary2);
         this.arm1.append(this.arm2);
         this.arm2.append(this.armfore);
-        this.arm1.setAttribute("position", "0 3 -2");
-        this.centerpoint.setAttribute({x:this.secam.object3D.position.x,y:this.secam.object3D.position.y,z:this.secam.object3D.position.z});
+        this.arm2.append(this.fist);
+        this.arm1.setAttribute("position", "-.5 3 -1");
         this.centerpoint.append(this.arm1)
+        this.secam.append(this.centerpoint);
         scene.append(this.centerpoint);
 
         this.r1 = -30;
@@ -54,12 +59,11 @@ class arm{
             this.r2 -= this.rt2;
             console.log(this.curen);
         }
-        this.arm1.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y, z:this.r1});
+        this.arm1.setAttribute("rotation", {x:0, y:0, z:this.r1});
         this.arm2.setAttribute("rotation", {x:0, y:0, z:this.r2});
     }
     follow(){
-        this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y, z:0});
-        this.centerpoint.setAttribute("position", {x:this.secam.object3D.position.x,y:this.secam.object3D.position.y,z:this.secam.object3D.position.z});
-        this.arm1.setAttribute("position", {x:this.centerpoint.object3D.position.x+1,y:2.8,z:this.centerpoint.object3D.position.z-.3});
+        this.centerpoint.setAttribute("position", {x: this.secam.object3D.position.x, y:this.secam.object3D.position.y-3, z:this.secam.object3D.position.z});
+        this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:0});
     }
 }
