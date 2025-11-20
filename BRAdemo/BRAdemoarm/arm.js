@@ -1,5 +1,7 @@
 class arm{
     constructor(){
+        this.secam = document.getElementById("secam");
+        this.centerpoint = document.createElement("a-entity");
         this.arm1 = document.createElement("a-entity");
         this.arm2 = document.createElement("a-entity");
         this.armupper = document.createElement("a-box");
@@ -23,9 +25,10 @@ class arm{
         this.arm1.append(this.rotary2);
         this.arm1.append(this.arm2);
         this.arm2.append(this.armfore);
-
         this.arm1.setAttribute("position", "0 3 -2");
-        scene.append(this.arm1);
+        this.centerpoint.setAttribute({x:this.secam.object3D.position.x,y:this.secam.object3D.position.y,z:this.secam.object3D.position.z});
+        this.centerpoint.append(this.arm1)
+        scene.append(this.centerpoint);
 
         this.r1 = -30;
         this.rt1 = 4.5;
@@ -35,7 +38,6 @@ class arm{
 
     }
     bend(){
-        this.secam = document.getElementById("secam");
         if(this.action == "punch"){
             if(this.r1 < -90 || this.r1 > -30){
                 this.rt1 = -this.rt1;
@@ -56,9 +58,8 @@ class arm{
         this.arm2.setAttribute("rotation", {x:0, y:0, z:this.r2});
     }
     follow(){
-        this.secam = document.getElementById("secam");
-        this.arm1.setAttribute("position", {x:this.secam.object3D.position.x+1,y:2.8,z:this.secam.object3D.position.z-.3});
-        this.arm1.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:this.r1});
-
+        this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y, z:0});
+        this.centerpoint.setAttribute("position", {x:this.secam.object3D.position.x,y:this.secam.object3D.position.y,z:this.secam.object3D.position.z});
+        this.arm1.setAttribute("position", {x:this.centerpoint.object3D.position.x+1,y:2.8,z:this.centerpoint.object3D.position.z-.3});
     }
 }
