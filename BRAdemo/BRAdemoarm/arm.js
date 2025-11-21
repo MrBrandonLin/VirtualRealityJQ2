@@ -35,16 +35,27 @@ class arm{
         this.secam.append(this.centerpoint);
         scene.append(this.centerpoint);
 
-        this.r1 = -30;
-        this.rt1 = 4.5;
-        this.r2 = 80;
-        this.rt2 = -7.5;
-        this.curen = 0;
-
+        this.rz1 = -30, this.rz2 = 80, this.curen = 0;
     }
     bend(){
         if(this.action == "punch"){
-            if(this.r1 < -90 || this.r1 > -30){
+            if(this.rz1 < -90 || this.rz1 > -30){
+                this.rzt1 = -this.rzt1;
+                this.curen += 1;
+            }
+            if(this.rz2 < 80 || this.rz2 > 180){
+                this.rzt2 = -this.rzt2;
+            }
+            if(this.curen > 1){
+                this.rzt1 = 0, this.rzt2 = 0;
+                this.action = "neutral";
+            }
+            this.rz1 -= this.rzt1;
+            this.rz2 -= this.rzt2;
+            this.arm1.setAttribute("rotation", {x:0, y:0, z:this.rz1});
+            this.arm2.setAttribute("rotation", {x:0, y:0, z:this.rz2});
+        } else if(this.action == "cross"){
+            if(this.r1 < 0 || this.r1 > 90){
                 this.rt1 = -this.rt1;
                 this.curen += 1;
             }
@@ -57,13 +68,12 @@ class arm{
             }
             this.r1 -= this.rt1;
             this.r2 -= this.rt2;
-            console.log(this.curen);
+            this.arm1.setAttribute("rotation", {x:this.r1, y:0, z:0});
         }
-        this.arm1.setAttribute("rotation", {x:0, y:0, z:this.r1});
-        this.arm2.setAttribute("rotation", {x:0, y:0, z:this.r2});
+
     }
     follow(){
-        this.centerpoint.setAttribute("position", {x: this.secam.object3D.position.x, y:this.secam.object3D.position.y-3, z:this.secam.object3D.position.z});
-        this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:0});
+        //this.centerpoint.setAttribute("position", {x: this.secam.object3D.position.x, y:this.secam.object3D.position.y-3, z:this.secam.object3D.position.z});
+        //this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:0});
     }
 }
