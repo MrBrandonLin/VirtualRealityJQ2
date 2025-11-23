@@ -1,6 +1,7 @@
 class arm{
     constructor(){
         this.secam = document.getElementById("secam");
+        this.hitmonkey = document.getElementById("hitmonkey");
         this.centerpoint = document.createElement("a-entity");
         this.arm1 = document.createElement("a-entity");
         this.arm2 = document.createElement("a-entity");
@@ -55,25 +56,31 @@ class arm{
             this.arm1.setAttribute("rotation", {x:0, y:0, z:this.rz1});
             this.arm2.setAttribute("rotation", {x:0, y:0, z:this.rz2});
         } else if(this.action == "cross"){
-            if(this.r1 < 0 || this.r1 > 90){
-                this.rt1 = -this.rt1;
+            if(this.rx1 < 0 || this.rx1 > 90){
+                this.rxt1 = -this.rxt1;
                 this.curen += 1;
             }
-            if(this.r2 < 80 || this.r2 > 180){
-                this.rt2 = -this.rt2;
+            if(this.rz1 > -30 || this.rz1 < -120){
+                this.rzt1 = -this.rzt1;
             }
             if(this.curen > 1){
-                this.rt1 = 0, this.rt2 = 0;
+                this.rxt1 = 0, this.rzt1 = 0;
                 this.action = "neutral";
             }
-            this.r1 -= this.rt1;
-            this.r2 -= this.rt2;
-            this.arm1.setAttribute("rotation", {x:this.r1, y:0, z:0});
+            this.rx1 -= this.rxt1;
+            this.rz1 -= this.rzt1;
+            this.rz2 -= this.rzt2;
+            this.arm1.setAttribute("rotation", {x:this.rx1, y:0, z:this.rz1});
         }
 
     }
     follow(){
-        //this.centerpoint.setAttribute("position", {x: this.secam.object3D.position.x, y:this.secam.object3D.position.y-3, z:this.secam.object3D.position.z});
-        //this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:0});
+        this.centerpoint.setAttribute("position", {x: this.secam.object3D.position.x, y:this.secam.object3D.position.y-3, z:this.secam.object3D.position.z});
+        this.centerpoint.setAttribute("rotation", {x:0, y:this.secam.rotationObj.y-90, z:0});
+    }
+    hitdetect(){
+        if(this.fist.object3D.position.x < this.hitmonkey.object3D.position.z){
+            console.log("hamlet")
+        }
     }
 }

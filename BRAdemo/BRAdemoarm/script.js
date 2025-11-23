@@ -16,10 +16,10 @@ window.addEventListener("DOMContentLoaded",function() {
     } else if(punchcombo%2 == 1){
       heavensgrace.action = "cross";
       heavensgrace.curen = 0;
-      heavensgrace.r1 = 0;
-      heavensgrace.rt1 = -4.5;
-      heavensgrace.r2 = 80;
-      heavensgrace.rt2 = -7.5;
+      heavensgrace.rz1 = -30;
+      heavensgrace.rzt1 = 6;
+      heavensgrace.rx1 = 0;
+      heavensgrace.rxt1 = -6;
       console.log("next");
       console.log(punchcombo);
     }
@@ -30,5 +30,6 @@ window.addEventListener("DOMContentLoaded",function() {
 function natural(){
   heavensgrace.bend();
   heavensgrace.follow();
+  heavensgrace.hitdetect();
   window.requestAnimationFrame( natural );
 }
