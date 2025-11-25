@@ -12,10 +12,10 @@ window.addEventListener("DOMContentLoaded",function() {
     bruno = new dancemonkey(x, 1, z, xs, zs);
     yeahitsthatonebrunomarssong.push(bruno);
   }
-  for(let i = 0; i<20; i++){
+  for(let i = 0; i<50; i++){
     let x = rnd(-25, 25);
     let z = rnd(-25, 25);
-    let h = rnd(1, 25);
+    let h = rnd(2, 5);
     jaundice = new tree(x, 1, z, h);
   }
       
