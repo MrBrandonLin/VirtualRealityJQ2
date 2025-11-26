@@ -4,11 +4,12 @@ let scene, camera, target, ball, cones = [];
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
-  target = document.querySelector("#target");
-  // Challenge 2 - Create a variable for the second target
+  target1 = document.querySelector("#target1");
+  target2 = document.querySelector("#target2");
+
   ball = document.querySelector("#ball");
   ball.x = -1;
-  ball.dx = -0.002;
+  ball.dx = -0.2;
   
   setTimeout(loop,100);
 })
@@ -17,8 +18,8 @@ function loop(){
   
   ball.x += ball.dx;
   ball.object3D.position.x = ball.x
-  let d1 = distance(ball, target);
-  //Challenge 3 - Store the distance between the ball and the second target
+  let d1 = distance(ball, target1);
+  let d2 = distance(ball, target2)
 
   output.setAttribute("value",`d1= ${d1}\nd2=${d2}`);
 
@@ -27,6 +28,9 @@ function loop(){
       when the distance between target 1 OR target 2 is less than 1
   */
   if(d1 < 1){
+    ball.dx = -ball.dx;
+  }
+  if(d2 < 1){
     ball.dx = -ball.dx;
   }
 
