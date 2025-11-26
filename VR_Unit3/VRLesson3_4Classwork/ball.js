@@ -7,10 +7,13 @@ class Ball{
     this.dy = rnd(1,3) / 250;
     this.dz = rnd(1,3) / 250;
 
+    this.gundam = document.getElementById("gun");
     this.obj = document.createElement("a-sphere");
     this.obj.setAttribute("clickable","");
-    // Challenge 6: Add the event listener to make the ball disappear and increase the score
-  
+    this.obj.addEventListener("click", ()=>{
+      this.obj.setAttribute("opacity","0");
+      score += 1;
+    })
 
     this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
     scene.append(this.obj);
