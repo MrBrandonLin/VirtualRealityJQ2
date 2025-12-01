@@ -5,7 +5,9 @@ window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
   for(let i = 0; i < 10; i++){
-    pothole = new Pothole(1, 1);
+    let x = rnd(-14, 14);
+    let z = rnd(-14, 14);
+    pothole = new Pothole(x, z);
     potholes.push(pothole);
   }
   
