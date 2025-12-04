@@ -57,8 +57,9 @@ class blackout{
         this.sexbox.setAttribute("color", "#000000");
         this.bam = false;
         scene.append(this.sexbox);
-        this.timin = 0, this.y = 0;
+        this.timin = 0, this.y = -3;
         this.secam = document.getElementById("secam");
+        
     }
     blacking(){
         this.timin += 1;

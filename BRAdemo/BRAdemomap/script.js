@@ -3,6 +3,7 @@ theevildead = [], timin = 0;
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   mappa = new map();
+  oldbetsie = new rifle();
   for(let i = 0; i < 30; i++){
     x = rnd(-45, 45);
     z = rnd(-45, 45);
@@ -16,9 +17,10 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function natural(){
   mappa.track();
-  for(let i = 0; i < theevildead.length; i++){
-    theevildead[i].track();
+  for(let evildead of theevildead){
+    evildead.track();
   }
+  
   sexbox.blacking();
   window.requestAnimationFrame( natural );
 }
