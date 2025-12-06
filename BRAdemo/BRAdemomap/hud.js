@@ -39,30 +39,15 @@ class rifle{
         
     }
     ammocount(){
-        this.ammo -= 1;
-        this.qt = true;
-        if(this.ammo < 1){
-            this.ammocounter.setAttribute("value", `!!!/6`);
-        } else {
-            this.ammocounter.setAttribute("value", `${this.ammo}/6`);
-        }
-    }
-
-    bulletphys(){
-        if(this.qt){
-            this.bullet = document.createElement("a-cone");
-            this.bullet.setAttribute("position", {x:this.barrel.object3D.position.x, y:this.barrel.object3D.position.y, z:this.barrel.object3D.position.z});
-            this.bullet.setAttribute("rotation", "0 90 -90");
-            this.bullet.setAttribute("scale", ".3 3 .3");
-            scene.append(this.bullet);
-        }
-    }
-    reload(){
+        window.addEventListener("click", function(){
+            this.ammo -= 1;
+        })
         window.addEventListener("keypress", (e)=>{
             if(e.key == `r`){
                 this.ammo = 6;
             }
         })
+        
         if(this.ammo < 1){
             this.ammocounter.setAttribute("value", `!!!/6`);
         } else {

@@ -13,20 +13,11 @@ window.addEventListener("DOMContentLoaded",function() {
   }
   sexbox = new blackout();
   natural();
-
-  window.addEventListener("click", ()=>{
-    oldbetsie.firing = true;
-  })
 })
 
 function natural(){
   mappa.track();
-  if(oldbetsie.firing){
-    oldbetsie.ammocount();
-    oldbetsie.bulletphys();
-    oldbetsie.firing = false;
-  }
-  oldbetsie.reload();
+  oldbetsie.ammocount();
   for(let evildead of theevildead){
     evildead.track();
   }
