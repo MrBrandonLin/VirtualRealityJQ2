@@ -5,7 +5,7 @@ class theevil{
         this.theevil = document.createElement("a-box");
         this.theevilmapicon = document.createElement("a-box");
 
-        this.x = x, this.z = z, this.type = type, this.timin = 0, this.patra, this.somba;
+        this.x = x, this.z = z, this.type = type, this.life = true, this.timin = 0, this.patra, this.somba;
         this.theevil.setAttribute("position", {x:this.x, y:2, z:this.z});
         this.theevil.setAttribute("scale", "1 4 1");
         this.theevilmapicon.setAttribute("position", "0 0 1");
@@ -21,7 +21,7 @@ class theevil{
         this.theevilmapicon.object3D.position.y = -this.theevil.object3D.position.z/100;
         this.theevilmapicon.object3D.position.x = this.theevil.object3D.position.x/100;
         this.timin += 1;
-        if(this.timin == 200){
+        if(this.timin == 200 && this.life == true){
             if(this.x<this.secam.object3D.position.x && this.z <this.secam.object3D.position.z){
                 this.patra = rnd(0, 5);
                 this.x += this.patra;
@@ -47,6 +47,7 @@ class theevil{
         } else if(this.timin > 220){
             this.timin = 0;
         }
+
     }
 }
 

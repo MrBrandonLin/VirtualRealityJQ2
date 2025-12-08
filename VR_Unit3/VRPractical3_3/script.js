@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
-let scene, camera, bullet, theevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0;
+let scene, camera, bullet, magazine = [], theevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
@@ -18,6 +18,7 @@ window.addEventListener("DOMContentLoaded",function() {
     if(e.key == " " && ammo_count > 0  ){
       bullet = new Bullet();
       ammo_count--;
+      magazine.push(bullet);
     }
     if(e.key == "r"){
       ammo_count = 6;
@@ -31,12 +32,17 @@ window.addEventListener("DOMContentLoaded",function() {
 function loop(){
   for(let evildead of theevildead){
     evildead.track();
-    if(distance(evildead.theevil, bullet.bulletin)<1){
-      console.log("your dead");
+    for(let bullen of magazine){
+      if(distance(evildead.theevil, bullen.bulletin)<1){
+        evildead.life = false;
+        bullen.donezo = true;
+      }
     }
   }
-  if(bullet){
-    bullet.fire();
+  for(let bullen of magazine){
+    if(bullen){
+    bullen.fire();
+  }
   }
   sexbox.blacking();
   mappa.track();

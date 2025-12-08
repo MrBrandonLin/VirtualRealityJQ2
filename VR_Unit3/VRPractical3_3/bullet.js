@@ -13,12 +13,16 @@ class Bullet{
     this.dz = v_xz * Math.cos(theta);
     this.dx = v_xz * Math.sin(theta);
     this.dy = v * Math.sin(phi);
+    this.donezo = false;
   }
   fire(){
-
-    this.bulletin.object3D.position.x += this.dx;
-    this.bulletin.object3D.position.y += this.dy;
-    this.bulletin.object3D.position.z += this.dz; 
+    if(this.donezo == false){
+      this.bulletin.object3D.position.x += this.dx;
+      this.bulletin.object3D.position.y += this.dy;
+      this.bulletin.object3D.position.z += this.dz; 
+    } else {
+      console.log("Chip Da Rapper");
+    }
 
     //this.bulletin.object3D.rotation.y = this.theta - Math.PI/2;
   }
