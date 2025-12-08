@@ -1,15 +1,26 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
-let scene, camera, bullet, enemies = [], ammo_boxes = [], ammo_count = 3, enemy_killed = 0;
+let scene, camera, bullet, theevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
+  mappa = new map();
+  sexbox = new blackout();
+  for(let i = 0; i < 30; i++){
+    x = rnd(-45, 45);
+    z = rnd(-45, 45);
+    type = rnd(0, 50);
+    evilmf = new theevil(x, z, type);
+    theevildead.push(evilmf);
+  }
 
   window.addEventListener("keydown",function(e){
-    //User can only fire with they press the spacebar and have sufficient ammo
     if(e.key == " " && ammo_count > 0  ){
       bullet = new Bullet();
       ammo_count--;
+    }
+    if(e.key == "r"){
+      ammo_count = 6;
     }
   })
   
@@ -18,9 +29,17 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function loop(){
+  for(let evildead of theevildead){
+    evildead.track();
+    if(distance(evildead.theevil, bullet.bulletin)<1){
+      console.log("your dead");
+    }
+  }
   if(bullet){
     bullet.fire();
   }
+  sexbox.blacking();
+  mappa.track();
  
   window.requestAnimationFrame(loop);
 }

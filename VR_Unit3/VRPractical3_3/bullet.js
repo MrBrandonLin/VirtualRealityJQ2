@@ -1,10 +1,10 @@
 class Bullet{
   constructor(){
-    this.obj = document.createElement("a-sphere");
-    this.obj.setAttribute("radius",0.5)
+    this.bulletin = document.createElement("a-sphere");
+    this.bulletin.setAttribute("radius",0.5)
     let pos = camera.object3D.position;
-    this.obj.setAttribute("position",{x:pos.x,y:pos.y,z:pos.z});
-    scene.append(this.obj);
+    this.bulletin.setAttribute("position",{x:pos.x,y:pos.y,z:pos.z});
+    scene.append(this.bulletin);
     
     let theta = camera.object3D.rotation.y + Math.PI;
     let phi = camera.object3D.rotation.x;
@@ -16,10 +16,10 @@ class Bullet{
   }
   fire(){
 
-    this.obj.object3D.position.x += this.dx;
-    this.obj.object3D.position.y += this.dy;
-    this.obj.object3D.position.z += this.dz; 
+    this.bulletin.object3D.position.x += this.dx;
+    this.bulletin.object3D.position.y += this.dy;
+    this.bulletin.object3D.position.z += this.dz; 
 
-    //this.obj.object3D.rotation.y = this.theta - Math.PI/2;
+    //this.bulletin.object3D.rotation.y = this.theta - Math.PI/2;
   }
 }

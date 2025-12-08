@@ -21,7 +21,7 @@ class theevil{
         this.theevilmapicon.object3D.position.y = -this.theevil.object3D.position.z/100;
         this.theevilmapicon.object3D.position.x = this.theevil.object3D.position.x/100;
         this.timin += 1;
-        if(this.timin == 1000){
+        if(this.timin == 200){
             if(this.x<this.secam.object3D.position.x && this.z <this.secam.object3D.position.z){
                 this.patra = rnd(0, 5);
                 this.x += this.patra;
@@ -44,7 +44,7 @@ class theevil{
                 this.z -= this.somba;
             }
             this.theevil.setAttribute("position", {x:this.x, y:2, z:this.z});
-        } else if(this.timin > 1200){
+        } else if(this.timin > 220){
             this.timin = 0;
         }
     }
@@ -63,10 +63,10 @@ class blackout{
     }
     blacking(){
         this.timin += 1;
-        if(this.timin == 900){
+        if(this.timin == 200){
             this.bam = true
             this.y = this.secam.object3D.position.y;
-        } else if(this.timin > 1200){
+        } else if(this.timin > 220){
             this.y = -3;
             this.timin = 0;
         }
