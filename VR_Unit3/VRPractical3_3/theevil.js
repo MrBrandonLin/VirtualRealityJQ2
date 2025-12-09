@@ -2,19 +2,26 @@ class theevil{
     constructor(x, z, type){
         this.mapback = document.getElementById("mapback");
         this.secam = document.getElementById("secam");
-        this.theevil = document.createElement("a-box");
+        this.theevil = document.createElement("a-entity");
+        this.theevilbase = document.createElement("a-box");
+        this.theevilcutout = document.createElement("a-image");
         this.theevilmapicon = document.createElement("a-box");
 
-        this.x = x, this.z = z, this.type = type, this.life = true, this.timin = 0, this.patra, this.somba;
-        this.theevil.setAttribute("position", {x:this.x, y:2, z:this.z});
-        this.theevil.setAttribute("scale", "1 4 1");
+        this.x = x, this.z = z, this.type = type, this.life = true, this.timin = 0, this.patra, this.somba, this.flerm;
+        this.theevil.setAttribute("position", {x:this.x, y:1, z:this.z});
+        this.theevilbase.setAttribute("scale", "1 2 .1");
+        this.theevilcutout.setAttribute("scale", "1 2 1");
         this.theevilmapicon.setAttribute("position", "0 0 1");
         this.theevilmapicon.setAttribute("scale", ".04 .04 .04");
-        this.theevilmapicon.setAttribute("color", "#ff55cd");
-        this.theevil.setAttribute("src", "images/Heavy.png");
+        this.theevilmapicon.setAttribute("color", "#ff0000");
+        this.theevilcutout.setAttribute("src", "images/Scout.png");
+        this.theevilbase.setAttribute("src", "images/cardboard.webp");
+        this.theevilcutout.setAttribute("position", "0 0 .06");
         
 
         this.mapback.append(this.theevilmapicon);
+        this.theevil.append(this.theevilbase);
+        this.theevil.append(this.theevilcutout);
         scene.append(this.theevil);
     }
     track(){
@@ -23,29 +30,28 @@ class theevil{
         this.timin += 1;
         if(this.timin == 200 && this.life == true){
             if(this.x<this.secam.object3D.position.x && this.z <this.secam.object3D.position.z){
-                this.patra = rnd(0, 5);
-                this.x += this.patra;
-                this.somba = rnd(0, 5);
-                this.z += this.somba;
+                this.patra = rnd(5, 15);
+                this.somba = rnd(5, 15);
             } else if(this.x>this.secam.object3D.position.x && this.z <this.secam.object3D.position.z){
-                this.patra = rnd(0, 5);
-                this.x -= this.patra;
-                this.somba = rnd(0, 5);
-                this.z += this.somba;
+                this.patra = rnd(-15, -5);
+                this.somba = rnd(5, 15);
             } else if(this.x<this.secam.object3D.position.x && this.z >this.secam.object3D.position.z){
-                this.patra = rnd(0, 5);
-                this.x += this.patra;
-                this.somba = rnd(0, 5);
-                this.z -= this.somba;
+                this.patra = rnd(5, 15);
+                this.somba = rnd(-15, -5);
             } else if(this.x>this.secam.object3D.position.x && this.z >this.secam.object3D.position.z){
-                this.patra = rnd(0, 5);
-                this.x -= this.patra;
-                this.somba = rnd(0, 5);
-                this.z -= this.somba;
+                this.patra = rnd(-15, -5);
+                this.somba = rnd(-15, -5);
             }
-            this.theevil.setAttribute("position", {x:this.x, y:2, z:this.z});
+            this.flerm = rnd(-20, 20);
+            this.x += this.patra;
+            this.z += this.somba;
+            this.theevil.setAttribute("rotation", {x:0, y:(this.secam.rotationObj.y+this.flerm), z:0});
+            this.theevil.setAttribute("position", {x:this.x, y:1, z:this.z});
         } else if(this.timin > 220){
             this.timin = 0;
+        } else if(this.life == false){
+            this.theevilcutout.setAttribute("src", "images/skeletin.webp");
+            this.theevilmapicon.setAttribute("color", "#000000");
         }
 
     }

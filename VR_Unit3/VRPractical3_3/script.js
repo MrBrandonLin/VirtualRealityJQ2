@@ -1,11 +1,12 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
-let scene, camera, bullet, magazine = [], theevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0;
+let scene, camera, bullet, magazine = [], theevildead = [], thedeadevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0, alreadydead = false;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
   mappa = new map();
   sexbox = new blackout();
+  betsie = new rifle();
   for(let i = 0; i < 30; i++){
     x = rnd(-45, 45);
     z = rnd(-45, 45);
@@ -19,9 +20,11 @@ window.addEventListener("DOMContentLoaded",function() {
       bullet = new Bullet();
       ammo_count--;
       magazine.push(bullet);
+      betsie.ammo--;
     }
     if(e.key == "r"){
       ammo_count = 6;
+      betsie.ammo = 6;
     }
   })
   
@@ -33,17 +36,24 @@ function loop(){
   for(let evildead of theevildead){
     evildead.track();
     for(let bullen of magazine){
-      if(distance(evildead.theevil, bullen.bulletin)<1){
+      if(distance(evildead.theevil, bullen.bulletin)<.5){
+        if(alreadydead == false){
+          enemy_killed+=1;
+        }
         evildead.life = false;
         bullen.donezo = true;
+        alreadydead = true;
       }
     }
   }
+  console.log(enemy_killed);
+
   for(let bullen of magazine){
     if(bullen){
     bullen.fire();
+    }
   }
-  }
+  betsie.count();
   sexbox.blacking();
   mappa.track();
  
