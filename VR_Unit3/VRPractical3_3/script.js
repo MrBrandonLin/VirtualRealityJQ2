@@ -45,8 +45,13 @@ function loop(){
         alreadydead = true;
       }
     }
+    if(evildead.life == false){
+      thedeadevildead.push(evildead);
+    }
   }
-  console.log(enemy_killed);
+  mappa.enemy = 30 - thedeadevildead.length;
+  thedeadevildead.length = 0;
+  
 
   for(let bullen of magazine){
     if(bullen){
@@ -61,7 +66,10 @@ function loop(){
 }
 
 function countdown(){
-
+  mappa.time();
+  if(mappa.cur < 0){
+    console.log("YOU LOSE WHITEBOY");
+  }
   setTimeout(countdown,1000);
 }
 
