@@ -3,7 +3,8 @@ class map{
         this.secam = document.getElementById("secam");
         this.mapback = document.createElement("a-box");
         this.mapicon = document.createElement("a-sphere");
-        this.mapback.setAttribute("color", "#7BC8A4");
+        this.mapback.setAttribute("color", "#65cffc");
+        this.mapback.setAttribute("opacity", ".7");
         this.mapback.setAttribute("position", {x:2.5, y:1, z:-2});
         this.mapback.setAttribute("scale", {x:1, y:1, z:.01});
         this.mapback.setAttribute("id", "mapback");

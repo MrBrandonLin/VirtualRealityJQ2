@@ -1,6 +1,6 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let scene, camera, bullet, magazine = [], theevildead = [], thedeadevildead = [], ammo_boxes = [], ammo_count = 6, enemy_killed = 0, alreadydead = false;
-
+let directive = [-50, 50, -50, 50];
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
@@ -13,6 +13,24 @@ window.addEventListener("DOMContentLoaded",function() {
     type = rnd(0, 50);
     evilmf = new theevil(x, z, type);
     theevildead.push(evilmf);
+  }
+  for(let i = 0; i < 4; i++){
+    t = directive[i];
+    if(i<2){
+      for(let ii = 0; ii<50; ii++){
+        x = rnd(-10000, 10000);
+        z = rnd(-10000, 10000);
+        scale = rnd(3, 10);
+        rocka = new rocknbowl(t+(x*.0001), ((ii-25)*2)+(z*.0001), scale);
+      }
+    } else {
+      for(let ii = 0; ii<50; ii++){
+        x = rnd(-10000, 10000);
+        z = rnd(-10000, 10000);
+        scale = rnd(3, 10);
+        rocka = new rocknbowl(((ii-25)*2)+(x*.0001), t+(z*.0001), scale);
+      }
+    }
   }
 
   window.addEventListener("keydown",function(e){
@@ -52,7 +70,6 @@ function loop(){
   mappa.enemy = 30 - thedeadevildead.length;
   thedeadevildead.length = 0;
   
-
   for(let bullen of magazine){
     if(bullen){
     bullen.fire();
