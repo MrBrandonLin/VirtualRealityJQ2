@@ -1,12 +1,12 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
-let scene, camera, dart, blocks = [];
+let scene, camera, dart, blocks = [], magazine = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   camera = document.querySelector("a-camera");
 
   window.onclick = ()=>{
-    dart = new Dart();
+    magazine.push(new Dart());
   } 
   for(let i = 0; i < 20; i++){
     let x = rnd(-10,10);
@@ -23,18 +23,19 @@ function loop(){
      Note: Explore the Block class for an understanding of the 
      above two tasks.
   */
-  for(let i=0; i<blocks; i++){
-    if(distance(dart.obj, blocks[i].obj) < 1 ){
-      blocks[i].shot = true;
-    }
-    if(blocks[i].shot){
-      blocks[i].shrink();
+  for(let blok of blocks){
+    for(let dat of magazine){
+      dat.fly();
+      if(distance(dat.obj, blok.obj) < 1 ){
+        blok.shot = true;
+        console.log(blok.shot);
+      }
+      if(blok.shot){
+        blok.shrink();
+      }
     }
   }
-  
-  if(dart){
-    dart.fly();
-  }
+
   window.requestAnimationFrame(loop);
 }
 
