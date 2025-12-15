@@ -3,9 +3,9 @@ class Robot{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.obj = document.createElement("a-box");
-
+    this.obj = document.createElement("a-entity");
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
+    this.obj.setAttribute("gltf-model","#notufo");
     this.obj.addEventListener("click",()=>{
       this.float = true;
     })

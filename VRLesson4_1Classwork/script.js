@@ -18,6 +18,7 @@ window.addEventListener("DOMContentLoaded",function() {
     let x = rnd(-20,20);
     let z = rnd(-20,20);
     let robot = new Robot(x,0.5,z);
+    robot.scale(.02);
     robots.push(robot)
   }
   

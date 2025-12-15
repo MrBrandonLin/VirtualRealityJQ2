@@ -6,8 +6,8 @@ class UFO{
     this.a = rnd(0,360);
     this.dx = Math.cos(this.a) / 20;
     this.dz = Math.sin(this.a) / 20;
-    this.obj = document.createElement("a-sphere");
-
+    this.obj = document.createElement("a-entity");
+    this.obj.setAttribute("gltf-model","#ufo");
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
     scene.append(this.obj);
  
