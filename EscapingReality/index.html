@@ -4,15 +4,19 @@
         <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
         <script src="script.js"></script>
         <script src="rhythm.js"></script>
+        <script src="menu.js"></script>
     </header>
     <body>
         <a-scene>
             <a-assets>
-                <sound src="PullOverThatmetalTooFast.mp3" id="Song1" >
+                <!-- Music -->
+                <sound src="PullOverThatmetalTooFast.mp3" id="Song1"></sound>
+                <!-- Models -->
+                 <a-gltf-model src="models/old_couch/scene.gltf" id="couch"></a-gltf-model>
             </a-assets>
-            <a-plane position="0 0 0" width="100" height="100" rotation="-90 0 0"color="#eeff99" side="double"></a-plane>
+            <a-plane position="0 0 0" width="50" height="50" rotation="-90 0 0"color="#eeff99" side="double"></a-plane>
             <a-sky color="#1865ee"></a-sky>
-            <a-camera position="0 1.9 0" id="secam">
+            <a-camera position="0 1.9 0" id="secamMain" active="false">
                 <a-cursor></a-cursor>
             </a-camera>
         </a-scene>

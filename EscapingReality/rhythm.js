@@ -11,7 +11,7 @@ class timer{
                      "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP1L1RpPpP",
                      "pPpPpPpP1L1RpPpPpPpPpPpP1L1RpPpPpPpPpPpP",
                      "1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1LpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpP1L1RpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                      "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
         ];
         this.songtime = 0;
