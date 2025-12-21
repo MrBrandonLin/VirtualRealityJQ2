@@ -9,10 +9,13 @@ class enemyModel{
         this.abR3 = document.createElement("a-box");
         this.backL1 = document.createElement("a-box"); this.backL2 = document.createElement("a-box");
         this.backR1 = document.createElement("a-box"); this.backR2 = document.createElement("a-box");
+        this.shoulderjointL = document.createElement("a-entity"); this.shoulderjointR = document.createElement("a-entity"); 
+        this.upperarmjointL = document.createElement("a-entity"); this.upperarmjointR = document.createElement("a-entity"); 
         this.shoulderL = document.createElement("a-box"); this.shoulderR = document.createElement("a-box");
+        this.upperarmL = document.createElement("a-box"); this.upperarmR = document.createElement("a-box");
         this.forearmL = document.createElement("a-box"); this.forearmR = document.createElement("a-box");
 
-        this.enemy.setAttribute("position", "0 3 -5");
+        this.enemy.setAttribute("position", "0 6 5");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
         this.pecL.setAttribute("color", "#E5C298");
         this.pecR.setAttribute("position", ".4 0 .05"); this.pecR.setAttribute("rotation", "1 20 0");
@@ -39,10 +42,20 @@ class enemyModel{
         this.backR1.setAttribute("scale", "1 1.5 1"); this.backR1.setAttribute("color", "#E5C298");
         this.backR2.setAttribute("position", ".4 -1.5 -.4"); this.backR2.setAttribute("rotation", "5 0 5");
         this.backR2.setAttribute("scale", "1 1 1"); this.backR2.setAttribute("color", "#E5C298");
-        this.shoulderL.setAttribute("position", "-1.3 .2 -.2"); this.shoulderL.setAttribute("rotation", "0 2 0");
-        this.shoulderL.setAttribute("scale", "1 .5 1"); this.shoulderL.setAttribute("color", "#E5C298");
-        this.shoulderR.setAttribute("position", "1.3 .2 -.2"); this.shoulderR.setAttribute("rotation", "0 -2 0");
-        this.shoulderR.setAttribute("scale", "1 .5 1"); this.shoulderR.setAttribute("color", "#E5C298");
+        this.shoulderjointL.setAttribute("position", "-1.3 .2 -.2"); this.shoulderjointL.setAttribute("rotation", "0 0 8");
+        this.shoulderjointR.setAttribute("position", "1.3 .2 -.2"); this.shoulderjointR.setAttribute("rotation", "0 0 -8");
+        this.shoulderL.setAttribute("rotation", "0 2 12");
+        this.shoulderL.setAttribute("scale", ".7 .5 .8"); this.shoulderL.setAttribute("color", "#E5C298");
+        this.shoulderR.setAttribute("rotation", "0 -2 -12");
+        this.shoulderR.setAttribute("scale", ".7 .5 .8"); this.shoulderR.setAttribute("color", "#E5C298");
+        this.upperarmL.setAttribute("position", "-.2 -.7 0"); this.upperarmL.setAttribute("rotation", "0 0 -10"); 
+        this.upperarmL.setAttribute("scale", ".70 1.7 .75"); this.upperarmL.setAttribute("color", "#E5C298");
+        this.upperarmR.setAttribute("position", ".2 -.7 0"); this.upperarmR.setAttribute("rotation", "0 0 10"); 
+        this.upperarmR.setAttribute("scale", ".70 1.7 .75"); this.upperarmR.setAttribute("color", "#E5C298");
+        this.forearmL.setAttribute("position", "0 -.9 0"); this.forearmL.setAttribute("rotation", "0 0 5");
+        this.forearmL.setAttribute("color", "#E5C298");
+        this.forearmR.setAttribute("position", "0 -.9 0"); this.forearmR.setAttribute("rotation", "0 0 -5");
+        this.forearmR.setAttribute("color", "#E5C298");
 
 
         this.enemy.append(this.pecL); this.enemy.append(this.pecR); this.enemy.append(this.pecM);
@@ -50,8 +63,13 @@ class enemyModel{
         this.enemy.append(this.abR1); this.enemy.append(this.abR2); this.enemy.append(this.abR3);
         this.enemy.append(this.backL1); this.enemy.append(this.backL2);
         this.enemy.append(this.backR1); this.enemy.append(this.backR2);
-        this.enemy.append(this.shoulderL); this.enemy.append(this.shoulderR);
-        this.enemy.append(this.forearmL); this.enemy.append(this.forearmR)
+        this.upperarmjointL.append(this.forearmL); this.upperarmjointR.append(this.forearmR);
+        this.upperarmL.append(this.upperarmjointL); this.upperarmR.append(this.upperarmjointR);
+        this.shoulderjointL.append(this.upperarmL); this.shoulderjointR.append(this.upperarmR);
+        this.shoulderjointL.append(this.shoulderL); this.shoulderjointR.append(this.shoulderR);
+        this.enemy.append(this.shoulderjointL); this.enemy.append(this.shoulderjointR);
+        
+        
         scene.append(this.enemy);
     }
 }
