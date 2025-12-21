@@ -12,6 +12,8 @@ function natural(){
     window.addEventListener("click", ()=>{
         secamMenu.setAttribute("camera", "active", false);
         secamMain.setAttribute("camera", "active", true);
+        secamMain.setAttribute("look-controls-enabled", "false");
+        secamMain.setAttribute("rotation", "-20 20 0");
     })
     timin.timering();
 }

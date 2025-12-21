@@ -4,15 +4,18 @@ class timer{
         this.noteboxL = document.createElement("a-box");
         this.noteboxR = document.createElement("a-box");
 
+        this.beatbox.setAttribute("position", ".5 2 -4")
         this.beatbox.setAttribute("sound", {src:"#Song1", loop:true, refDistance:1000})
         this.noteboxL.setAttribute("position", "-1 1 -3");
         this.noteboxR.setAttribute("position", "1 1 -3");
         this.song = ["pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                      "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP1L1RpPpP",
-                     "pPpPpPpP1L1RpPpPpPpPpPpP1L1RpPpPpPpPpPpP",
+                     "pPpPpPpP1L2RpPpPpPpPpPpP2L1RpPpPpPpPpPpP",
                      "1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1LpPpPpP",
-                     "pPpPpP1L1RpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpP1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1L",
+                     "1RpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                      "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                    
         ];
         this.songtime = 0;
         this.linetime = 0;
@@ -44,14 +47,19 @@ class timer{
             }
             if(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2)=="1L"){
                 this.noteboxL.setAttribute("position", "-1 2 -3");
+            } else if(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2)=="2L"){
+                this.noteboxL.setAttribute("position", "-1 2 -2");
             } else {
                 this.noteboxL.setAttribute("position", "-1 1 -3");
             }
             if(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2)=="1R"){
                 this.noteboxR.setAttribute("position", "1 2 -3");
+            } else if(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2)=="2R"){
+                this.noteboxR.setAttribute("position", "1 2 -2");
             } else {
                 this.noteboxR.setAttribute("position", "1 1 -3");
             }
+            
             console.log(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
             if(this.s%.5 == 0){
             }
