@@ -8,18 +8,12 @@ class timer{
         this.beatbox.setAttribute("sound", {src:"#Song1", loop:true, refDistance:1000})
         this.noteboxL.setAttribute("position", "-1 1 -3");
         this.noteboxR.setAttribute("position", "1 1 -3");
-        this.song = ["pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP1L1RpPpP",
-                     "pPpPpPpP1L2RpPpPpPpPpPpP2L1RpPpPpPpPpPpP",
-                     "1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1LpPpPpP",
-                     "pPpPpP1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1L",
-                     "1RpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
-                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+        this.song = ["pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP1L1RpPpP",
+                     "pPpPpPpP1L2RpPpPpPpPpPpP2L1RpPpPpPpPpPpP", "1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1LpPpPpP",
+                     "pPpPpP1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1L", "1RpPpPpPpPpP2L2RpPpPpPpPpP2L1RpPpPpPpPpP",
+                     "1L2RpPpPpPpPpPpP2L1RpPpPpPpPpP1L2RpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpP1LpP1L1R2LpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                     
         ];
         this.songtime = 0;
