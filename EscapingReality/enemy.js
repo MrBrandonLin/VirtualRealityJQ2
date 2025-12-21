@@ -12,7 +12,7 @@ class enemyModel{
         this.shoulderL = document.createElement("a-box"); this.shoulderR = document.createElement("a-box");
         this.forearmL = document.createElement("a-box"); this.forearmR = document.createElement("a-box");
 
-        this.enemy.setAttribute("position", "0 3x -1");
+        this.enemy.setAttribute("position", "0 3 -5");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
         this.pecL.setAttribute("color", "#E5C298");
         this.pecR.setAttribute("position", ".4 0 .05"); this.pecR.setAttribute("rotation", "1 20 0");
