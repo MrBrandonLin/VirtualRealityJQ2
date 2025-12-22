@@ -16,10 +16,14 @@ class enemyModel{
         this.forearmL = document.createElement("a-box"); this.forearmR = document.createElement("a-box");
         this.torsojoint = document.createElement("a-entity"); this.torsosection = document.createElement("a-cylinder");
         this.hipjointL = document.createElement("a-entity"); this.hipjointR = document.createElement("a-entity");
-        this.thighL = document.createElement("a-cylinder"); this.thighR = document.createElement("a-cylinder");
+        this.thighL = document.createElement("a-box"); this.thighR = document.createElement("a-box");
+        this.thighjointL = document.createElement("a-entity"); this.thighjointR = document.createElement("a-entity");
+        this.kneeL = document.createElement("a-box"); this.kneeR = document.createElement("a-box");
+        this.calfL = document.createElement("a-box"); this.calfR = document.createElement("a-box");
 
 
-        this.enemy.setAttribute("position", "0 5 5");
+
+        this.enemy.setAttribute("position", "0 7 5");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
         this.pecL.setAttribute("color", "#E5C298");
         this.pecR.setAttribute("position", ".4 0 .05"); this.pecR.setAttribute("rotation", "1 20 0");
@@ -62,13 +66,21 @@ class enemyModel{
         this.forearmR.setAttribute("scale", ".68 1.8 .73"); this.forearmR.setAttribute("color", "#E5C298");
         this.torsojoint.setAttribute("position", "0 -2 0"); 
         this.torsosection.setAttribute("position", "0 0 -.3");
-        this.torsosection.setAttribute("scale", "1.1 .5 1");  this.torsosection.setAttribute("segments-radial", "12");
+        this.torsosection.setAttribute("scale", "1.1 .5 .8");  this.torsosection.setAttribute("color", "#E5C298");
+        this.torsosection.setAttribute("segments-radial", "8");
         this.hipjointL.setAttribute("position", "-0.5 .1 0"); this.hipjointL.setAttribute("rotation", "0 0 -5"); 
         this.hipjointR.setAttribute("position", "0.5 .1 0"); this.hipjointR.setAttribute("rotation", "0 0 5"); 
         this.thighL.setAttribute("position", "0 -1.5 -.2");
-        this.thighL.setAttribute("scale", ".6 3 .6"); this.thighL.setAttribute("segments-radial", "6");
+        this.thighL.setAttribute("scale", "1 2.5 1"); this.thighL.setAttribute("color", "#E5C298");
         this.thighR.setAttribute("position", "0 -1.5 -.2");
-        this.thighR.setAttribute("scale", ".6 3 .6"); this.thighR.setAttribute("segments-radial", "6");
+        this.thighR.setAttribute("scale", "1 2.5 1"); this.thighR.setAttribute("color", "#E5C298");
+        this.thighR.setAttribute("segments-radial", "6");
+        this.thighjointL.setAttribute("position", "0 -3 -.2"); this.thighjointR.setAttribute("position", "0 -3 -.2"); 
+        this.kneeL.setAttribute("rotation", "12 0 0"); this.kneeR.setAttribute("rotation", "12 0 0")
+        this.calfL.setAttribute("position", "0 -1.2 -.1"); 
+        this.calfL.setAttribute("scale", ".95 2.65 .95"); 
+        this.calfR.setAttribute("position", "0 -1.2 -.1"); 
+        this.calfR.setAttribute("scale", ".95 2.65 .95"); 
     
 
 
@@ -86,6 +98,9 @@ class enemyModel{
         this.torsojoint.append(this.torsosection);
         this.torsojoint.append(this.hipjointL); this.torsojoint.append(this.hipjointR);
         this.hipjointL.append(this.thighL); this.hipjointR.append(this.thighR);
+        this.hipjointL.append(this.thighjointL); this.hipjointR.append(this.thighjointR); 
+        this.thighjointL.append(this.kneeL); this.thighjointR.append(this.kneeR); 
+        this.thighjointL.append(this.calfL); this.thighjointR.append(this.calfR); 
         
         
         scene.append(this.enemy);

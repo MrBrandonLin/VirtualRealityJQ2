@@ -14,6 +14,18 @@ class timer{
                      "1L2RpPpPpPpPpPpP2L1RpPpPpPpPpP1L2RpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                      "pPpPpPpPpPpPpPpP1LpP1L1R2LpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                      "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
+                     "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP",
                     
         ];
         this.songtime = 0;
