@@ -4,7 +4,7 @@ class timer{
         this.noteboxL = document.createElement("a-box");
         this.noteboxR = document.createElement("a-box");
 
-        this.beatbox.setAttribute("position", ".5 2 -4")
+        this.beatbox.setAttribute("position", ".5 7 -4")
         this.beatbox.setAttribute("sound", {src:"#Song1", loop:true, refDistance:1000})
         this.song = ["pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP", "pPpPpPpPpPpPpPpPpPpPpPpPpPpPpPpP1L1RpPpP",
                      "pPpPpPpP1L2RpPpPpPpPpPpP2L1RpPpPpPpPpPpP", "1L1RpPpPpPpPpP1L1RpPpPpPpPpPpPpP1LpPpPpP",
