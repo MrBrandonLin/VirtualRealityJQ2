@@ -23,7 +23,7 @@ class enemyModel{
 
 
 
-        this.enemy.setAttribute("position", "0 7 5");
+        this.enemy.setAttribute("position", "0 7 -7");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
         this.pecL.setAttribute("color", "#E5C298");
         this.pecR.setAttribute("position", ".4 0 .05"); this.pecR.setAttribute("rotation", "1 20 0");
@@ -109,19 +109,25 @@ class enemyModel{
     pose(note){
         if(note=="1L"){
             this.shoulderjointL.setAttribute("rotation", "-90 0 -10");
-        } else if(note=="2L"){
-            this.upperarmjointL.setAttribute("rotation", "-90 0 -10");
-        } else {
-            this.shoulderjointL.setAttribute("rotation", "0 0 -10");
             this.upperarmjointL.setAttribute("rotation", "0 0 0");
+        } else if(note=="2L"){
+            this.shoulderjointL.setAttribute("rotation", "-90 0 -30");
+            this.upperarmjointL.setAttribute("rotation", "0 0 -10");
+        } else{
+            this.shoulderjointL.setAttribute("rotation", "-25 0 0");
+            this.upperarmjointL.setAttribute("rotation", "-140 0 0");
+            this.enemy.setAttribute("rotation", "0 -40 0");
         }
         if(note=="1R"){
             this.shoulderjointR.setAttribute("rotation", "-90 0 10");
-        } else if(note=="2R"){
-            this.upperarmjointR.setAttribute("rotation", "-90 0 10");
-        } else {
-            this.shoulderjointR.setAttribute("rotation", "0 0 10");
             this.upperarmjointR.setAttribute("rotation", "0 0 0");
+        } else if(note=="2R"){
+            this.upperarmjointR.setAttribute("rotation", "0 0 10");
+            this.shoulderjointR.setAttribute("rotation", "-90 0 30");
+        } else{
+            this.shoulderjointR.setAttribute("rotation", "-25 0 0");
+            this.upperarmjointR.setAttribute("rotation", "-140 0 0");
+            this.enemy.setAttribute("rotation", "0 -40 0");
         }
     }
 }
