@@ -68,19 +68,20 @@ class enemyModel{
         this.torsosection.setAttribute("position", "0 0 -.3");
         this.torsosection.setAttribute("scale", "1.1 .5 .8");  this.torsosection.setAttribute("color", "#E5C298");
         this.torsosection.setAttribute("segments-radial", "8");
-        this.hipjointL.setAttribute("position", "-0.5 .1 0"); this.hipjointL.setAttribute("rotation", "0 0 -5"); 
-        this.hipjointR.setAttribute("position", "0.5 .1 0"); this.hipjointR.setAttribute("rotation", "0 0 5"); 
+        this.hipjointL.setAttribute("position", "-0.5 .15 0"); this.hipjointL.setAttribute("rotation", "0 0 -5"); 
+        this.hipjointR.setAttribute("position", "0.5 .15 0"); this.hipjointR.setAttribute("rotation", "0 0 5"); 
         this.thighL.setAttribute("position", "0 -1.5 -.2");
-        this.thighL.setAttribute("scale", "1 2.5 1"); this.thighL.setAttribute("color", "#E5C298");
+        this.thighL.setAttribute("scale", "1 2.3 1"); this.thighL.setAttribute("color", "#E5C298");
         this.thighR.setAttribute("position", "0 -1.5 -.2");
-        this.thighR.setAttribute("scale", "1 2.5 1"); this.thighR.setAttribute("color", "#E5C298");
+        this.thighR.setAttribute("scale", "1 2.3 1"); this.thighR.setAttribute("color", "#E5C298");
         this.thighR.setAttribute("segments-radial", "6");
-        this.thighjointL.setAttribute("position", "0 -3 -.2"); this.thighjointR.setAttribute("position", "0 -3 -.2"); 
-        this.kneeL.setAttribute("rotation", "12 0 0"); this.kneeR.setAttribute("rotation", "12 0 0")
+        this.thighjointL.setAttribute("position", "0 -2.5 -.2"); this.thighjointR.setAttribute("position", "0 -2.5 -.2"); 
+        this.kneeL.setAttribute("rotation", "12 0 0"); this.kneeL.setAttribute("color", "#E5C298");
+        this.kneeR.setAttribute("rotation", "12 0 0"); this.kneeR.setAttribute("color", "#E5C298");
         this.calfL.setAttribute("position", "0 -1.2 -.1"); 
-        this.calfL.setAttribute("scale", ".95 2.65 .95"); 
+        this.calfL.setAttribute("scale", ".95 2.2 .95"); this.calfL.setAttribute("color", "#E5C298");
         this.calfR.setAttribute("position", "0 -1.2 -.1"); 
-        this.calfR.setAttribute("scale", ".95 2.65 .95"); 
+        this.calfR.setAttribute("scale", ".95 2.2 .95"); this.calfR.setAttribute("color", "#E5C298");
     
 
 
@@ -104,5 +105,23 @@ class enemyModel{
         
         
         scene.append(this.enemy);
+    }
+    pose(note){
+        if(note=="1L"){
+            this.shoulderjointL.setAttribute("rotation", "-90 0 -10");
+        } else if(note=="2L"){
+            this.upperarmjointL.setAttribute("rotation", "-90 0 -10");
+        } else {
+            this.shoulderjointL.setAttribute("rotation", "0 0 -10");
+            this.upperarmjointL.setAttribute("rotation", "0 0 0");
+        }
+        if(note=="1R"){
+            this.shoulderjointR.setAttribute("rotation", "-90 0 10");
+        } else if(note=="2R"){
+            this.upperarmjointR.setAttribute("rotation", "-90 0 10");
+        } else {
+            this.shoulderjointR.setAttribute("rotation", "0 0 10");
+            this.upperarmjointR.setAttribute("rotation", "0 0 0");
+        }
     }
 }

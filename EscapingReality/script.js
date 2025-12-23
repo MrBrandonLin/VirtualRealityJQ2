@@ -1,4 +1,5 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
+let note = "";
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");
     timin = new timer();
@@ -17,4 +18,5 @@ function natural(){
         secamMain.setAttribute("rotation", "-20 20 0");
     })
     timin.timering();
+    trina.pose(note);
 }
