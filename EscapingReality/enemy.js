@@ -20,8 +20,8 @@ class enemyModel{
         this.thighjointL = document.createElement("a-entity"); this.thighjointR = document.createElement("a-entity");
         this.kneeL = document.createElement("a-box"); this.kneeR = document.createElement("a-box");
         this.calfL = document.createElement("a-box"); this.calfR = document.createElement("a-box");
-
-
+        this.neckjoint = document.createElement("a-entity"); this.neckM = document.createElement("a-box");
+        this.headjoint = document.createElement("a-entity"); this.head = document.createElement("a-box");
 
         this.enemy.setAttribute("position", "0 7 -7");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
@@ -82,9 +82,10 @@ class enemyModel{
         this.calfL.setAttribute("scale", ".95 2.2 .95"); this.calfL.setAttribute("color", "#E5C298");
         this.calfR.setAttribute("position", "0 -1.2 -.1"); 
         this.calfR.setAttribute("scale", ".95 2.2 .95"); this.calfR.setAttribute("color", "#E5C298");
+        this.neckjoint.setAttribute("position", "0 1 .1"); this.neckjoint.setAttribute("rotation", "5 0 0");
+        this.neckM.setAttribute("position", "0 0 -.3"); 
+        this.neckM.setAttribute("scale", "1.1 1.8 1.1"); this.neckM.setAttribute("color", "#E5C298");
     
-
-
         this.enemy.append(this.pecL); this.enemy.append(this.pecR); this.enemy.append(this.pecM);
         this.enemy.append(this.abL1);  this.enemy.append(this.abL2); this.enemy.append(this.abL3);
         this.enemy.append(this.abR1); this.enemy.append(this.abR2); this.enemy.append(this.abR3);
@@ -102,7 +103,7 @@ class enemyModel{
         this.hipjointL.append(this.thighjointL); this.hipjointR.append(this.thighjointR); 
         this.thighjointL.append(this.kneeL); this.thighjointR.append(this.kneeR); 
         this.thighjointL.append(this.calfL); this.thighjointR.append(this.calfR); 
-        
+        this.enemy.append(this.neckjoint); this.neckjoint.append(this.neckM);
         
         scene.append(this.enemy);
     }
@@ -110,24 +111,30 @@ class enemyModel{
         if(note=="1L"){
             this.shoulderjointL.setAttribute("rotation", "-90 0 -10");
             this.upperarmjointL.setAttribute("rotation", "0 0 0");
+            this.enemy.object3D.position.z = -1;
         } else if(note=="2L"){
             this.shoulderjointL.setAttribute("rotation", "-90 0 -30");
             this.upperarmjointL.setAttribute("rotation", "0 0 -10");
+            this.enemy.object3D.position.z = -1;
         } else{
             this.shoulderjointL.setAttribute("rotation", "-25 0 0");
             this.upperarmjointL.setAttribute("rotation", "-140 0 0");
             this.enemy.setAttribute("rotation", "0 -40 0");
+            this.enemy.object3D.position.z = -7;
         }
         if(note=="1R"){
             this.shoulderjointR.setAttribute("rotation", "-90 0 10");
             this.upperarmjointR.setAttribute("rotation", "0 0 0");
+            this.enemy.object3D.position.z = -1;
         } else if(note=="2R"){
             this.upperarmjointR.setAttribute("rotation", "0 0 10");
             this.shoulderjointR.setAttribute("rotation", "-90 0 30");
+            this.enemy.object3D.position.z = -1;
         } else{
             this.shoulderjointR.setAttribute("rotation", "-25 0 0");
             this.upperarmjointR.setAttribute("rotation", "-140 0 0");
             this.enemy.setAttribute("rotation", "0 -40 0");
+            this.enemy.object3D.position.z = -7;
         }
     }
 }
