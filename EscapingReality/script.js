@@ -14,14 +14,14 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function natural(){
     window.addEventListener("keypress", (e)=>{
-        if(e.key == "p" && ohmymy.menuchoice == 0){
+        if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth == 1){
             //secamMenu.setAttribute("camera", "active", false);
             secamMain.setAttribute("camera", "active", true);
             //secamMain.setAttribute("look-controls-enabled", "false");
             //secamMain.setAttribute("wasd-controls-enabled", "false");
             secamMain.setAttribute("rotation", "-20 20 0");
         }
-        if((e.key == "i" || e.key == "o")){
+        if((e.key == "i" || e.key == "o" || e.key == "p" || e.key == "u")){
             oopdoop = true;  
             jackiesquire = e.key; 
             
@@ -31,6 +31,7 @@ function natural(){
         ohmymy.menuselect(jackiesquire);
         oopdoop = false;
     }
+    ohmymy.menuwindmechanic();
     timin.timering();
     trina.pose(note);
     djHardRock.pose();
