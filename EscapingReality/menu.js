@@ -30,6 +30,7 @@ class menu{
         this.couch.setAttribute("position", ".3 .5 49.2"); this.couch.setAttribute("rotation", "0 -20 0");
         this.couch.setAttribute("scale", ".008 .008 .008"); this.couch.setAttribute("gltf-model", "#couch");
         this.couch.setAttribute("side", "double");
+        this.couch.setAttribute("sound", {src:"#SongMenu", loop:true, refDistance:1000})
         this.title.setAttribute("position", ".2 1.7 49"); this.title.setAttribute("scale", "1.5 .80");
         this.title.setAttribute("src", "#title");
         this.start.setAttribute("position", "-.5 1.6 50"); this.start.setAttribute("scale", ".2 .2 .2");
@@ -53,11 +54,16 @@ class menu{
         scene.append(this.top); scene.append(this.bottom);
 
         this.menuchoice = 0; this.menudepth = 0; this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
+
+        window.addEventListener("click", ()=>{
+            this.couch.components.sound.playSound();
+        })
     }
     thereare5secondsoftitlecard(){
 
     }
     menuselect(key){
+
         if(key=="o"){
             this.menuchoice += 1;
             if(this.menuchoice > 2){
