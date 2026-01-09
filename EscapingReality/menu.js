@@ -16,7 +16,7 @@ class menu{
 
 
         this.menucamera.setAttribute("position", "0 1.4 50.6"); this.menucamera.setAttribute("active", "true"); 
-        this.menucamera.setAttribute("wasd-controls-enabled", "true");
+        this.menucamera.setAttribute("wasd-controls-enabled", "false");
         this.menumenu.setAttribute("position", "-.3 1.4 50"); this.menumenu.setAttribute("scale", "0 .7 1"); 
         this.room.setAttribute("position", "0 1.5 50"); this.room.setAttribute("scale", "3 2 3");
         this.room.setAttribute("side", "double"); this.room.setAttribute("position", "0 1.5 50");
