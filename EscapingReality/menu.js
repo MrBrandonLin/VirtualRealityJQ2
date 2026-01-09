@@ -13,11 +13,19 @@ class menu{
         this.credits = document.createElement("a-cylinder");
         this.top = document.createElement("a-sphere");
         this.bottom = document.createElement("a-sphere");
+        this.song1 = document.createElement("a-box");
+        this.song2 = document.createElement("a-box");
+        this.song3 = document.createElement("a-box");
+        this.song4 = document.createElement("a-box");
+        this.song5 = document.createElement("a-box");
+        this.song6 = document.createElement("a-box");
+        this.songselector = document.createElement("a-box");
 
 
         this.menucamera.setAttribute("position", "0 1.4 50.6"); this.menucamera.setAttribute("active", "true"); 
-        this.menucamera.setAttribute("wasd-controls-enabled", "false");
-        this.menumenu.setAttribute("position", "-.3 1.4 50"); this.menumenu.setAttribute("scale", "0 .7 1"); 
+        this.menucamera.setAttribute("wasd-controls-enabled", "true");
+        this.menumenu.setAttribute("position", "-.3 1.4 50"); this.menumenu.setAttribute("geometry", {width: 0}); 
+        this.menumenu.setAttribute("scale", "1 .7 1"); 
         this.room.setAttribute("position", "0 1.5 50"); this.room.setAttribute("scale", "3 2 3");
         this.room.setAttribute("side", "double"); this.room.setAttribute("position", "0 1.5 50");
         this.room.setAttribute("src", "#whitebricktexture");
@@ -43,6 +51,18 @@ class menu{
         this.top.setAttribute("color", "#ff0000");
         this.bottom.setAttribute("position", "-.5 1.1 50"); this.bottom.setAttribute("scale", ".2 .2 .2");
         this.bottom.setAttribute("color", "#ff0000");
+        this.song1.setAttribute("position", "0 -2 0");
+        this.song1.setAttribute("scale", ".2 .3 .2"); this.song1.setAttribute("color", "#138328");
+        this.song2.setAttribute("position", "0 -2 0");
+        this.song2.setAttribute("scale", ".2 .3 .2"); this.song2.setAttribute("color", "#ff02ff")
+        this.song3.setAttribute("position", "0 -2 0");
+        this.song3.setAttribute("scale", ".2 .3 .2"); this.song3.setAttribute("color", "#f31234")
+        this.song4.setAttribute("position", "0 -2 0");
+        this.song4.setAttribute("scale", ".2 .3 .2"); this.song4.setAttribute("color", "#ff00ff")
+        this.song5.setAttribute("position", "0 -2 0");
+        this.song5.setAttribute("scale", ".2 .3 .2"); this.song5.setAttribute("color", "#a331ba")
+        this.song6.setAttribute("position", "0 -2 0");
+        this.song6.setAttribute("scale", ".2 .3 .2"); this.song6.setAttribute("color", "#ff7777")
 
         scene.append(this.menucamera);
         this.menucamera.append(this.menucursor);
@@ -52,6 +72,8 @@ class menu{
         scene.append(this.title);
         scene.append(this.start); scene.append(this.settings); scene.append(this.credits);
         scene.append(this.top); scene.append(this.bottom);
+        this.menumenu.append(this.song1); this.menumenu.append(this.song2); this.menumenu.append(this.song3);
+        this.menumenu.append(this.song4); this.menumenu.append(this.song5); this.menumenu.append(this.song6);
 
         this.menuchoice = 0; this.menudepth = 0; this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
 
@@ -75,11 +97,6 @@ class menu{
                 this.menuchoice = 2;
             }
         }
-        if(this.menudepth > 1){
-            this.menudepth = 1;
-        } else if(this.menudepth < 0){
-            this.menudepth = 0;
-        }
         if(this.menuchoice == 0){
             this.start.setAttribute("color", "#ffff00");
             this.settings.setAttribute("color", "#ff0000");
@@ -98,20 +115,27 @@ class menu{
             this.menuwinder = true;
             this.menudepth += 1;
             this.menuwindment = .1;
+            this.song1.setAttribute("position", "-.05 .2 -.05"); this.song2.setAttribute("position", ".25 .2 -.05");
+            this.song3.setAttribute("position", "-.05 -.2 -.05"); this.song4.setAttribute("position", ".25 -.2 -.05");
         }
         if(key=="u" && this.menuchoice == 0){
             this.menuwinder = true;
             this.menudepth -= 1;
             this.menuwindment = -.1;
+            if(this.menudepth<0){
+                this.menudepth = 0;
+            }
+            this.song1.setAttribute("position", "-.2 -2 0"); this.song2.setAttribute("position", "0 -2 0");
+            this.song3.setAttribute("position", ".2 -2 0"); this.song4.setAttribute("position", "-.2 -2 0");
         }
-
+        console.log(this.menudepth);
     }
     menuwindmechanic(){
         if(this.menuwinder == true){
             this.menuwind += this.menuwindment;
-            this.menumenu.setAttribute("scale", {x:this.menuwind, y:.7 , z:1});
+            this.menumenu.setAttribute("geometry", {width: this.menuwind});
             this.menumenu.setAttribute("position", {x:-.5+(this.menuwind*.5), y:1.4, z:50});
-            if(this.menuwind >= 1 || this.menuwind <= 0){
+            if(this.menuwind > .8 || this.menuwind < 0){
                 this.menuwinder = false;
             }
         }

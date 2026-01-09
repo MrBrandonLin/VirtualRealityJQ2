@@ -9,11 +9,16 @@ window.addEventListener("DOMContentLoaded",function() {
     djHardRock = new playerModel();
     secamMain = document.getElementById("secamMain");
     secamMenu = document.getElementById("secamMenu");
-    this.setInterval(sexing, 250)
+    this.setInterval(unnatural, 10)
     this.setInterval(natural, 250)
 })
 
 function natural(){
+    timin.timering();
+    trina.pose(note);
+    djHardRock.pose();
+}
+function unnatural(){
     window.addEventListener("keypress", (e)=>{
         if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth == 1){
             ohmymy.couch.components.sound.stopSound();
@@ -34,10 +39,4 @@ function natural(){
         oopdoop = false;
     }
     ohmymy.menuwindmechanic();
-    timin.timering();
-    trina.pose(note);
-    djHardRock.pose();
-}
-function sexing(){
-    console.log("reminder add sex later");
 }
