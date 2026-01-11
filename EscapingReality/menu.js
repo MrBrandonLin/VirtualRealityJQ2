@@ -9,7 +9,7 @@ class menu{
         this.couch = document.createElement("a-entity");
         this.title = document.createElement("a-image");
         this.start = document.createElement("a-cylinder");
-        this.settings = document.createElement("a-cylinder");
+        this.stats = document.createElement("a-cylinder");
         this.credits = document.createElement("a-cylinder");
         this.top = document.createElement("a-sphere");
         this.bottom = document.createElement("a-sphere");
@@ -41,16 +41,19 @@ class menu{
         this.couch.setAttribute("sound", {src:"#SongMenu", loop:true, refDistance:1000})
         this.title.setAttribute("position", ".2 1.7 49"); this.title.setAttribute("scale", "1.5 .80");
         this.title.setAttribute("src", "#title");
-        this.start.setAttribute("position", "-.5 1.6 50"); this.start.setAttribute("scale", ".2 .2 .2");
-        this.start.setAttribute("color", "#ffff00");
-        this.settings.setAttribute("position", "-.5 1.4 50"); this.settings.setAttribute("scale", ".2 .2 .2");
-        this.settings.setAttribute("color", "#ff0000"); 
-        this.credits.setAttribute("position", "-.5 1.2 50"); this.credits.setAttribute("scale", ".2 .2 .2");
-        this.credits.setAttribute("color", "#ff0000");
+        this.start.setAttribute("position", "-.5 1.6 50"); this.start.setAttribute("rotation", "0 -24 0"); 
+        this.start.setAttribute("scale", ".2 .2 .2");
+        this.start.setAttribute("src", "#start2"); this.start.setAttribute("repeat", "3"); 
+        this.stats.setAttribute("position", "-.5 1.4 50"); this.stats.setAttribute("rotation", "0 -22 0"); 
+        this.stats.setAttribute("scale", ".2 .2 .2");
+        this.stats.setAttribute("src", "#stats1"); this.stats.setAttribute("repeat", "3"); 
+        this.credits.setAttribute("position", "-.5 1.2 50"); this.credits.setAttribute("rotation", "0 -22 0"); 
+        this.credits.setAttribute("scale", ".2 .2 .2"); 
+        this.credits.setAttribute("src", "#credits1"); this.credits.setAttribute("repeat", "3"); 
         this.top.setAttribute("position", "-.5 1.7 50"); this.top.setAttribute("scale", ".2 .2 .2");
-        this.top.setAttribute("color", "#ff0000");
+        this.top.setAttribute("src", "#leathertexture"); this.top.setAttribute("repeat", "4 2"); 
         this.bottom.setAttribute("position", "-.5 1.1 50"); this.bottom.setAttribute("scale", ".2 .2 .2");
-        this.bottom.setAttribute("color", "#ff0000");
+        this.bottom.setAttribute("src", "#leathertexture"); this.bottom.setAttribute("repeat", "4 2"); 
         this.song1.setAttribute("position", "0 -2 0");
         this.song1.setAttribute("scale", ".2 .3 .2"); this.song1.setAttribute("color", "#138328");
         this.song2.setAttribute("position", "0 -2 0");
@@ -70,7 +73,7 @@ class menu{
         scene.append(this.room);  scene.append(this.ceiling); scene.append(this.floor);
         scene.append(this.couch);
         scene.append(this.title);
-        scene.append(this.start); scene.append(this.settings); scene.append(this.credits);
+        scene.append(this.start); scene.append(this.stats); scene.append(this.credits);
         scene.append(this.top); scene.append(this.bottom);
         this.menumenu.append(this.song1); this.menumenu.append(this.song2); this.menumenu.append(this.song3);
         this.menumenu.append(this.song4); this.menumenu.append(this.song5); this.menumenu.append(this.song6);
@@ -98,17 +101,17 @@ class menu{
             }
         }
         if(this.menuchoice == 0){
-            this.start.setAttribute("color", "#ffff00");
-            this.settings.setAttribute("color", "#ff0000");
-            this.credits.setAttribute("color", "#ff0000");
+            this.start.setAttribute("src", "#start2");
+            this.stats.setAttribute("src", "#stats1");
+            this.credits.setAttribute("src", "#credits1");
         } else if(this.menuchoice == 1){
-            this.start.setAttribute("color", "#ff0000");
-            this.settings.setAttribute("color", "#ffff00");
-            this.credits.setAttribute("color", "#ff0000");
+            this.start.setAttribute("src", "#start1");
+            this.stats.setAttribute("src", "#stats2");
+            this.credits.setAttribute("src", "#credits1");
         } else if(this.menuchoice == 2){
-            this.start.setAttribute("color", "#ff0000");
-            this.settings.setAttribute("color", "#ff0000");
-            this.credits.setAttribute("color", "#ffff00");
+            this.start.setAttribute("src", "#start1");
+            this.stats.setAttribute("src", "#stats1");
+            this.credits.setAttribute("src", "#credits2");
         }
 
         if(key=="p" && this.menuchoice == 0){
