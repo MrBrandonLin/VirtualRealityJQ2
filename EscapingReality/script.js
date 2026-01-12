@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded",function() {
     secamMain = document.getElementById("secamMain");
     secamMenu = document.getElementById("secamMenu");
     this.setInterval(unnatural, 10)
-    this.setInterval(natural, 250)
+    this.setInterval(natural, 62.5)
 })
 
 function natural(){

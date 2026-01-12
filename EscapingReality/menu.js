@@ -55,7 +55,7 @@ class menu{
         this.bottom.setAttribute("position", "-.5 1.1 50"); this.bottom.setAttribute("scale", ".2 .2 .2");
         this.bottom.setAttribute("src", "#leathertexture"); this.bottom.setAttribute("repeat", "4 2"); 
         this.song1.setAttribute("position", "0 -2 0");
-        this.song1.setAttribute("scale", ".2 .3 .2"); this.song1.setAttribute("color", "#138328");
+        this.song1.setAttribute("scale", ".2 .3 .2"); this.song1.setAttribute("src", "#Song1i");
         this.song2.setAttribute("position", "0 -2 0");
         this.song2.setAttribute("scale", ".2 .3 .2"); this.song2.setAttribute("color", "#ff02ff")
         this.song3.setAttribute("position", "0 -2 0");
@@ -84,9 +84,6 @@ class menu{
         this.menuchoice = 0; this.menudepth1 = 0; this.menudepth2 = 0; 
         this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
 
-        window.addEventListener("click", ()=>{
-            this.couch.components.sound.playSound();
-        })
     }
     thereare5secondsoftitlecard(){
 
