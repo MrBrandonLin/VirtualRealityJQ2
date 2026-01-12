@@ -20,7 +20,7 @@ function natural(){
 }
 function unnatural(){
     window.addEventListener("keypress", (e)=>{
-        if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth == 1){
+        if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 1){
             ohmymy.couch.components.sound.stopSound();
             //secamMenu.setAttribute("camera", "active", false);
             secamMain.setAttribute("camera", "active", true);

@@ -66,6 +66,8 @@ class menu{
         this.song5.setAttribute("scale", ".2 .3 .2"); this.song5.setAttribute("color", "#a331ba")
         this.song6.setAttribute("position", "0 -2 0");
         this.song6.setAttribute("scale", ".2 .3 .2"); this.song6.setAttribute("color", "#ff7777")
+        this.songselector.setAttribute("position", "-.05 2 -.1");
+        this.songselector.setAttribute("scale", ".25 .35 .25"); this.songselector.setAttribute("color", "#1fff00");
 
         scene.append(this.menucamera);
         this.menucamera.append(this.menucursor);
@@ -77,8 +79,10 @@ class menu{
         scene.append(this.top); scene.append(this.bottom);
         this.menumenu.append(this.song1); this.menumenu.append(this.song2); this.menumenu.append(this.song3);
         this.menumenu.append(this.song4); this.menumenu.append(this.song5); this.menumenu.append(this.song6);
+        this.menumenu.append(this.songselector);
 
-        this.menuchoice = 0; this.menudepth = 0; this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
+        this.menuchoice = 0; this.menudepth1 = 0; this.menudepth2 = 0; 
+        this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
 
         window.addEventListener("click", ()=>{
             this.couch.components.sound.playSound();
@@ -90,20 +94,65 @@ class menu{
     menuselect(key){
 
         if(key=="o"){
-            this.menuchoice += 1;
-            if(this.menuchoice > 2){
-                this.menuchoice = 0;
+            if(this.menudepth1 == 0){
+                this.menuchoice += 1;
+                if(this.menuchoice > 2){
+                    this.menuchoice = 0;
+                }
+            } else if(this.menudepth1 == 1){
+                this.menudepth2 += 1;
+                if(this.menudepth2 > 3){
+                    this.menudepth2 = 0;
+                }
             }
+            
         } else if(key=="i"){
-            this.menuchoice -= 1;
-            if(this.menuchoice < 0){
-                this.menuchoice = 2;
+            if(this.menudepth1 == 0){
+                this.menuchoice -= 1;
+                if(this.menuchoice < 0){
+                    this.menuchoice = 2;
+                }
+            } else if(this.menudepth1 == 1){
+                this.menudepth2 -= 1;
+                if(this.menudepth2 < 0){
+                    this.menudepth2 = 3;
+                }
+            }
+        }
+        if(key=="p"){
+            this.menuwinder = true;
+            this.menudepth1 += 1;
+            this.menuwindment = .1; 
+        }
+        if(key=="u"){
+            this.menuwinder = true;
+            this.menudepth1 -= 1;
+            this.menuwindment = -.1;
+            if(this.menudepth1<=0){
+                this.menudepth1 = 0;
             }
         }
         if(this.menuchoice == 0){
             this.start.setAttribute("src", "#start2");
             this.stats.setAttribute("src", "#stats1");
             this.credits.setAttribute("src", "#credits1");
+            if(this.menudepth1 == 1){
+                this.song1.setAttribute("position", "-.05 .2 -.05"); this.song2.setAttribute("position", ".25 .2 -.05");
+                this.song3.setAttribute("position", "-.05 -.2 -.05"); this.song4.setAttribute("position", ".25 -.2 -.05");
+                if(this.menudepth2 == 0){
+                    this.songselector.setAttribute("position", "-.05 .2 -.1");
+                } else if(this.menudepth2 == 1){
+                    this.songselector.setAttribute("position", ".25 .2 -.1");
+                } else if(this.menudepth2 == 2){
+                    this.songselector.setAttribute("position", "-.05 -.2 -.1");
+                } else if(this.menudepth2 == 3){
+                    this.songselector.setAttribute("position", ".25 -.2 -.1");
+                }
+            } else if(this.menudepth1 == 0){
+                this.song1.setAttribute("position", "-.05 2 -.05"); this.song2.setAttribute("position", ".25 2 -.05");
+                this.song3.setAttribute("position", "-.05 -2 -.05"); this.song4.setAttribute("position", ".25 -2 -.05");
+                this.songselector.setAttribute("position", "-.05 2 -.1");
+            }
         } else if(this.menuchoice == 1){
             this.start.setAttribute("src", "#start1");
             this.stats.setAttribute("src", "#stats2");
@@ -113,25 +162,8 @@ class menu{
             this.stats.setAttribute("src", "#stats1");
             this.credits.setAttribute("src", "#credits2");
         }
+        console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2);
 
-        if(key=="p" && this.menuchoice == 0){
-            this.menuwinder = true;
-            this.menudepth += 1;
-            this.menuwindment = .1;
-            this.song1.setAttribute("position", "-.05 .2 -.05"); this.song2.setAttribute("position", ".25 .2 -.05");
-            this.song3.setAttribute("position", "-.05 -.2 -.05"); this.song4.setAttribute("position", ".25 -.2 -.05");
-        }
-        if(key=="u" && this.menuchoice == 0){
-            this.menuwinder = true;
-            this.menudepth -= 1;
-            this.menuwindment = -.1;
-            if(this.menudepth<0){
-                this.menudepth = 0;
-            }
-            this.song1.setAttribute("position", "-.2 -2 0"); this.song2.setAttribute("position", "0 -2 0");
-            this.song3.setAttribute("position", ".2 -2 0"); this.song4.setAttribute("position", "-.2 -2 0");
-        }
-        console.log(this.menudepth);
     }
     menuwindmechanic(){
         if(this.menuwinder == true){
