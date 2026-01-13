@@ -6,17 +6,17 @@ window.addEventListener("DOMContentLoaded",function() {
     timin = new timer();
     ohmymy = new menu();
     trina = new enemyModel();
-    djHardRock = new playerModel();
     secamMain = document.getElementById("secamMain");
     secamMenu = document.getElementById("secamMenu");
     this.setInterval(unnatural, 10)
     this.setInterval(natural, 62.5)
+    tit = new tot();
 })
 
 function natural(){
     timin.timering();
     trina.pose(note);
-    djHardRock.pose();
+    tit.freak();
 }
 function unnatural(){
     window.addEventListener("keypress", (e)=>{

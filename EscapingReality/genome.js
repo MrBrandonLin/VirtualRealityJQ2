@@ -1,6 +1,6 @@
-class playerModel{
+class enemyModel{
     constructor(){
-        this.player = document.createElement("a-entity");
+        this.enemy = document.createElement("a-entity");
         this.pecL = document.createElement("a-box"); this.pecR = document.createElement("a-box");
         this.pecM = document.createElement("a-box");
         this.abL1 = document.createElement("a-box"); this.abL2 = document.createElement("a-box");
@@ -20,10 +20,10 @@ class playerModel{
         this.thighjointL = document.createElement("a-entity"); this.thighjointR = document.createElement("a-entity");
         this.kneeL = document.createElement("a-box"); this.kneeR = document.createElement("a-box");
         this.calfL = document.createElement("a-box"); this.calfR = document.createElement("a-box");
+        this.neckjoint = document.createElement("a-entity"); this.neckM = document.createElement("a-box");
+        this.headjoint = document.createElement("a-entity"); this.head = document.createElement("a-box");
 
-
-
-        this.player.setAttribute("position", "0 7 2");
+        this.enemy.setAttribute("position", "0 7 -7");
         this.pecL.setAttribute("position", "-.4 0 0"); this.pecL.setAttribute("rotation", "1 -20 .05");
         this.pecL.setAttribute("color", "#E5C298");
         this.pecR.setAttribute("position", ".4 0 .05"); this.pecR.setAttribute("rotation", "1 20 0");
@@ -82,64 +82,59 @@ class playerModel{
         this.calfL.setAttribute("scale", ".95 2.2 .95"); this.calfL.setAttribute("color", "#E5C298");
         this.calfR.setAttribute("position", "0 -1.2 -.1"); 
         this.calfR.setAttribute("scale", ".95 2.2 .95"); this.calfR.setAttribute("color", "#E5C298");
+        this.neckjoint.setAttribute("position", "0 1 .1"); this.neckjoint.setAttribute("rotation", "5 0 0");
+        this.neckM.setAttribute("position", "0 0 -.3"); 
+        this.neckM.setAttribute("scale", "1.1 1.8 1.1"); this.neckM.setAttribute("color", "#E5C298");
     
-
-
-        this.player.append(this.pecL); this.player.append(this.pecR); this.player.append(this.pecM);
-        this.player.append(this.abL1);  this.player.append(this.abL2); this.player.append(this.abL3);
-        this.player.append(this.abR1); this.player.append(this.abR2); this.player.append(this.abR3);
-        this.player.append(this.backL1); this.player.append(this.backL2);
-        this.player.append(this.backR1); this.player.append(this.backR2);
+        this.enemy.append(this.pecL); this.enemy.append(this.pecR); this.enemy.append(this.pecM);
+        this.enemy.append(this.abL1);  this.enemy.append(this.abL2); this.enemy.append(this.abL3);
+        this.enemy.append(this.abR1); this.enemy.append(this.abR2); this.enemy.append(this.abR3);
+        this.enemy.append(this.backL1); this.enemy.append(this.backL2);
+        this.enemy.append(this.backR1); this.enemy.append(this.backR2);
         this.upperarmjointL.append(this.forearmL); this.upperarmjointR.append(this.forearmR);
         this.shoulderjointL.append(this.upperarmjointL); this.shoulderjointR.append(this.upperarmjointR);
         this.shoulderjointL.append(this.upperarmL); this.shoulderjointR.append(this.upperarmR);
         this.shoulderjointL.append(this.shoulderL); this.shoulderjointR.append(this.shoulderR);
-        this.player.append(this.shoulderjointL); this.player.append(this.shoulderjointR);
-        this.player.append(this.torsojoint);
+        this.enemy.append(this.shoulderjointL); this.enemy.append(this.shoulderjointR);
+        this.enemy.append(this.torsojoint);
         this.torsojoint.append(this.torsosection);
         this.torsojoint.append(this.hipjointL); this.torsojoint.append(this.hipjointR);
         this.hipjointL.append(this.thighL); this.hipjointR.append(this.thighR);
         this.hipjointL.append(this.thighjointL); this.hipjointR.append(this.thighjointR); 
         this.thighjointL.append(this.kneeL); this.thighjointR.append(this.kneeR); 
         this.thighjointL.append(this.calfL); this.thighjointR.append(this.calfR); 
+        this.enemy.append(this.neckjoint); this.neckjoint.append(this.neckM);
         
-        this.sex = "";
-        window.addEventListener("keypress", (e)=>{
-            this.sex = e.key;
-        })
-        scene.append(this.player);
+        scene.append(this.enemy);
     }
-    pose(){
-        if(this.sex=="u"){
+    pose(note){
+        if(note=="1L"){
             this.shoulderjointL.setAttribute("rotation", "-90 0 -10");
             this.upperarmjointL.setAttribute("rotation", "0 0 0");
-        } else if(this.sex=="h"){
+            this.enemy.object3D.position.z = -1;
+        } else if(note=="2L"){
             this.shoulderjointL.setAttribute("rotation", "-90 0 -30");
             this.upperarmjointL.setAttribute("rotation", "0 0 -10");
-        } else {
+            this.enemy.object3D.position.z = -1;
+        } else{
             this.shoulderjointL.setAttribute("rotation", "-25 0 0");
             this.upperarmjointL.setAttribute("rotation", "-140 0 0");
-            this.player.setAttribute("rotation", "0 -220 0");
+            this.enemy.setAttribute("rotation", "0 -40 0");
+            this.enemy.object3D.position.z = -7;
         }
-
-        if(this.sex=="i"){
+        if(note=="1R"){
             this.shoulderjointR.setAttribute("rotation", "-90 0 10");
             this.upperarmjointR.setAttribute("rotation", "0 0 0");
-        } else if(this.sex=="l"){
+            this.enemy.object3D.position.z = -1;
+        } else if(note=="2R"){
             this.upperarmjointR.setAttribute("rotation", "0 0 10");
             this.shoulderjointR.setAttribute("rotation", "-90 0 30");
+            this.enemy.object3D.position.z = -1;
         } else{
             this.shoulderjointR.setAttribute("rotation", "-25 0 0");
             this.upperarmjointR.setAttribute("rotation", "-140 0 0");
-            this.player.setAttribute("rotation", "0 -220 0");
+            this.enemy.setAttribute("rotation", "0 -40 0");
+            this.enemy.object3D.position.z = -7;
         }
-        if(this.sex=="a"){
-            this.player.setAttribute("position", "-3 7 2");
-        } else if(this.sex=="s"){
-            this.player.setAttribute("position", "0 7 5");
-        } else{
-            this.player.setAttribute("position", "0 7 2");
-        }
-        this.sex = ""
     }
 }
