@@ -39,11 +39,23 @@
             <a-camera position="4 10 4" id="secamMain" active="false">
                 <a-cursor></a-cursor>
             </a-camera>
-            <a-entity position="0 9 0" id="character">
-                <a-image position="4 5 -1"scale="14 10 10"src="#kachinka"></a-image>
-                <a-box scale=".1 .1 .1" id="trueBase"> </a-box>
-                <a-box id="footR" position="-1 0 0" rotation="0 -15 0" scale=".5 .3 1"> </a-box>
-                <a-box id="footL" position="1 0 0" rotation="0 15 0" scale=".5 .3 1"> </a-box>
+            <a-entity position="0 6 0" id="character">
+              <a-image position="4 4.3 -1"scale="14 10 10"src="#kachinka"></a-image>
+                <a-box width=".1" height=".1" depth=".1" id="trueBase">
+                  <a-box position=".6 0 0" rotation="0 15 0" width=".5" height=".3"> <!--Left Foot-->
+                    <a-entity position="0 0 -.25"> <!--Left Foot Joint-->
+                      <a-box position="0 .8 0" width=".5" height="1.2" depth=".5"></a-box> <!--Left Calf 1-->
+                      <a-box position="0 2 .025" rotation="2 0 0" width=".5" height="1.2" depth=".5"></a-box> <!--Left Calf 2-->
+                      <a-entity position="0 2.5 .1"> <!--Left Knee Joint-->
+                        <a-box rotation="12 0 0" width=".5" height=".5" depth=".5"></a-box> <!--Left Knee-->
+                        <a-box position="0 .5 0" rotation="4 0 0" width=".6" height=".9" depth=".7"></a-box> <!--Left Thigh-->
+                        <a-box position="0 1.3 .05" width=".65" height="1.2" depth=".75"></a-box> <!--Left Thigh-->
+                      </a-entity>
+                    </a-entity>
+                  </a-box>
+                </a-box>
+                <a-box id="footR" position="-.6 0 0" rotation="0 -15 0" scale=".5 .3 1"> </a-box>
+                </a-box>
                 
             </a-entity>
         </a-scene>
