@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded",function() {
 function natural(){
     timin.timering();
     trina.pose(note);
-    tit.freak();
+    //tit.freak();
 }
 function unnatural(){
     window.addEventListener("keypress", (e)=>{
