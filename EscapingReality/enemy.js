@@ -29,9 +29,9 @@ class enemy{
     }
     stance(note){
         this.characterCopy.addEventListener("click", ()=>{
-            this.centerMass[0].object3D.rotation.x = radiator(attacks.pP.centerMass[0]);
-            this.hipL[0].object3D.rotation.x = radiator(attacks.pP.hipJointL[0]);
-            this.hipR[0].object3D.rotation.x = radiator(attacks.pP.hipJointR[0]);
+            this.centerMass[0].setAttribute("rotation", {x:attacks.pP.centerMass[0], y:attacks.pP.centerMass[1], z:attacks.pP.centerMass[2]})
+            this.hipL[0].setAttribute("rotation", {x:attacks.pP.hipJointL[0], y:attacks.pP.hipJointL[1], z:attacks.pP.hipJointL[2]})
+            this.hipR[0].setAttribute("rotation", {x:attacks.pP.hipJointR[0], y:attacks.pP.hipJointR[1], z:attacks.pP.hipJointR[2]})
             this.thighL[3].object3D.rotation.x = radiator(0);
             this.thighR[3].object3D.rotation.x = radiator(0);
             this.calfL[3].object3D.rotation.x = radiator(0);
@@ -46,5 +46,6 @@ class enemy{
             this.chest[3].object3D.rotation.x = radiator(0);
             this.neck[4].object3D.rotation.x = radiator(0);
         })
+        
     }
 }

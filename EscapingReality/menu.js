@@ -167,8 +167,12 @@ class menu{
             this.menuwind += this.menuwindment;
             this.menumenu.setAttribute("geometry", {width: this.menuwind});
             this.menumenu.setAttribute("position", {x:-.5+(this.menuwind*.5), y:1.4, z:50});
-            if(this.menuwind > .8 || this.menuwind < 0){
+            if(this.menuwind > .8){
+                this.menuwind = .8;
                 this.menuwinder = false;
+            } else if(this.menuwind < 0){
+                this.menuwinder = false;
+                this.menuwind = 0;
             }
         }
     }
