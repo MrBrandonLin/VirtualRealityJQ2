@@ -1,4 +1,5 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
+let radiator = (d) => d*(Math.PI/180)
 let note = ""; 
 oopdoop = false; jackiesquire = "";
 window.addEventListener("DOMContentLoaded",function() {
@@ -10,13 +11,13 @@ window.addEventListener("DOMContentLoaded",function() {
     secamMenu = document.getElementById("secamMenu");
     this.setInterval(unnatural, 10)
     this.setInterval(natural, 62.5)
-    tit = new tot();
+    shinji = new enemy();
 })
 
 function natural(){
     timin.timering();
     trina.pose(note);
-    //tit.freak();
+    shinji.stance(note);
 }
 function unnatural(){
     window.addEventListener("keypress", (e)=>{
