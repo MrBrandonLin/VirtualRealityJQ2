@@ -3,8 +3,8 @@ let songs = {
     song1:{
         music:"#Song1",
         label:"#Song1i",
-        beatmap:["pPpPpPpP", "L1R1L1R1", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+        beatmap:["R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", //5 segments. Each segment is a second.
+                 "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",

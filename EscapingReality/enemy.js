@@ -28,24 +28,23 @@ class enemy{
         scene.append(this.characterCopy);
     }
     stance(note){
-        this.characterCopy.addEventListener("click", ()=>{
-            this.centerMass[0].setAttribute("rotation", {x:attacks.pP.centerMass[0], y:attacks.pP.centerMass[1], z:attacks.pP.centerMass[2]})
-            this.hipL[0].setAttribute("rotation", {x:attacks.pP.hipJointL[0], y:attacks.pP.hipJointL[1], z:attacks.pP.hipJointL[2]})
-            this.hipR[0].setAttribute("rotation", {x:attacks.pP.hipJointR[0], y:attacks.pP.hipJointR[1], z:attacks.pP.hipJointR[2]})
-            this.thighL[3].object3D.rotation.x = radiator(0);
-            this.thighR[3].object3D.rotation.x = radiator(0);
-            this.calfL[3].object3D.rotation.x = radiator(0);
-            this.calfR[3].object3D.rotation.x = radiator(0);
-            this.gut[0].object3D.rotation.x = radiator(0);
-            this.shoulderL[0].object3D.rotation.x = radiator(0);
-            this.shoulderR[0].object3D.rotation.x = radiator(0);
-            this.upperarmL[2].object3D.rotation.x = radiator(0);
-            this.upperarmR[2].object3D.rotation.x = radiator(0);
-            this.forearmL[1].object3D.rotation.x = radiator(0);
-            this.forearmR[1].object3D.rotation.x = radiator(0);
-            this.chest[3].object3D.rotation.x = radiator(0);
-            this.neck[4].object3D.rotation.x = radiator(0);
-        })
-        
+        this.centerMass[0].setAttribute("rotation", {x:note.centerMass[0], y:note.centerMass[1], z:note.centerMass[2]})
+        this.hipL[0].setAttribute("rotation", {x:note.hipJointL[0], y:note.hipJointL[1], z:note.hipJointL[2]})
+        this.hipR[0].setAttribute("rotation", {x:note.hipJointR[0], y:note.hipJointR[1], z:note.hipJointR[2]})
+        this.thighL[3].setAttribute("rotation", {x:note.leftThighJoint[0], y:note.leftThighJoint[1], z:note.leftThighJoint[2]})
+        this.thighR[3].setAttribute("rotation", {x:note.rightThighJoint[0], y:note.rightThighJoint[1], z:note.rightThighJoint[2]})
+        this.calfL[3].setAttribute("rotation", {x:note.leftCalfJoint[0], y:note.leftCalfJoint[1], z:note.leftCalfJoint[2]})
+        this.calfR[3].setAttribute("rotation", {x:note.rightCalfJoint[0], y:note.rightCalfJoint[1], z:note.rightCalfJoint[2]})
+        this.gut[0].setAttribute("rotation", {x:note.gut[0], y:note.gut[1], z:note.gut[2]})
+        this.shoulderL[0].setAttribute("rotation", {x:note.leftShoulderJoint[0], y:note.leftShoulderJoint[1], z:note.leftShoulderJoint[2]})
+        this.shoulderR[0].setAttribute("rotation", {x:note.rightShoulderJoint[0], y:note.rightShoulderJoint[1], z:note.rightShoulderJoint[2]})
+        this.upperarmL[2].setAttribute("rotation", {x:note.leftUpperarmJoint[0], y:note.leftUpperarmJoint[1], z:note.leftUpperarmJoint[2]})
+        this.upperarmR[2].setAttribute("rotation", {x:note.rightUpperarmJoint[0], y:note.rightUpperarmJoint[1], z:note.rightUpperarmJoint[2]})
+        this.forearmL[1].setAttribute("rotation", {x:note.leftForearmJoint[0], y:note.leftForearmJoint[1], z:note.leftForearmJoint[2]})
+        this.forearmR[1].setAttribute("rotation", {x:note.rightForearmJoint[0], y:note.rightForearmJoint[1], z:note.rightForearmJoint[2]})
+        this.chest[3].setAttribute("rotation", {x:note.neckJoint[0], y:note.neckJoint[1], z:note.neckJoint[2]})
+        this.neck[4].setAttribute("rotation", {x:note.headJoint[0], y:note.headJoint[1], z:note.headJoint[2]})
     }
+    
+        
 }

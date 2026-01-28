@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded",function() {
 function natural(){
     timin.timering();
     trina.pose(note);
-    shinji.stance(note);
+    shinji.stance(attacks[note]);
 }
 function unnatural(){
     window.addEventListener("keypress", (e)=>{
