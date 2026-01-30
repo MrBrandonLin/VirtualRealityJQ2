@@ -1,8 +1,8 @@
-class enemy{
+class player{
     constructor(){
         this.character = document.getElementById("character");
         this.characterCopy = this.character.cloneNode(true);
-        this.characterCopy.setAttribute("position", "6 4 0");
+        this.characterCopy.setAttribute("position", "6 4 7");
         this.trueBase = this.characterCopy.children;
         this.centerMass = this.trueBase[0].children; this.centerMass2 = this.centerMass[0].children;
         this.hipL = this.centerMass2[0].children; this.hipR = this.centerMass2[1].children;
@@ -15,15 +15,6 @@ class enemy{
         this.neck = this.chest[3].children;
         this.s = 5;
         console.log(this.calfL)
-        //
-        //Hip Joint L is this.hipL[0], Hip Joint R is this.hipR[0]
-        //Left Knee Joint is this.thighL[3], Right Knee Joint is this.thighR[3]
-        //Left Foot Joint is this.calfL[3], Right Foot Joint is this.calfR[3]
-        //Gut Joint is this.gut[0]
-        //Left Shoulder Joint is this.shoulderL[0], Right Shoulder Joint is this.shoulderR[0]
-        //Left Upper Arm Joint is this.upperarmL[2], Right Upper Arm Joint is this.upperarmR[2]
-        //Left Fore Arm Joint is this.forearmL[1], Right Fore Arm Joint is this.forearmR[1]
-        //Neck Joint is this.chest[3], Head Joint is this.neck[4]
 
         scene.append(this.characterCopy);
     }
