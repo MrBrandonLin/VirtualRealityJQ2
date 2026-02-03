@@ -3,12 +3,8 @@
 class timer{
     constructor(){
         this.beatbox = document.createElement("a-box");
-        this.noteboxL = document.createElement("a-box");
-        this.noteboxR = document.createElement("a-box");
 
         this.beatbox.setAttribute("position", ".5 7 -4");
-        this.noteboxL.setAttribute("position", "2 7 -4");
-        this.noteboxR.setAttribute("position", "-1 7 -4");
 
         this.beatbox.setAttribute("sound", {src:songs.song1.music, loop:true, refDistance:1000});
         this.beatmap = songs.song1.beatmap;
@@ -23,8 +19,6 @@ class timer{
         this.beatbox.addEventListener("click", ()=>{
             this.play = true;
         })
-        scene.append(this.noteboxL);
-        scene.append(this.noteboxR);
         scene.append(this.beatbox);
     }
     timering(){

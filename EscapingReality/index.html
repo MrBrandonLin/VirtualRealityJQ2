@@ -5,7 +5,6 @@
         <script src="script.js"></script>
         <script src="rhythm.js"></script>
         <script src="menu.js"></script>
-        <script src="genome.js"></script>
         <script src="johtoanto1ankostereo.js"></script>
         <script src="monkeypaw3000.js"></script>
         <script src="enemy.js"></script>
@@ -39,10 +38,10 @@
             </a-assets>
             <a-plane position="0 0 0" width="50" height="50" rotation="-90 0 0"color="#eeff99" side="double"></a-plane>
             <a-sky color="#1865ee"></a-sky>
-            <a-camera position="4 10 4" id="secamMain" active="false">
+            <a-camera position="4 10 4" id="secamMain" active="false" look-controls wasd-controls="fly: true">
                 <a-cursor></a-cursor>
             </a-camera>
-            <a-entity position="0 4 0" id="character">
+            <a-entity position="0 -20 0" id="character">
                 <a-entity id="trueBase">
                   <a-entity position="0 4.2 0" rotation="0 0 0"> <!--Center Mass-->
                     <a-box position=".3 0 -.15" rotation="0 0 12"> <!--Hip L-->
@@ -116,6 +115,9 @@
                     </a-box>
                   </a-entity>
                 </a-entity>
+            </a-entity>
+            <a-entity id="ring">
+              <a-box position="0 2 0" scale="25 5 25" color="#1171d1"></a-box>
             </a-entity>
         </a-scene>
     </body>

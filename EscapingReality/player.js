@@ -2,7 +2,8 @@ class player{
     constructor(){
         this.character = document.getElementById("character");
         this.characterCopy = this.character.cloneNode(true);
-        this.characterCopy.setAttribute("position", "6 4 7");
+        this.characterCopy.setAttribute("position", "0 5 5");
+        this.characterCopy.setAttribute("rotation", "0 180 0");
         this.trueBase = this.characterCopy.children;
         this.centerMass = this.trueBase[0].children; this.centerMass2 = this.centerMass[0].children;
         this.hipL = this.centerMass2[0].children; this.hipR = this.centerMass2[1].children;
