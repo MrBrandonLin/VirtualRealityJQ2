@@ -30,7 +30,57 @@ let songs = {
     song2:{
         music:"#Song2",
         label:"#Song2i",
-        beatmap:["pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
+        beatmap:["pPpPpPpP", "L1pPL1pP", "pPL1pPR1", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+
+        ], 
+        
+    },
+    song3:{
+        music:"#Song3",
+        label:"#Song3i",
+        beatmap:["pPpPpPpP", "L1pPL1pP", "pPL1pPR1", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+
+        ], 
+        
+    },
+    songtest:{
+        music:"#SongMenu",
+        label:"#SongMenui",
+        beatmap:["pPpPpPpP", "L1pPL1pP", "pPL1pPR1", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",

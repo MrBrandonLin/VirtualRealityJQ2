@@ -6,8 +6,8 @@ class timer{
 
         this.beatbox.setAttribute("position", ".5 7 -4");
 
-        this.beatbox.setAttribute("sound", {src:songs.song1.music, loop:true, refDistance:1000});
-        this.beatmap = songs.song1.beatmap;
+        this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000});
+        this.beatmap = songs.songtest.beatmap;
 
         this.songtime = 0;
         this.linetime = 0;
@@ -50,6 +50,21 @@ class timer{
             this.standardALLtick+=.25
         } else if(this.play != true){
             this.beatbox.components.sound.stopSound();
+        }
+    }
+    songdecide(okay){
+        if(okay==0){
+            this.beatbox.setAttribute("sound", {src:songs.song1.music, loop:true, refDistance:1000})
+            this.beatmap = songs.song1.beatmap;
+        }else if(okay==1){
+            this.beatbox.setAttribute("sound", {src:songs.song2.music, loop:true, refDistance:1000})
+            this.beatmap = songs.song2.beatmap;
+        }else if(okay==2){
+            this.beatbox.setAttribute("sound", {src:songs.song3.music, loop:true, refDistance:1000})
+            this.beatmap = songs.song3.beatmap;
+        } else{
+            this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000})
+            this.beatmap = songs.songtest.beatmap;
         }
     }
 }

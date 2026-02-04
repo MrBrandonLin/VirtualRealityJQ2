@@ -1,7 +1,8 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
-let note = "", sirfrancisbacon = false; 
-oopdoop = false; jackiesquire = ""; notas="";
+let note = "", 
+sirfrancisbacon = false; oopdoop = false; spacecowboy = false;
+jackiesquire = ""; notas="";
 dynamicduo = ["L1", "R1", "R2"]
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");
@@ -22,7 +23,7 @@ function natural(){
     einhotdog();
 }
 function unnatural(){
-    window.addEventListener("keypress", (e)=>{
+    window.addEventListener("keydown", (e)=>{
         if(sirfrancisbacon == false){
             if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 1){
                 ohmymy.couch.components.sound.stopSound();
@@ -31,7 +32,7 @@ function unnatural(){
                 //secamMain.setAttribute("look-controls-enabled", "false");
                 //secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
-                ohmymy.menudepth2
+                timin.songdecide(ohmymy.menudepth2)
                 sirfrancisbacon = true;
             }
             if((e.key == "i" || e.key == "o" || e.key == "p" || e.key == "u")){
@@ -44,6 +45,10 @@ function unnatural(){
         }   
 
     })
+    window.addEventListener("keyup", (e)=>{
+        jackiesquire = "z"
+    })
+
     if(oopdoop == true){
         ohmymy.menuselect(jackiesquire);
         oopdoop = false;
@@ -64,15 +69,19 @@ function distance(obj1,obj2){
 }
 
 function attackread(esoteric){
-    if(esoteric=="u"){
-        notas = "L1"
-    } else if(esoteric=="o"){
-        notas = "R1"
-    } else if(esoteric=="p"){
-        notas = "R2"
-    } else {
-        notas = "pP"
-    }
+        if(esoteric=="u"){
+            notas = "L1"
+            spacecowboy = true;
+        } else if(esoteric=="o"){
+            notas = "R1"
+            spacecowboy = true;
+        } else if(esoteric=="p"){
+            notas = "R2"
+            spacecowboy = true;
+        } else {
+            notas = "pP"
+        }
+    
     return notas;
 }
 

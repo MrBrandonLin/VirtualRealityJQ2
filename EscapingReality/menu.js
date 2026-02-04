@@ -57,9 +57,9 @@ class menu{
         this.song1.setAttribute("position", "0 -2 0");
         this.song1.setAttribute("scale", ".2 .3 .2"); this.song1.setAttribute("src", "#Song1i");
         this.song2.setAttribute("position", "0 -2 0");
-        this.song2.setAttribute("scale", ".2 .3 .2"); this.song2.setAttribute("color", "#ff02ff")
+        this.song2.setAttribute("scale", ".2 .3 .2"); this.song2.setAttribute("src", "#Song2i")
         this.song3.setAttribute("position", "0 -2 0");
-        this.song3.setAttribute("scale", ".2 .3 .2"); this.song3.setAttribute("color", "#f31234")
+        this.song3.setAttribute("scale", ".2 .3 .2"); this.song3.setAttribute("src", "#Song3i")
         this.song4.setAttribute("position", "0 -2 0");
         this.song4.setAttribute("scale", ".2 .3 .2"); this.song4.setAttribute("color", "#ff00ff")
         this.song5.setAttribute("position", "0 -2 0");
