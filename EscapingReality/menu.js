@@ -17,8 +17,6 @@ class menu{
         this.song2 = document.createElement("a-box");
         this.song3 = document.createElement("a-box");
         this.song4 = document.createElement("a-box");
-        this.song5 = document.createElement("a-box");
-        this.song6 = document.createElement("a-box");
         this.songselector = document.createElement("a-box");
 
 
@@ -62,10 +60,6 @@ class menu{
         this.song3.setAttribute("scale", ".2 .3 .2"); this.song3.setAttribute("src", "#Song3i")
         this.song4.setAttribute("position", "0 -2 0");
         this.song4.setAttribute("scale", ".2 .3 .2"); this.song4.setAttribute("color", "#ff00ff")
-        this.song5.setAttribute("position", "0 -2 0");
-        this.song5.setAttribute("scale", ".2 .3 .2"); this.song5.setAttribute("color", "#a331ba")
-        this.song6.setAttribute("position", "0 -2 0");
-        this.song6.setAttribute("scale", ".2 .3 .2"); this.song6.setAttribute("color", "#ff7777")
         this.songselector.setAttribute("position", "-.05 2 -.1");
         this.songselector.setAttribute("scale", ".25 .35 .25"); this.songselector.setAttribute("color", "#1fff00");
 
@@ -77,11 +71,11 @@ class menu{
         scene.append(this.title);
         scene.append(this.start); scene.append(this.stats); scene.append(this.credits);
         scene.append(this.top); scene.append(this.bottom);
-        this.menumenu.append(this.song1); this.menumenu.append(this.song2); this.menumenu.append(this.song3);
-        this.menumenu.append(this.song4); this.menumenu.append(this.song5); this.menumenu.append(this.song6);
+        this.menumenu.append(this.song1); this.menumenu.append(this.song2);
+        this.menumenu.append(this.song3); this.menumenu.append(this.song4);
         this.menumenu.append(this.songselector);
 
-        this.menuchoice = 0; this.menudepth1 = 0; this.menudepth2 = 0; 
+        this.menuchoice = 0; this.menudepth1 = 0; this.menudepth2 = 0; this.menudepth3 = 0;
         this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
 
     }
@@ -100,6 +94,7 @@ class menu{
                 this.menudepth2 += 1;
                 if(this.menudepth2 > 3){
                     this.menudepth2 = 0;
+                    this.menudepth3 += 1;
                 }
             }
             
@@ -113,6 +108,7 @@ class menu{
                 this.menudepth2 -= 1;
                 if(this.menudepth2 < 0){
                     this.menudepth2 = 3;
+                    this.menudepth3 += 1;
                 }
             }
         }
@@ -159,7 +155,23 @@ class menu{
             this.stats.setAttribute("src", "#stats1");
             this.credits.setAttribute("src", "#credits2");
         }
-        console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2);
+        if(this.menudepth3 > 1){
+            this.menudepth3 = 0;
+        } else if(this.menudepth3 <0){
+            this.menudepth = 1;
+        }
+        if(this.menudepth3 == 1){
+            this.song1.setAttribute("src", "#Song1i");
+            this.song2.setAttribute("src", "#Song2i")
+            this.song3.setAttribute("src", "#Song3i")
+            this.song4.setAttribute("color", "#ff00ff")
+        } else if(this.menudepth3 == 0){
+            this.song1.setAttribute("src", "#Song3i");
+            this.song2.setAttribute("src", "#Song1i")
+            this.song3.setAttribute("src", "#Song2i")
+            this.song4.setAttribute("color", "#ff00ff")
+        }
+        console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2 +", "+ this.menudepth3);
 
     }
     menuwindmechanic(){
