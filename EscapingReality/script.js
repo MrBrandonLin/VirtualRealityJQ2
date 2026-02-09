@@ -17,22 +17,23 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function natural(){
-    timin.timering();
-    shinji.stance(attacks[note]);
-    gorilla.stance(attacks[attackread(jackiesquire)]);
-    einhotdog();
+    if(sirfrancisbacon==true){
+        timin.timering();
+        shinji.stance(attacks[note]);
+        gorilla.stance(attacks[attackread(jackiesquire)]);
+        einhotdog();
+    }
 }
 function unnatural(){
     window.addEventListener("keydown", (e)=>{
-        if(sirfrancisbacon == false){
+        if(sirfrancisbacon == false){ 
+            ohmymy.couch.components.sound.playSound();
             if(e.key == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 1){
-                ohmymy.couch.components.sound.stopSound();
-                //secamMenu.setAttribute("camera", "active", false);
                 secamMain.setAttribute("camera", "active", true);
                 //secamMain.setAttribute("look-controls-enabled", "false");
                 //secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
-                timin.songdecide(ohmymy.menudepth2)
+                timin.songdecide(ohmymy.menudepth2, ohmymy.menudepth3)
                 sirfrancisbacon = true;
             }
             if((e.key == "i" || e.key == "o" || e.key == "p" || e.key == "u")){
@@ -41,6 +42,7 @@ function unnatural(){
                 
             }
         } else if(sirfrancisbacon == true){
+            ohmymy.couch.components.sound.stopSound();
             jackiesquire = e.key; 
         }   
 

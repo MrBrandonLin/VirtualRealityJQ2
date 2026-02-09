@@ -59,7 +59,7 @@ class menu{
         this.song3.setAttribute("position", "0 -2 0");
         this.song3.setAttribute("scale", ".2 .3 .2"); this.song3.setAttribute("src", "#Song3i")
         this.song4.setAttribute("position", "0 -2 0");
-        this.song4.setAttribute("scale", ".2 .3 .2"); this.song4.setAttribute("color", "#ff00ff")
+        this.song4.setAttribute("scale", ".2 .3 .2"); this.song4.setAttribute("src", "Song4i")
         this.songselector.setAttribute("position", "-.05 2 -.1");
         this.songselector.setAttribute("scale", ".25 .35 .25"); this.songselector.setAttribute("color", "#1fff00");
 
@@ -160,16 +160,16 @@ class menu{
         } else if(this.menudepth3 <0){
             this.menudepth = 1;
         }
-        if(this.menudepth3 == 1){
+        if(this.menudepth3 == 0){
             this.song1.setAttribute("src", "#Song1i");
             this.song2.setAttribute("src", "#Song2i")
             this.song3.setAttribute("src", "#Song3i")
-            this.song4.setAttribute("color", "#ff00ff")
-        } else if(this.menudepth3 == 0){
-            this.song1.setAttribute("src", "#Song3i");
-            this.song2.setAttribute("src", "#Song1i")
-            this.song3.setAttribute("src", "#Song2i")
-            this.song4.setAttribute("color", "#ff00ff")
+            this.song4.setAttribute("src", "#Song4i")
+        } else if(this.menudepth3 == 1){
+            this.song1.setAttribute("src", "#Song5i");
+            this.song2.setAttribute("src", "#SongMenui")
+            this.song3.setAttribute("src", "#SongMenui")
+            this.song4.setAttribute("src", "#SongMenui")
         }
         console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2 +", "+ this.menudepth3);
 
