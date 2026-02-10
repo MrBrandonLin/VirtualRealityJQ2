@@ -1,8 +1,8 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
-let note = "", 
+let note = "", stage = "";
 sirfrancisbacon = false; oopdoop = false; spacecowboy = false;
-jackiesquire = ""; notas="";
+jackiesquire = ""; notas=""; 
 dynamicduo = ["L1", "R1", "R2"]
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");

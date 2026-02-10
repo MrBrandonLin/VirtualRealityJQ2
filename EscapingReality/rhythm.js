@@ -43,6 +43,7 @@ class timer{
                     console.log("full second");
                 }
                 note = this.beatmap[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
+                stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 //console.log(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
                 console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
                 this.standard4tick=0;

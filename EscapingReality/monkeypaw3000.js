@@ -39,16 +39,16 @@ let attacks = {
         neckJoint: [0, 5, 0], headJoint: [0, 30, 0]
     },
     L2:{
-        trueBasePos: [0, 0, 7],
-        trueBase: [0, 0, 0], centerMass: [4, -30, 0],
-        hipJointL: [-25, 20, 0], hipJointR: [-20, -20, 0], 
-        leftThighJoint: [20, 0, 0], rightThighJoint: [20, 0, 0], 
-        leftCalfJoint: [0, 0, 0], rightCalfJoint: [0, 0, 0], 
-        gut: [2, 0, 0], 
+        trueBasePos: [0, 0, 5],
+        trueBase: [0, 0, 0], centerMass: [-1, -35, 0],
+        hipJointL: [-15, 20, 0], hipJointR: [-10, -20, 0], 
+        leftThighJoint: [30, 0, 0], rightThighJoint: [30, 0, 0], 
+        leftCalfJoint: [-5, 0, 0], rightCalfJoint: [-5, 0, 0], 
+        gut: [-4, 0, 0], 
         leftKneeJoint: [0, 0, 0], rightKneeJoint: [0, 0, 0], 
-        leftShoulderJoint: [-80, 0, 0], rightShoulderJoint: [-25, 50, 0],
-        leftUpperarmJoint: [0, 0, -110], rightUpperarmJoint: [-130, 40, 0],
-        leftForearmJoint: [0, 12, 0], rightForearmJoint: [-12, 0, 0],
+        leftShoulderJoint: [-100, 0, -30], rightShoulderJoint: [5, 0, 0],
+        leftUpperarmJoint: [0, 0, -120], rightUpperarmJoint: [-130, 40, 0],
+        leftForearmJoint: [0, 12, 40], rightForearmJoint: [-12, 0, 0],
         neckJoint: [0, 5, 0], headJoint: [0, 30, 0]
     },
     R1:{
@@ -106,7 +106,7 @@ let attacks = {
 
 }
 
-let attacks2 = {
+let defends = {
     pP:[attacks.pP.trueBase[0], attacks.pP.centerMass[0], attacks.pP.hipJointL[0], attacks.pP.hipJointR[0],
         attacks.pP.gut[0], attacks.pP.leftKneeJoint[0], attacks.pP.rightKneeJoint[0]
     ]
