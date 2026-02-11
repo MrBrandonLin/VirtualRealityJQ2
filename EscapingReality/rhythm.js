@@ -4,7 +4,7 @@ class timer{
     constructor(){
         this.beatbox = document.createElement("a-box");
 
-        this.beatbox.setAttribute("position", ".5 7 -4");
+        this.beatbox.setAttribute("position", "4 14 18");
 
         this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000});
         this.beatmap = songs.songtest.beatmap;
@@ -17,12 +17,12 @@ class timer{
         this.standardALLtick = 0;
         this.play = false;
 
-        this.beatbox.addEventListener("click", ()=>{
-            this.play = true;
-        })
         scene.append(this.beatbox);
     }
     timering(){
+        if(jackiesquire=="y"){
+            this.play = true;
+        }
         if(this.linetime>=this.beatmap.length){
                 this.play = false;
                 this.standard4tick = 0;

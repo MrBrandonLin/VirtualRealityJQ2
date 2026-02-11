@@ -1,7 +1,7 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
-let note = "", stage = "";
-sirfrancisbacon = false; oopdoop = false; spacecowboy = false;
+let note = "", stage = ""; nothing ="";
+sirfrancisbacon = false; oopdoop = false; spacecowboy = false; cameleyetea = false;
 jackiesquire = ""; notas=""; 
 dynamicduo = ["L1", "R1", "R2"]
 window.addEventListener("DOMContentLoaded",function() {
@@ -19,9 +19,15 @@ window.addEventListener("DOMContentLoaded",function() {
 function natural(){
     if(sirfrancisbacon==true){
         timin.timering();
-        shinji.stance(attacks[note]);
-        gorilla.stance(attacks[attackread(jackiesquire)]);
+        if(stage=="aA"){
+            shinji.stance(attacks[note]);
+            gorilla.stance(defends[attackread(jackiesquire)]);
+        } else if(stage="dD"){
+            shinji.stance(defends[note]);
+            gorilla.stance(attacks[attackread(jackiesquire)]);
+        }
         einhotdog();
+
     }
 }
 function unnatural(){
@@ -71,14 +77,20 @@ function distance(obj1,obj2){
 }
 
 function attackread(esoteric){
-        if(esoteric=="u"){
+        if(esoteric=="q"){
             notas = "L1"
+            spacecowboy = true;
+        } else if(esoteric=="w"){
+            notas = "L2"
             spacecowboy = true;
         } else if(esoteric=="o"){
             notas = "R1"
             spacecowboy = true;
-        } else if(esoteric=="p"){
+        }else if(esoteric=="p"){
             notas = "R2"
+            spacecowboy = true;
+        }else if(esoteric=="i"){
+            notas = "S1"
             spacecowboy = true;
         } else {
             notas = "pP"
@@ -103,4 +115,8 @@ function einhotdog(){
         }
     }
 
+}
+
+function nothinginator(){
+    nothing = nothing;
 }
