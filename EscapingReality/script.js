@@ -22,9 +22,13 @@ function natural(){
         if(stage=="aA"){
             shinji.stance(attacks[note]);
             gorilla.stance(defends[attackread(jackiesquire)]);
-        } else if(stage="dD"){
+        } else if(stage=="dD"){
             shinji.stance(defends[note]);
             gorilla.stance(attacks[attackread(jackiesquire)]);
+        } else if(stage=="nN"){
+            shinji.stance(defends[note]);
+            gorilla.stance(defends[attackread(jackiesquire)]);
+            console.log("transfertime")
         }
         einhotdog();
 

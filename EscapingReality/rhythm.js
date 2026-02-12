@@ -21,7 +21,9 @@ class timer{
     }
     timering(){
         if(jackiesquire=="y"){
-            this.play = true;
+            this.play = true; 
+        } else if(jackiesquire=="l"){
+            console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
         }
         if(this.linetime>=this.beatmap.length){
                 this.play = false;
@@ -45,9 +47,10 @@ class timer{
                 note = this.beatmap[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 //console.log(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
-                console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
                 this.standard4tick=0;
+                console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
             }
+            
             this.standard4tick+=.25;
             this.standardALLtick+=.25
         } else if(this.play != true){
