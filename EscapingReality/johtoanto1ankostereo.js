@@ -7,8 +7,8 @@ let songs = {
         beatmap:[
                  "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", //5 segments. Each segment is a second.
                  "T1T2T1T2", "T1T2T1T2", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
-                 "pPL1R1R1", "L4L1L3dD", "pPR2pPdD", "L1dDL2dD", "L1dDL2dD",
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPL1R1R1", "L4L1L3dD", "pPR2pPdD", "L1dDR1dD", "L1L2pPdD",
+                 "pPL1R1dD", "pPR2L2dD", "pPdDL1L3", "pPR1pPdD", "pPdDpPdD",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
@@ -231,10 +231,10 @@ let songs = {
     songtest:{
         music:"#SongMenu",
         label:"#SongMenui",
-        beatmap:["L1L2pPdD", "L1L2pPdD", "L1L2pPdD", "L1L2pPdD", "L1L2pPdD", //5 segments. Each segment is a second.
-                 "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", 
-                 "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2",
-                 "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2", "L2L2L2L2",
+        beatmap:["K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", //5 segments. Each segment is a second.
+                 "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2",
+                 "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2",
+                 "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2", "K1K2K1K2",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
