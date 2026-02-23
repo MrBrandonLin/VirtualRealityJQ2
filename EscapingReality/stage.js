@@ -15,104 +15,16 @@ class world{
         }
     }
     setTheStageYo(beep, bop){
-        if(bop == 0){
-            if(beep==0){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            }else if(beep==1){
-                this.setChildren[1].setAttribute("color", songs.song2.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song2.stageColors[1])
-                }
-                for(let i=0;i<3;i++){
-                    this.setChildren[i*3+5].setAttribute("color", songs.song2.stageColors[4])
-                }
-                for(let i=0;i<3;i++){
-                    this.setChildren[i*3+6].setAttribute("color", songs.song2.stageColors[3])
-                }
-                for(let i=0;i<3;i++){
-                    this.setChildren[i*3+7].setAttribute("color", songs.song2.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song2.stageColors[1])
-                }
-            }else if(beep==2){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            } else if(beep==3){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            }
-        } else if(bop==1){
-            if(beep==0){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            }else if(beep==1){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            }else if(beep==2){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            } else if(beep==3){
-                this.setChildren[1].setAttribute("color", songs.song1.stageColors[0])
-                for(let i=0;i<3;i++){
-                    this.setChildren[i+2].setAttribute("color", songs.song1.stageColors[1])
-                }
-                for(let i=0;i<9;i++){
-                    this.setChildren[i+5].setAttribute("color", songs.song1.stageColors[2])
-                }
-                for(let i=0;i<5;i++){
-                    this.setChildren[i+14].setAttribute("color", songs.song1.stageColors[3])
-                }
-            }
+        this.sTc = sTc(beep, bop)
+        this.setChildren[1].setAttribute("color", this.sTc.stageColors[0])
+        for(let i=0;i<3;i++){
+            this.setChildren[i+2].setAttribute("color", this.sTc.stageColors[1])
+        }
+        for(let i=0;i<9;i++){
+            this.setChildren[i+5].setAttribute("color", this.sTc.stageColors[2])
+        }
+        for(let i=0;i<5;i++){
+            this.setChildren[i+14].setAttribute("color", this.sTc.stageColors[3])
         }
     }
 }

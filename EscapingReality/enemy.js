@@ -8,11 +8,13 @@ class enemy{
         this.hipL = this.centerMass2[0].children; this.hipR = this.centerMass2[1].children;
         this.thighL = this.hipL[0].children; this.thighR = this.hipR[0].children;
         this.calfL = this.thighL[3].children; this.calfR = this.thighR[3].children;
+        this.footL = this.calfL[3].children; this.footR = this.calfR[3].children;
         this.gut = this.centerMass2[2].children; this.chest = this.gut[0].children;
         this.shoulderL = this.chest[1].children; this.shoulderR = this.chest[2].children;
         this.upperarmL = this.shoulderL[0].children; this.upperarmR = this.shoulderR[0].children;
         this.forearmL = this.upperarmL[2].children; this.forearmR = this.upperarmR[2].children;
-        this.neck = this.chest[3].children;
+        this.wristL = this.forearmL[1].children; this.wristR = this.forearmR[1].children;
+        this.neck = this.chest[3].children; this.head = this.neck[4].children;
         this.s = 5;
         console.log(this.calfL)
         //
@@ -46,10 +48,26 @@ class enemy{
         this.chest[3].setAttribute("rotation", {x:note.neckJoint[0], y:note.neckJoint[1], z:note.neckJoint[2]})
         this.neck[4].setAttribute("rotation", {x:note.headJoint[0], y:note.headJoint[1], z:note.headJoint[2]})
     }
-    getSuitedUpDawg(){
-        
+    getSuitedUpDawg(beep, bop){
+        this.sTc = sTc(beep, bop)
+        this.centerMass2[0].setAttribute("color", this.sTc.modelColors[1])
+        this.centerMass2[1].setAttribute("color", this.sTc.modelColors[1])
+        this.thighL[0].setAttribute("color", this.sTc.modelColors[1]); this.thighR[0].setAttribute("color", this.sTc.modelColors[1])
+        this.thighL[1].setAttribute("color", this.sTc.modelColors[1]); this.thighR[1].setAttribute("color", this.sTc.modelColors[1])
+        this.thighL[2].setAttribute("color", this.sTc.modelColors[1]); this.thighR[2].setAttribute("color", this.sTc.modelColors[1])
+        this.calfL[0].setAttribute("color", this.sTc.modelColors[2]); this.calfR[0].setAttribute("color", this.sTc.modelColors[2])
+        this.calfL[1].setAttribute("color", this.sTc.modelColors[2]); this.calfR[1].setAttribute("color", this.sTc.modelColors[2])
+        this.calfL[2].setAttribute("color", this.sTc.modelColors[2]); this.calfR[2].setAttribute("color", this.sTc.modelColors[2])
+        this.centerMass2[2].setAttribute("color", this.sTc.modelColors[2])
+        this.chest[0].setAttribute("color", this.sTc.modelColors[2])
+        this.chest[1].setAttribute("color", this.sTc.modelColors[2]); this.chest[2].setAttribute("color", this.sTc.modelColors[2])
+        this.upperarmL[0].setAttribute("color", this.sTc.modelColors[2]); this.upperarmR[0].setAttribute("color", this.sTc.modelColors[2])
+        this.upperarmL[1].setAttribute("color", this.sTc.modelColors[2]); this.upperarmR[1].setAttribute("color", this.sTc.modelColors[2])
+        this.forearmL[0].setAttribute("color", this.sTc.modelColors[2]); this.forearmR[0].setAttribute("color", this.sTc.modelColors[2])
+        this.wristL[0].setAttribute("color", this.sTc.modelColors[4]); this.wristR[0].setAttribute("color", this.sTc.modelColors[4]);
+        this.footL[0].setAttribute("color", this.sTc.modelColors[3]); this.footR[0].setAttribute("color", this.sTc.modelColors[3]); 
+        this.neck[0].setAttribute("color", this.sTc.modelColors[2]); this.neck[1].setAttribute("color", this.sTc.modelColors[2]);
+        this.neck[2].setAttribute("color", this.sTc.modelColors[2]); this.neck[3].setAttribute("color", this.sTc.modelColors[2]);
+        this.head[0].setAttribute("color", this.sTc.modelColors[2]); this.head[1].setAttribute("src", this.sTc.modelColors[0]);
     }
-
-    
-        
 }

@@ -77,7 +77,7 @@ let songs = {
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
         ],
         modelColors:[
-            "#facemap1", "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+            "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
         ]
 
         
