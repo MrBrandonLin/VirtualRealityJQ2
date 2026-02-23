@@ -77,13 +77,13 @@ class menu{
 
         this.menuchoice = 0; this.menudepth1 = 0; this.menudepth2 = 0; this.menudepth3 = 0;
         this.menuwinder = false; this.menuwind = 0, this.menuwindment = .1;
-
+        this.menucamera.setAttribute("sound", {src:"#menuselectchime", loop:true, refDistance:1000});
     }
     thereare5secondsoftitlecard(){
 
     }
     menuselect(key){
-
+        
         if(key=="o"){
             if(this.menudepth1 == 0){
                 this.menuchoice += 1;
@@ -172,8 +172,7 @@ class menu{
             this.song4.setAttribute("src", "#SongMenui")
         }
         console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2 +", "+ this.menudepth3);
-
-    }
+}
     menuwindmechanic(){
         if(this.menuwinder == true){
             this.menuwind += this.menuwindment;

@@ -46,6 +46,10 @@ class enemy{
         this.chest[3].setAttribute("rotation", {x:note.neckJoint[0], y:note.neckJoint[1], z:note.neckJoint[2]})
         this.neck[4].setAttribute("rotation", {x:note.headJoint[0], y:note.headJoint[1], z:note.headJoint[2]})
     }
+    getSuitedUpDawg(){
+        
+    }
+
     
         
 }

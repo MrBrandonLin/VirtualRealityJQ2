@@ -30,6 +30,10 @@ class timer{
                 this.standard4tick = 0;
                 this.linetime = 0;
                 this.songtime = 0;
+                secamMain.setAttribute("camera", "active", false);
+                inmenu = true;
+                ohmymy.menudepth1=1;
+
         }
         if(this.play){
             this.beatbox.components.sound.playSound();
