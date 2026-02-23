@@ -279,10 +279,10 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
         ],
         stageColors:[
-            "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+            "#705A86", "#F48319", "#FDD4E4", "#FFFFFF"
         ],
         modelColors:[
-            "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
+            "#facemap5", "#D5501D", "#E09261", "#D5501D", "#6C9520"
         ]
         
     },
