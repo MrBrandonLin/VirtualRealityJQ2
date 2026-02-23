@@ -28,6 +28,7 @@ class timer{
         if(this.linetime>=this.beatmap.length){
                 this.play = false;
                 this.standard4tick = 0;
+                this.standardALLtick = 0;
                 this.linetime = 0;
                 this.songtime = 0;
                 secamMain.setAttribute("camera", "active", false);

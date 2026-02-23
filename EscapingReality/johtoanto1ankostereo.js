@@ -74,7 +74,7 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //95s, 380qs
         ],
         stageColors:[
-            "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+            "#6DCDF3", "#FCEA35", "#FF6BE6", "#56E33A"
         ],
         modelColors:[
             "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
@@ -126,7 +126,10 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
         ],
         stageColors:[
-            "#8F939C", "#050409", "#D32632", "#EC6921", "#FFD200"
+            "#D32632", "#EC6921", "#FFD200",  "#050409"
+        ],
+        modelColors:[
+            "#facemap2", "#FDFDFF", "#050409", "#050409", "#FDFDFF"
         ]
         
     },
@@ -175,6 +178,9 @@ let songs = {
         ],
         stageColors:[
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+        ],
+        modelColors:[
+            "#facemap3", "#EBBE30", "#895526", "#8E8E8E", "#000000"
         ]
         
     },
@@ -223,6 +229,9 @@ let songs = {
         ],
         stageColors:[
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+        ],
+        modelColors:[
+            "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
         ]
         
     },
@@ -271,6 +280,9 @@ let songs = {
         ],
         stageColors:[
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+        ],
+        modelColors:[
+            "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
         ]
         
     },
@@ -303,7 +315,11 @@ let songs = {
         ],
         stageColors:[
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"
+        ],
+        modelColors:[
+            "#facemap1", "#233369", "#E6A579", "#E6A579", "#DD303F"
         ]
+        
         
     }
 }
