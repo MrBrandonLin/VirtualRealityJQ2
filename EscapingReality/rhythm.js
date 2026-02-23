@@ -83,8 +83,8 @@ class timer{
                 this.beatbox.setAttribute("sound", {src:songs.song5.music, loop:true, refDistance:1000})
                 this.beatmap = songs.song1.beatmap;
             }else if(okay==1){
-                this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000})
-                this.beatmap = songs.songtest.beatmap;
+                this.beatbox.setAttribute("sound", {src:songs.song6.music, loop:true, refDistance:1000})
+                this.beatmap = songs.song6.beatmap;
             }else if(okay==2){
                 this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000})
                 this.beatmap = songs.songtest.beatmap;

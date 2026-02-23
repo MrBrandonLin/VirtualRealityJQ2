@@ -286,6 +286,57 @@ let songs = {
         ]
         
     },
+    song6:{
+        music:"#Song6",
+        label:"#Song6i",
+        beatmap:["pPpPpPpP", "L1pPL1pP", "pPL1pPR1", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", 
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+
+        ], 
+        battlestage:["aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+        ],
+        stageColors:[
+            "#705A86", "#F48319", "#FDD4E4", "#FFFFFF"
+        ],
+        modelColors:[
+            "#facemap4", "#D2B782",  "#E09261", "#FBFEF4", "#709898"
+        ]
+        
+    },
     songtest:{
         music:"#SongMenu",
         label:"#SongMenui",

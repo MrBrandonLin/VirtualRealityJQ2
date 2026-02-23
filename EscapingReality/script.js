@@ -108,7 +108,7 @@ function sTc(a, b){
         if(a==0){
             c=songs.song5;
         }else if(a==1){
-            c=songs.songtest;
+            c=songs.song6;
         }else if(a==2){
             c=songs.songtest;
         } else if(a==3){

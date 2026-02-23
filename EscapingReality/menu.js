@@ -167,7 +167,7 @@ class menu{
             this.song4.setAttribute("src", "#Song4i")
         } else if(this.menudepth3 == 1){
             this.song1.setAttribute("src", "#Song5i");
-            this.song2.setAttribute("src", "#SongMenui")
+            this.song2.setAttribute("src", "#Song6i")
             this.song3.setAttribute("src", "#SongMenui")
             this.song4.setAttribute("src", "#SongMenui")
         }
