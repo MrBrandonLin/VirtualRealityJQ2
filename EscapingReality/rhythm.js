@@ -8,6 +8,7 @@ class timer{
 
         this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000});
         this.beatmap = songs.songtest.beatmap;
+        this.battleform = songs.songtest.battleform;
         this.battlestage = songs.songtest.battlestage;
 
         this.songtime = 0;
@@ -50,10 +51,10 @@ class timer{
                     console.log("full second");
                 }
                 note = this.beatmap[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
+                form = this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
-                //console.log(this.song[this.linetime].substring(this.songtime*2, (this.songtime*2)+2));
                 this.standard4tick=0;
-                console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
+                console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2) + " " + this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
             }
             
             this.standard4tick+=.25;
@@ -63,35 +64,10 @@ class timer{
         }
     }
     songdecide(okay, okie){
-        if(okie == 0){
-            if(okay==0){
-                this.beatbox.setAttribute("sound", {src:songs.song1.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song1.beatmap;
-                this.battlestage = songs.song1.battlestage;
-            }else if(okay==1){
-                this.beatbox.setAttribute("sound", {src:songs.song2.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song2.beatmap;
-            }else if(okay==2){
-                this.beatbox.setAttribute("sound", {src:songs.song3.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song3.beatmap;
-            } else if(okay==3){
-                this.beatbox.setAttribute("sound", {src:songs.song4.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song4.beatmap;
-            }
-        } else if(okie==1){
-            if(okay==0){
-                this.beatbox.setAttribute("sound", {src:songs.song5.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song1.beatmap;
-            }else if(okay==1){
-                this.beatbox.setAttribute("sound", {src:songs.song6.music, loop:true, refDistance:1000})
-                this.beatmap = songs.song6.beatmap;
-            }else if(okay==2){
-                this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000})
-                this.beatmap = songs.songtest.beatmap;
-            } else if(okay==3){
-                this.beatbox.setAttribute("sound", {src:songs.songtest.music, loop:true, refDistance:1000})
-                this.beatmap = songs.songtest.beatmap;
-            }
-        }
+        this.sTc = sTc(okay, okie);
+        this.beatbox.setAttribute("sound", {src:this.sTc.music, loop:true, refDistance:1000})
+        this.beatmap = this.sTc.beatmap;
+        this.battleform = this.sTc.battleform;
+        this.battlestage = this.sTc.battlestage;
     }
 }

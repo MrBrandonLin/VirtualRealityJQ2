@@ -168,7 +168,7 @@ class menu{
         } else if(this.menudepth3 == 1){
             this.song1.setAttribute("src", "#Song5i");
             this.song2.setAttribute("src", "#Song6i")
-            this.song3.setAttribute("src", "#SongMenui")
+            this.song3.setAttribute("src", "#Song7i")
             this.song4.setAttribute("src", "#SongMenui")
         }
         console.log(this.menuchoice + ", " + this.menudepth1 + ", " + this.menudepth2 +", "+ this.menudepth3);

@@ -1,9 +1,10 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
-let note = "", stage = ""; nothing ="";
+let note = "", form = "", stage = ""; nothing ="";
 inmenu = true; singlefiredmenu = false; spacecowboy = false; cameleyetea = false;
-jackiesquire = ""; notas=""; poki="";
-dynamicduo = ["L1", "R1", "R2"]
+jackiesquire = ""; 
+notas=""; fotas=""; iroow="";
+poki="pP"; hwai="wW";
 
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");
@@ -16,6 +17,7 @@ window.addEventListener("DOMContentLoaded",function() {
     shinji = new enemy();
     gorilla = new player();
     stagend = new world();
+    jinsen = new headsupdisplay();
 })
 
     window.addEventListener("keydown", (e)=>{
@@ -35,17 +37,18 @@ window.addEventListener("DOMContentLoaded",function() {
     })
 function natural(){
     poki = attackread(jackiesquire);
+    hwai = formread(jackiesquire);
     if(inmenu==false){
         timin.timering();
         if(stage=="aA"){
-            shinji.stance(attacks[note]);
-            gorilla.stance(defends[poki]);
+            shinji.stance(attacks[form][note]);
+            gorilla.stance(defends[hwai][poki]);
         } else if(stage=="dD"){
-            shinji.stance(defends[note]);
-            gorilla.stance(attacks[poki]);
+            shinji.stance(defends[form][note]);
+            gorilla.stance(attacks[hwai][poki]);
         } else if(stage=="nN"){
-            shinji.stance(defends[note]);
-            gorilla.stance(defends[poki]);
+            shinji.stance(defends[form][note]);
+            gorilla.stance(defends[hwai][poki]);
             console.log("transfertime")
         }
         stagend.audienceCheer();
@@ -58,8 +61,8 @@ function unnatural(){
             ohmymy.menuselect(jackiesquire);
             if(jackiesquire == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 2){
                 secamMain.setAttribute("camera", "active", true);
-                //secamMain.setAttribute("look-controls-enabled", "false");
-                //secamMain.setAttribute("wasd-controls-enabled", "false");
+                secamMain.setAttribute("look-controls-enabled", "false");
+                secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
                 timin.songdecide(ohmymy.menudepth2, ohmymy.menudepth3)
                 stagend.setTheStageYo(ohmymy.menudepth2, ohmymy.menudepth3);
@@ -76,9 +79,9 @@ function unnatural(){
 
 
 function attackread(esoteric){
-    for(let i=0; i<playerKeyInput.length;i++){
-        if(esoteric == playerKeyInput[i]){
-            notas = playerKeyOutput[i];
+    for(let i=0; i<playerActInput.length;i++){
+        if(esoteric == playerActInput[i]){
+            notas = playerActOutput[i];
             spacecowboy = true
             break;
         } else {
@@ -87,6 +90,20 @@ function attackread(esoteric){
     }
     return notas;
 }
+function formread(esoteric){
+    for(let i=0; i<playerFormInput.length;i++){
+        if(esoteric == playerFormInput[i]){
+            fotas = playerFormOutput[i];
+            spacecowboy = true
+            iroow = playerFormOutput[i];
+            break;
+        } else {
+            fotas = iroow;
+        }
+    }
+    return fotas;
+}
+
 
 function nothinginator(){
     nothing = nothing;
@@ -110,7 +127,7 @@ function sTc(a, b){
         }else if(a==1){
             c=songs.song6;
         }else if(a==2){
-            c=songs.songtest;
+            c=songs.song7;
         } else if(a==3){
             c=songs.songtest;
         }
