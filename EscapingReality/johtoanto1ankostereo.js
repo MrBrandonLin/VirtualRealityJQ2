@@ -768,6 +768,12 @@ let songs = {
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
                  "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
+                 
                  
         ], 
         battleform:[
@@ -827,16 +833,14 @@ let songs = {
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
         ],
         stageColors:[
             "#DD303F", "#3E64BC", "#FDFDFD", "#1594CF"

@@ -2,8 +2,8 @@ let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
 let note = "", form = "", stage = ""; nothing ="";
 inmenu = true; singlefiredmenu = false; spacecowboy = false; cameleyetea = false;
-jackiesquire = ""; 
-notas=""; fotas=""; iroow="";
+jackiesquire = ""; gi=""; joe=0;
+notas=""; fotas=""; iroow=""; 
 poki="pP"; hwai="wW";
 
 window.addEventListener("DOMContentLoaded",function() {
@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded",function() {
         ohmymy.menucamera.components.sound.stopSound();
     })
 function natural(){
+    joe+=1;
     poki = attackread(jackiesquire);
     hwai = formread(jackiesquire);
     if(inmenu==false){
@@ -61,8 +62,8 @@ function unnatural(){
             ohmymy.menuselect(jackiesquire);
             if(jackiesquire == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 2){
                 secamMain.setAttribute("camera", "active", true);
-                secamMain.setAttribute("look-controls-enabled", "false");
-                secamMain.setAttribute("wasd-controls-enabled", "false");
+                //secamMain.setAttribute("look-controls-enabled", "false");
+                //secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
                 timin.songdecide(ohmymy.menudepth2, ohmymy.menudepth3)
                 stagend.setTheStageYo(ohmymy.menudepth2, ohmymy.menudepth3);
