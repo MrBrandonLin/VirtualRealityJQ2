@@ -26,7 +26,7 @@ class timer{
         } else if(jackiesquire=="l"){
             console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
         }
-        if(this.linetime>=this.beatmap.length){
+        if(this.linetime>=this.beatmap.length || dead){
                 this.play = false;
                 this.standard4tick = 0;
                 this.standardALLtick = 0;

@@ -5,6 +5,7 @@ inmenu = true; singlefiredmenu = false; spacecowboy = false; cameleyetea = false
 jackiesquire = ""; gi=""; joe=0;
 notas=""; fotas=""; iroow=""; 
 poki="pP"; hwai="wW";
+dead = false;
 
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");
@@ -36,7 +37,6 @@ window.addEventListener("DOMContentLoaded",function() {
         ohmymy.menucamera.components.sound.stopSound();
     })
 function natural(){
-    joe+=1;
     poki = attackread(jackiesquire);
     hwai = formread(jackiesquire);
     if(inmenu==false){
@@ -44,16 +44,20 @@ function natural(){
         if(stage=="aA"){
             shinji.stance(attacks[form][note]);
             gorilla.stance(defends[hwai][poki]);
+            jinsen.hudtrack();
         } else if(stage=="dD"){
             shinji.stance(defends[form][note]);
             gorilla.stance(attacks[hwai][poki]);
+            jinsen.hudtrack();
         } else if(stage=="nN"){
             shinji.stance(defends[form][note]);
             gorilla.stance(defends[hwai][poki]);
+            jinsen.hudtrack();
             console.log("transfertime")
         }
         stagend.audienceCheer();
     }
+    dead = jinsen.healthgone;
 }
 function unnatural(){
     if(inmenu == true){ 
@@ -81,7 +85,7 @@ function unnatural(){
 
 function attackread(esoteric){
     for(let i=0; i<playerActInput.length;i++){
-        if(esoteric == playerActInput[i]){
+        if(esoteric == playerActInput[i] && jinsen.playerstamina > 0 && jinsen.staminaready){
             notas = playerActOutput[i];
             spacecowboy = true
             break;
