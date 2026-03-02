@@ -975,17 +975,17 @@ let defends = {
             neckJoint: [0, 25, 0], headJoint: [0, 15, 0]
         }, 
         S1:{
-            trueBasePos: [-2, 0, -.1],
-            trueBase: [0, 0, 0], centerMass: [8, -30, 5],
-            hipJointL: [-40, 20, 0], hipJointR: [-40, 5, -20], 
-            leftThighJoint: [10, 0, 0], rightThighJoint: [30, 10, 5], 
+            trueBasePos: [0, 0, -3],
+            trueBase: [0, 0, 0], centerMass: [8, -30, 0],
+            hipJointL: [-25, 20, 0], hipJointR: [-20, -20, 0], 
+            leftThighJoint: [20, 0, 0], rightThighJoint: [20, 0, 0], 
             leftCalfJoint: [0, 0, 0], rightCalfJoint: [0, 0, 0], 
             gut: [6, 0, 0], 
-            leftKneeJoint: [0, -5, 0], rightKneeJoint: [0, 0, 0], 
+            leftKneeJoint: [0, 0, 0], rightKneeJoint: [0, 0, 0], 
             leftShoulderJoint: [-40, -10, 0], rightShoulderJoint: [-25, 50, 0],
             leftUpperarmJoint: [-130, -40, 0], rightUpperarmJoint: [-130, 40, 0],
             leftForearmJoint: [-12, 0, 0], rightForearmJoint: [-12, 0, 0],
-            neckJoint: [0, 25, 0], headJoint: [0, 15, 0]
+            neckJoint: [0, 5, 0], headJoint: [0, 30, 0]
         },
         LK:{
             trueBasePos: [2, 0, -.1],

@@ -13,7 +13,7 @@ let songs = {
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
                  "R2R2pPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //35s, 140qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //40s, 160qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDL1L1", "L2L2pPR1", //45s, 180qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
                  "R1R2R2dD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //50s, 200qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //55s, 220qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //60s, 240qs
@@ -109,25 +109,25 @@ let songs = {
                      "dDdDdDuE", "uEuEuEuE", "uEuEuEaA", "aAaAaAaA", "aAaAaAaA", //30s, 120qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //35s, 140qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //40s, 160qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //45s, 180qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //50s, 200qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //55s, 220qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "eUeUeUeU", //45s, 180qs
+                     "eUeUeUeU", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //50s, 200qs
+                     "dDdDdDdD", "dDdDdDdD", "dDdDuEuE", "uEuEuEuE", "aAaAaAaA", //55s, 220qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //60s, 240qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //65s, 260qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //70s, 280qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //75s, 300qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //80s, 320qs
+                     "eUeUeUeU", "eUeUdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //65s, 260qs
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //70s, 280qs
+                     "uEuEuEuE", "uEuEaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //75s, 300qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //80s, 320qs 464 532 584
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //85s, 340qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //90s, 360qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //95s, 380qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //100s, 400qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //105s, 420qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //110s, 440qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //115s, 460qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //120s, 480qs
+                     "eUeUeUeU", "eUeUeUeU", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //105s, 420qs
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //110s, 440qs
+                     "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //115s, 460qs
+                     "uEuEuEuE", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //120s, 480qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //125s, 500qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //130s, 520qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //135s, 540qs
+                     "aAaAaAaA", "aAaAaAaA", "eUeUeUeU", "aAaAaAaA", "aAaAaAaA", //135s, 540qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //140s, 560qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //145s, 580qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //150s, 600qs
@@ -136,8 +136,8 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //165s, 660qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //170s, 680qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //175s, 700qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //180s, 720qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //185s, 740qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "uEuEuEuE", //180s, 720qs
+                     "uEuEuEuE", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //185s, 740qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //190s, 760qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //195s, 780qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //200s, 800qs
@@ -146,7 +146,7 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //215s, 860qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //220s, 880qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //225s, 900qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",                         //227s, 908
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",                         //227s, 908qs
         ],
         stageColors:[
             "#6DCDF3", "#FCEA35", "#FF6BE6", "#56E33A"
@@ -161,123 +161,154 @@ let songs = {
         music:"#Song2",
         label:"#Song2i",
         beatmap:[
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //5s, 20qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //10s, 40qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //15s, 60qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //20s, 80qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //25s, 100qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //30s, 120qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //35s, 140qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //40s, 160qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //50s, 200qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //55s, 220qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //60s, 240qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //65s, 260qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //70s, 280qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //75s, 300qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //80s, 320qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //85s, 340qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //90s, 360qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //95s, 380qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //100s, 400qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //105s, 420qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //110s, 440qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //115s, 460qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //120s, 480qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //125s, 500qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //130s, 520qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //135s, 540qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //140s, 560qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //145s, 580qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //150s, 600qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //155s, 620qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //160s, 640qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //165s, 660qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //170s, 680qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //175s, 700qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //180s, 720qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //185s, 740qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //190s, 760qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //195s, 780qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //200s, 800qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //205s, 820qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //210s, 840qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //215s, 860qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //220s, 880qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //225s, 900qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //230s, 920qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //235s, 940qs
-            "pPdDpPdD", "pPdDpPdD", "pPdDpPdD"                          //238s, 952qs
-
-        ], 
+                 "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", //5s, 20qs
+                 "T1T2T1T2", "T1T2T1T2", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //10s, 40qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "L1dDR1dD", "L1L2pPdD", //15s, 60qs
+                 "pPL1R1dD", "pPR2L2dD", "pPdDL1L3", "pPdDpPdD", "pPdDpPdD", //20s, 80qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //25s, 100qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
+                 "R2R2pPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //35s, 140qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //40s, 160qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDL1L1", "L2L2pPR1", //45s, 180qs
+                 "R1R2R2dD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //50s, 200qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //55s, 220qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //60s, 240qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //65s, 260qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //70s, 280qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //75s, 300qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //80s, 320qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //85s, 340qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //90s, 360qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //95s, 380qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //100s, 400qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //105s, 420qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //110s, 440qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //115s, 460qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //120s, 480qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //125s, 500qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //130s, 520qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //135s, 540qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //140s, 560qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //145s, 580qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //150s, 600qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //155s, 620qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //160s, 640qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //165s, 660qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //170s, 680qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //175s, 700qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //180s, 720qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //185s, 740qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //190s, 760qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //195s, 780qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //200s, 800qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //205s, 820qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //210s, 840qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //215s, 860qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //220s, 880qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //225s, 900qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //230s, 920qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //235s, 940qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "gGgGgGgG",             //238s, 952qs
+        ],
         battleform:[
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //5s, 20qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //10s, 40qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //15s, 60qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //20s, 80qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //25s, 100qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //30s, 120qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //35s, 140qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //40s, 160qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //45s, 180qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //50s, 200qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //55s, 220qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //60s, 240qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //65s, 260qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //70s, 280qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //75s, 300qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //80s, 320qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //85s, 340qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //90s, 360qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //95s, 380qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //100s, 400qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //105s, 420qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //110s, 440qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //115s, 460qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //120s, 480qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //125s, 500qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //130s, 520qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //135s, 540qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //140s, 560qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //145s, 580qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //150s, 600qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //155s, 620qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //160s, 640qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //165s, 660qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //170s, 680qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //175s, 700qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //180s, 720qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //185s, 740qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //190s, 760qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //195s, 780qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //200s, 800qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //205s, 820qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //210s, 840qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //215s, 860qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //220s, 880qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //225s, 900qs
-                "wWwWwWwW", "wWwWwWwW" //227s, 908qs
-        ], 
-        battlestage:["aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //5s, 20qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //10s, 40qs
+                 "wWwWaAaA", "wWdDdDwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //15s, 60qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //20s, 80qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //25s, 100qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //30s, 120qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //35s, 140qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //40s, 160qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //45s, 180qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //50s, 200qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //55s, 220qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //60s, 240qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //65s, 260qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //70s, 280qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //75s, 300qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //80s, 320qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //85s, 340qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //90s, 360qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //95s, 380qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //100s, 400qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //105s, 420qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //110s, 440qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //115s, 460qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //120s, 480qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //125s, 500qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //130s, 520qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //135s, 540qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //140s, 560qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //145s, 580qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //150s, 600qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //155s, 620qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //160s, 640qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //165s, 660qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //170s, 680qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //175s, 700qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //180s, 720qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //185s, 740qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //190s, 760qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //195s, 780qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //200s, 800qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //205s, 820qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //210s, 840qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //215s, 860qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //220s, 880qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //225s, 900qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //230s, 920qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //235s, 940qs
+                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //238s, 952qs
+        ],
+        battlestage:[
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //5s, 20qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //10s, 40qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //15s, 60qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "eUeUeUeU", "eUeUeUeU", //20s, 80qs
+                 "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //25s, 100qs
+                 "dDdDdDuE", "uEuEuEuE", "uEuEuEaA", "aAaAaAaA", "aAaAaAaA", //30s, 120qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //35s, 140qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //40s, 160qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //45s, 180qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //50s, 200qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //55s, 220qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //60s, 240qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //65s, 260qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //70s, 280qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //75s, 300qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //80s, 320qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //85s, 340qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //90s, 360qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //95s, 380qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //100s, 400qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //105s, 420qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //110s, 440qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //115s, 460qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //120s, 480qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //125s, 500qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //130s, 520qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //135s, 540qs 
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //140s, 560qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //145s, 580qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //150s, 600qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //155s, 620qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //160s, 640qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //165s, 660qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //170s, 680qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //175s, 700qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //180s, 720qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //185s, 740qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //190s, 760qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //195s, 780qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //200s, 800qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //205s, 820qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //210s, 840qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //215s, 860qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //220s, 880qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //225s, 900qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //230s, 920qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //235s, 940qs
+                 "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //238s, 952qs
         ],
         stageColors:[
             "#D32632", "#EC6921", "#FFD200",  "#050409"

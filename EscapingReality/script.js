@@ -69,6 +69,7 @@ function natural(){
         timin.linetime = 0;
         timin.songtime = 0;
         loading += 1
+        jinsen.statusupdates.setAttribute("position", "0 0 -.49");
         if(loading >= 20){
             secamMain.setAttribute("camera", "active", false);
             inmenu = true;
@@ -87,8 +88,8 @@ function unnatural(){
             ohmymy.menuselect(jackiesquire);
             if(jackiesquire == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 2){
                 secamMain.setAttribute("camera", "active", true);
-                //secamMain.setAttribute("look-controls-enabled", "false");
-                //secamMain.setAttribute("wasd-controls-enabled", "false");
+                secamMain.setAttribute("look-controls-enabled", "false");
+                secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
                 timin.songdecide(ohmymy.menudepth2, ohmymy.menudepth3)
                 stagend.setTheStageYo(ohmymy.menudepth2, ohmymy.menudepth3);

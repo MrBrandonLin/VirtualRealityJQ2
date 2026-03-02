@@ -39,12 +39,12 @@ class headsupdisplay{
             this.staminaready = true;
         }
         if(this.playerstamina <= 0){ this.staminaready = false; }
-        if(jinsen.playerhealth < 0){
-            jinsen.statusupdates.setAttribute("position", "0 0 -.49");
-            jinsen.healthgone = true;
+        if(this.playerhealth <= 0){
+            this.statusupdates.setAttribute("position", "0 0 -.49");
+            this.healthgone = true;
         } else {
-            jinsen.healthgone = false;
-            jinsen.statusupdates.setAttribute("position", "0 -10 -.49");
+            this.healthgone = false;
+            this.statusupdates.setAttribute("position", "0 -10 -.49");
         }
         if(stage=="eU"){
             jinsen.statusupdates.setAttribute("src", "#transferAttack1");
