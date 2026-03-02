@@ -7,8 +7,8 @@ let songs = {
         beatmap:[
                  "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", "T1T2T1T2", //5s, 20qs
                  "T1T2T1T2", "T1T2T1T2", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //10s, 40qs
-                 "pPL1R1R1", "L4L1L3dD", "pPR2pPdD", "L1dDR1dD", "L1L2pPdD", //15s, 60qs
-                 "pPL1R1dD", "pPR2L2dD", "pPdDL1L3", "pPR1pPdD", "pPdDpPdD", //20s, 80qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "L1dDR1dD", "L1L2pPdD", //15s, 60qs
+                 "pPL1R1dD", "pPR2L2dD", "pPdDL1L3", "pPdDpPdD", "pPdDpPdD", //20s, 80qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //25s, 100qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
                  "R2R2pPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //35s, 140qs
@@ -50,13 +50,13 @@ let songs = {
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //215s, 860qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //220s, 880qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //225s, 900qs
-                 "pPdDpPdD", "pPdDpPdD"                                      //227s, 908qs
+                 "pPdDpPdD", "pPdDpPdD", "gGgGgGgG"                          //227s, 908qs
 
         ], 
         battleform:[
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //5s, 20qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //10s, 40qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //15s, 60qs
+                "wWwWaAaA", "wWdDdDwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //15s, 60qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //20s, 80qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //25s, 100qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //30s, 120qs
@@ -99,14 +99,14 @@ let songs = {
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //215s, 860qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //220s, 880qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //225s, 900qs
-                "wWwWwWwW", "wWwWwWwW" //227s, 908qs
+                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW",                         //227s, 908qs
         ], 
         battlestage:["aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //5s, 20qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //10s, 40qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //15s, 60qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "nNnNnNnN", "nNnNnNnN", //20s, 80qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "eUeUeUeU", "eUeUeUeU", //20s, 80qs
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //25s, 100qs
-                     "dDdDnNnN", "nNnNnNnN", "nNnNaAaA", "aAaAaAaA", "aAaAaAaA", //30s, 120qs
+                     "dDdDdDuE", "uEuEuEuE", "uEuEuEaA", "aAaAaAaA", "aAaAaAaA", //30s, 120qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //35s, 140qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //40s, 160qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //45s, 180qs
@@ -120,6 +120,33 @@ let songs = {
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //85s, 340qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //90s, 360qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //95s, 380qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //100s, 400qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //105s, 420qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //110s, 440qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //115s, 460qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //120s, 480qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //125s, 500qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //130s, 520qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //135s, 540qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //140s, 560qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //145s, 580qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //150s, 600qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //155s, 620qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //160s, 640qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //165s, 660qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //170s, 680qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //175s, 700qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //180s, 720qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //185s, 740qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //190s, 760qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //195s, 780qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //200s, 800qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //205s, 820qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //210s, 840qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //215s, 860qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //220s, 880qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //225s, 900qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",                         //227s, 908
         ],
         stageColors:[
             "#6DCDF3", "#FCEA35", "#FF6BE6", "#56E33A"
@@ -758,23 +785,20 @@ let songs = {
     songtest:{
         music:"#SongMenu",
         label:"#SongMenui",
-        beatmap:["pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", //5 segments. Each segment is a second.
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP", "pPpPpPpP",
-                 
-                 
+        beatmap:["pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //5 segments. Each segment is a second.
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "gG"
         ], 
         battleform:[
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //5s, 20qs
@@ -802,29 +826,9 @@ let songs = {
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //115s, 460qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //120s, 480qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //125s, 500qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //130s, 520qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //135s, 540qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //140s, 560qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //145s, 580qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //150s, 600qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //155s, 620qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //160s, 640qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //165s, 660qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //170s, 680qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //175s, 700qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //180s, 720qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //185s, 740qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //190s, 760qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //195s, 780qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //200s, 800qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //205s, 820qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //210s, 840qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //215s, 860qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //220s, 880qs
-                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //225s, 900qs
-                "wWwWwWwW", "wWwWwWwW" //227s, 908qs
+
         ], 
-        battlestage:["aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA",
+        battlestage:[ 
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD",

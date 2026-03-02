@@ -31,6 +31,7 @@ class enemy{
     }
     stance(note){
         this.trueBase[0].setAttribute("position", {x:note.trueBasePos[0], y:note.trueBasePos[1], z:note.trueBasePos[2]})
+        this.trueBase[0].setAttribute("rotation", {x:note.trueBase[0], y:note.trueBase[1], z:note.trueBase[2]})
         this.centerMass[0].setAttribute("rotation", {x:note.centerMass[0], y:note.centerMass[1], z:note.centerMass[2]})
         this.hipL[0].setAttribute("rotation", {x:note.hipJointL[0], y:note.hipJointL[1], z:note.hipJointL[2]})
         this.hipR[0].setAttribute("rotation", {x:note.hipJointR[0], y:note.hipJointR[1], z:note.hipJointR[2]})

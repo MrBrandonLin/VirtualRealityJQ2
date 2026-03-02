@@ -17,25 +17,30 @@ class timer{
         this.standard16tick = 0;
         this.standardALLtick = 0;
         this.play = false;
+        this.songend = false;
 
         scene.append(this.beatbox);
     }
     timering(){
         if(jackiesquire=="y"){
             this.play = true; 
-        } else if(jackiesquire=="l"){
-            console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
         }
-        if(this.linetime>=this.beatmap.length || dead){
-                this.play = false;
-                this.standard4tick = 0;
-                this.standardALLtick = 0;
-                this.linetime = 0;
-                this.songtime = 0;
+        if(this.songend == true){
+            this.play = false;
+            this.standard4tick = 0;
+            this.standardALLtick = 0;
+            this.linetime = 0;
+            this.songtime = 0;
+            loading += 1
+            if(loading >= 20){
                 secamMain.setAttribute("camera", "active", false);
                 inmenu = true;
-                ohmymy.menudepth1=1;
-
+                ohmymy.menudepth1 = 1;
+                jinsen.healthgone = false;
+                jinsen.playerhealth = 100;
+                jinsen.playerstamina = 100;
+                this.songend = false;
+            }
         }
         if(this.play){
             this.beatbox.components.sound.playSound();
@@ -55,8 +60,11 @@ class timer{
                 stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 this.standard4tick=0;
                 console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2) + " " + this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
+                if(note == "gG"){
+                    this.play = false;
+                    this.songend = true;
+                }
             }
-            
             this.standard4tick+=.25;
             this.standardALLtick+=.25
         } else if(this.play != true){
