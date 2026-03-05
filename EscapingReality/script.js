@@ -61,7 +61,7 @@ function natural(){
         stagend.audienceCheer();
     }
     dead = jinsen.healthgone;
-    if(dead == true){
+    if(dead == true || (jinsen.gamewin == true && timin.songend == true)){
         note = "pP"
         timin.play = false;
         timin.standard4tick = 0;
@@ -160,10 +160,10 @@ function hitRegister(){
         let tonkotsu = uAe[hwai][poki][form];
         for(let ton of tonkotsu){
             if(ton == note){
-                jinsen.playerhealth -= 1;
+                jinsen.enemyhealth -= 1;
                 console.log("hit")
             } else {
-                jinsen.playerhealth = jinsen.playerhealth;
+                jinsen.enemyhealth = jinsen.enemyhealth;
             }
         }
     } else {

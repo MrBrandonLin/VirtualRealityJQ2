@@ -264,7 +264,7 @@ let attacks = {
             neckJoint: [0, 5, 0], headJoint: [0, 30, 0]
         },
         L2:{
-            trueBasePos: [0, 0, 7.5],
+            trueBasePos: [2, 0, 7.5],
             trueBase: [0, 0, 0], centerMass: [-1, -35, 0],
             hipJointL: [-15, 20, 0], hipJointR: [-10, -20, 0], 
             leftThighJoint: [30, 0, 0], rightThighJoint: [30, 0, 0], 

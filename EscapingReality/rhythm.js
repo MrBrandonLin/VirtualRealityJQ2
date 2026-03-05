@@ -39,6 +39,7 @@ class timer{
                 jinsen.healthgone = false;
                 jinsen.playerhealth = 100;
                 jinsen.playerstamina = 100;
+                jinsen.gamewin = false;
                 this.songend = false;
             }
         }
