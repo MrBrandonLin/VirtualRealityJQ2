@@ -12,43 +12,43 @@ let songs = {
                  "pPdDL1L1", "pPdDpPR1", "R1dDpPL1", "pPR1pPL1", "pPR1pPL1", //25s, 100qs
                  "pPdDS1S1", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
                  "R2R2pPdD", "pPdDpPdD", "pPL1L1R1", "R1dDpPdD", "pPdDpPdD", //35s, 140qs
-                 "L1L2pPdD", "L1L2pPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //40s, 160qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
+                 "L1L1L1L2", "L2dDpPL1", "L1L1L2dD", "pPdDL1dD", "L1dDL1dD", //40s, 160qs 112 176
+                 "pPL1pPR1", "R1dDpPL1", "pPR1R1dD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
                  "pPdDpPdD", "pPpPS1S1", "S1dDpPdD", "S1S1S1dD", "pPR1R1S1", //50s, 200qs
-                 "pPL1L1S1", "pPdDL1L1", "R1R1pPdD", "pPdDpPdD", "pPdDpPdD", //55s, 220qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //60s, 240qs
+                 "pPL1L1S1", "pPdDL1L1", "R1R1pPdD", "pPdDpPdD", "pPdDL1dD", //55s, 220qs 
+                 "L1R1pPdD", "R1R2pPdD", "R1R2pPdD", "T1T2pPdD", "L1R2pPdD", //60s, 240qs 216 240
                  "pPdDpPdD", "pPdDpPdD", "pPL1L1L1", "pPdDR1R1", "R1dDpPdD", //65s, 260qs
                  "L1L1pPR1", "R1dDpPdD", "pPdDS1S1", "pPS1S1dD", "pPS1S1dD", //70s, 280qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //75s, 300qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //80s, 320qs 
+                 "pPdDpPdD", "pPdDpPdD", "L1L3L4dD", "pPL4L3L1", "pPdDL1R1", //75s, 300qs
+                 "pPdDpPL1", "pPL1R1dD", "pPdDL1dD", "L1R2pPdD", "L1L3L4dD", //80s, 320qs 286 400
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //85s, 340qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //90s, 360qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //95s, 380qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //95s, 380qs 
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //100s, 400qs 
                  "pPdDpPdD", "pPdDpPdD", "pPdDL1L1", "pPR1R1dD", "pPR1R1R1", //105s, 420qs
                  "R1R1R1R1", "R1dDpPS1", "S1S1S1dD", "pPL1L1L1", "L1L1L1L1", //110s, 440qs
                  "L1dDpPdD", "L1L1pPS1", "pPR1R1dD", "pPL1L1pP", "S1dDR1R1", //115s, 460qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //120s, 480qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //125s, 500qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //130s, 520qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDL1L1", //135s, 540qs
+                 "pPdDpPdD", "pPdDpPdD", "pPL1L4L3", "pPL1L4L3", "pPL1L4L3", //120s, 480qs
+                 "pPL1L1dD", "L1L1R1dD", "pPL1L1dD", "L1L1R2dD", "pPdDpL1", //125s, 500qs 468 530
+                 "L1dDpPdD", "L1L1pPdD", "pPdDpPL1", "L1dDpPdD", "L1L1pPdD", //130s, 520qs
+                 "pPL1L1dD", "pPL1L1dD", "pPdDpPdD", "pPdDpPdD", "pPdDL1L1", //135s, 540qs
                  "L1L1L1L1", "L1L1pPdD", "R1R1R1S1", "S1S1R1R1", "R1dDpPdD", //140s, 560qs
                  "pPS1S1dD", "pPS1S1dD", "pPL1L1dD", "L1L1pPdD", "R1R1pPR1", //145s, 580qs
-                 "R1dDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //150s, 600qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //155s, 620qs // 536 584 _724 780 
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //160s, 640qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //165s, 660qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //170s, 680qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //175s, 700qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //180s, 720qs
+                 "R1dDpPdD", "pPdDpPdD", "pPdDL1L1", "pPdDL1L1", "pPdDL1L1", //150s, 600qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //155s, 620qs 588 716
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //160s, 640qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //165s, 660qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //170s, 680qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //175s, 700qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDpPdD", "pPdDpPdD", //180s, 720qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //185s, 740qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //190s, 760qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //195s, 780qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //200s, 800qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //205s, 820qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //210s, 840qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //215s, 860qs
-                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //220s, 880qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //200s, 800qs 788 872
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //205s, 820qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //210s, 840qs
+                 "pPdDL1L1", "pPdDpPdD", "L1L1pPdD", "pPdDL1L1", "pPdDL1L1", //215s, 860qs
+                 "pPdDL1L1", "pPdDL1L1", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //220s, 880qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //225s, 900qs
                  "pPdDpPdD", "pPdDpPdD", "gGgGgGgG"                          //227s, 908qs
 
@@ -61,7 +61,7 @@ let songs = {
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //25s, 100qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //30s, 120qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //35s, 140qs
-                "aAaAaAaA", "aAaAwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //40s, 160qs
+                "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //40s, 160qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //45s, 180qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //50s, 200qs
                 "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", "wWwWwWwW", //55s, 220qs
@@ -108,7 +108,7 @@ let songs = {
                      "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //25s, 100qs
                      "dDdDdDuE", "uEuEuEuE", "uEuEuEaA", "aAaAaAaA", "aAaAaAaA", //30s, 120qs
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //35s, 140qs
-                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //40s, 160qs
+                     "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //40s, 160qs 
                      "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "eUeUeUeU", //45s, 180qs
                      "eUeUeUeU", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", "dDdDdDdD", //50s, 200qs
                      "dDdDdDdD", "dDdDdDdD", "dDdDuEuE", "uEuEuEuE", "aAaAaAaA", //55s, 220qs

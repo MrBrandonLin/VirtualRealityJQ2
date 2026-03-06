@@ -77,6 +77,7 @@ function natural(){
             jinsen.healthgone = false;
             jinsen.playerhealth = 100;
             jinsen.playerstamina = 100;
+            jinsen.enemyhealth = 100;
             loading = 0;
         }
     }
