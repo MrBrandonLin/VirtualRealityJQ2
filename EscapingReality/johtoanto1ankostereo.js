@@ -816,7 +816,16 @@ let songs = {
     songtest:{
         music:"#SongMenu",
         label:"#SongMenui",
-        beatmap:["pPdDpPdD", "L1L1L1L1", "L1L1L1L1", "pPdDpPdD", "pPdDpPdD", //5 segments. Each segment is a second.
+        beatmap:["L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", //5 segments. Each segment is a second.
+                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
+                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
+                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
                  "gG"
         ], 
         battleform:[

@@ -89,8 +89,8 @@ function unnatural(){
             ohmymy.menuselect(jackiesquire);
             if(jackiesquire == "p" && ohmymy.menuchoice == 0 && ohmymy.menudepth1 == 2){
                 secamMain.setAttribute("camera", "active", true);
-                secamMain.setAttribute("look-controls-enabled", "false");
-                secamMain.setAttribute("wasd-controls-enabled", "false");
+                //secamMain.setAttribute("look-controls-enabled", "false");
+                //secamMain.setAttribute("wasd-controls-enabled", "false");
                 secamMain.setAttribute("rotation", "-20 20 0");
                 timin.songdecide(ohmymy.menudepth2, ohmymy.menudepth3)
                 stagend.setTheStageYo(ohmymy.menudepth2, ohmymy.menudepth3);
