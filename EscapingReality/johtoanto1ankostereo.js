@@ -816,10 +816,10 @@ let songs = {
     songtest:{
         music:"#SongMenu",
         label:"#SongMenui",
-        beatmap:["L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", //5 segments. Each segment is a second.
-                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
-                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
-                 "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1", "L1L1L1L1",
+        beatmap:["R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", //5 segments. Each segment is a second.
+                 "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1",
+                 "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1",
+                 "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1", "R1R1R1R1",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD",
