@@ -4,22 +4,25 @@ class headsupdisplay{
         this.playerstaminabar = document.createElement("a-text");
         this.enemyhealthbar = document.createElement("a-text");
         this.statusupdates = document.createElement("a-image");
-        this.playerhealth = 1000000000;
-        this.playerstamina = 100;
-        this.enemyhealth = 100;
+        this.playerhealth = 500;
+        this.playerhealthpercent = (this.playerhealth/500)*100;
+        this.playerstamina = 500;
+        this.playerstaminapercent = (this.playerstamina/500)*100;
+        this.enemyhealth = 500;
+        this.enemyhealthpercent = (this.enemyhealth/500)*100;
         this.staminadrain = 2;
         this.staminarecovery = 1;
         this.staminaready = true;
         this.healthgone = false; this.gamewin = false;
 
-        this.playerhealthbar.setAttribute("value", `${this.playerhealth}%`)
+        this.playerhealthbar.setAttribute("value", `${this.playerhealthpercent}%`)
         this.playerhealthbar.setAttribute("position", "-.85 -.30 -.5")
         this.playerhealthbar.setAttribute("color", "#00c90d")
-        this.playerstaminabar.setAttribute("value", `${this.playerstamina}%`)
+        this.playerstaminabar.setAttribute("value", `${this.playerstaminapercent}%`)
         this.playerstaminabar.setAttribute("position", "-.85 -.22 -.6")
         this.playerstaminabar.setAttribute("color", "#00a7f5")
         this.enemyhealthbar.setAttribute("position", ".45 .30 -.6")
-        this.enemyhealthbar.setAttribute("value", `${this.enemyhealth}%`)
+        this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent}%`)
         this.statusupdates.setAttribute("src", "#deathScreen")
         this.statusupdates.setAttribute("position", "0 -10 -.49"); this.statusupdates.setAttribute("scale", "1.75 1"); 
         secamMain.append(this.playerhealthbar);
@@ -28,15 +31,18 @@ class headsupdisplay{
         secamMain.append(this.statusupdates);
     }
     hudtrack(){
+        this.playerhealthpercent = (this.playerhealth/500)*100;
+        this.playerstaminapercent = (this.playerstamina/500)*100;
+        this.enemyhealthpercent = (this.enemyhealth/500)*100;
         if(notas != "pP"){
             if(this.playerstamina > 0){ this.playerstamina -= this.staminadrop; } 
             else { this.playerstamina += 0; }
-        } else if(this.playerstamina<100){ this.playerstamina += 1; }
+        } else if(this.playerstamina<500){ this.playerstamina += 1; }
         
-        this.playerhealthbar.setAttribute("value", `${this.playerhealth}%`)
-        this.playerstaminabar.setAttribute("value", `${this.playerstamina}%`)
-        this.enemyhealthbar.setAttribute("value", `${this.enemyhealth}%`)
-        if(this.playerstamina < 20){
+        this.playerhealthbar.setAttribute("value", `${this.playerhealthpercent.toFixed(2)}%`)
+        this.playerstaminabar.setAttribute("value", `${this.playerstaminapercent.toFixed(2)}%`)
+        this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent.toFixed(2)}%`)
+        if(this.playerstamina < 100){
             this.playerstaminabar.setAttribute("color", `#ff0000`)
             this.staminadrop = 4;
         } else {
@@ -68,7 +74,7 @@ class headsupdisplay{
             this.gamewin == true;
         } else {
             this.enemyhealthbar.setAttribute("position", ".45 .30 -.6")
-            this.enemyhealthbar.setAttribute("value", `${this.enemyhealth}%`)
+            this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent}%`)
         }
         if(timin.songend == true && this.gamewin == true){
             this.statusupdates.setAttribute("src", "#winScreen");

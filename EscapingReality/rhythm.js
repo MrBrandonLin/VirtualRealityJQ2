@@ -60,6 +60,9 @@ class timer{
                 note = this.beatmap[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 form = this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
+                notef = this.beatmap[this.linetime+1].substring(this.songtime*2, (this.songtime*2)+2);
+                formf = this.battleform[this.linetime+1].substring(this.songtime*2, (this.songtime*2)+2);
+                stagef = this.battlestage[this.linetime+1].substring(this.songtime*2, (this.songtime*2)+2);
                 this.standard4tick=0;
                 if(note == "gG"){
                     this.play = false;

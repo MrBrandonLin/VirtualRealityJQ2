@@ -1,6 +1,7 @@
 let rnd = (l,u) => Math.random() * (u-l) + l
 let radiator = (d) => d*(Math.PI/180)
 let note = "", form = "", stage = ""; nothing ="";
+let notef = "", formf = "", stagef = "";
 inmenu = true; singlefiredmenu = false; spacecowboy = false; cameleyetea = false;
 jackiesquire = ""; gi=""; joe=0; loading = 0;
 notas=""; fotas=""; iroow=""; 
@@ -18,6 +19,7 @@ window.addEventListener("DOMContentLoaded",function() {
     this.setInterval(natural, 62.5)
     shinji = new enemy();
     gorilla = new player();
+    ghost = new ghostofthefuture();
     stagend = new world();
     jinsen = new headsupdisplay();
 })
@@ -44,16 +46,19 @@ function natural(){
         timin.timering();
         if(stage=="aA"){
             shinji.stance(attacks[form][note]);
+            ghost.stance(attacks[formf][notef]);
             gorilla.stance(defends[hwai][poki]);
             hitRegister();
             jinsen.hudtrack();
         } else if(stage=="dD"){
             shinji.stance(defends[form][note]);
+            ghost.stance(defends[formf][notef]);
             gorilla.stance(attacks[hwai][poki]);
             hitRegister();
             jinsen.hudtrack();
         } else if(stage=="eU" || "uE"){
             shinji.stance(defends[form][note]);
+            ghost.stance(defends[formf][notef]);
             gorilla.stance(defends[hwai][poki]);
             hitRegister();
             jinsen.hudtrack();
@@ -75,9 +80,9 @@ function natural(){
             inmenu = true;
             ohmymy.menudepth1 = 1;
             jinsen.healthgone = false;
-            jinsen.playerhealth = 100;
-            jinsen.playerstamina = 100;
-            jinsen.enemyhealth = 100;
+            jinsen.playerhealth = 500;
+            jinsen.playerstamina = 500;
+            jinsen.enemyhealth = 500;
             loading = 0;
         }
     }

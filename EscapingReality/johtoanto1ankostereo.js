@@ -14,7 +14,7 @@ let songs = {
                  "R2R2pPdD", "pPdDpPdD", "L4L3L2L2", "pPL1pPR1", "R1dDpPdD", //35s, 140qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "L1L2R2R2", //40s, 160qs 112 176
                  "L1L2L2dD", "pPLKLKLK", "LKdDpPdD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
-                 "pPdDpPdD", "pPpPS1S1", "S1dDpPdD", "S1S1S1dD", "pPR1R1S1", //50s, 200qs
+                 "pPdDpPdD", "pPS1L1L1", "R1R1pPdD", "S1R1R1L1", "L1R1pPdD", //50s, 200qs
                  "pPL1L1S1", "pPdDL1L1", "R1R1pPdD", "pPdDpPdD", "pPdDL1dD", //55s, 220qs 
                  "L1R1pPdD", "R1R2pPdD", "R1R2pPdD", "T1T2pPdD", "L1R2pPdD", //60s, 240qs 216 240
                  "pPdDpPdD", "pPdDpPdD", "pPL1L1L1", "pPdDR1R1", "R1dDpPdD", //65s, 260qs
