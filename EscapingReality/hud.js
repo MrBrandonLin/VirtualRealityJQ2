@@ -4,7 +4,7 @@ class headsupdisplay{
         this.playerstaminabar = document.createElement("a-text");
         this.enemyhealthbar = document.createElement("a-text");
         this.statusupdates = document.createElement("a-image");
-        this.playerhealth = 100;
+        this.playerhealth = 1000000000;
         this.playerstamina = 100;
         this.enemyhealth = 100;
         this.staminadrain = 2;

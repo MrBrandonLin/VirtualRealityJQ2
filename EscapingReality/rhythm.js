@@ -24,6 +24,8 @@ class timer{
     timering(){
         if(jackiesquire=="y"){
             this.play = true; 
+        } else if(jackiesquire=="t"){
+            console.log(console.log(this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2) + " " + this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2)))
         }
         if(this.songend == true){
             this.play = false;
@@ -54,13 +56,11 @@ class timer{
                 }
                 if(this.standard16tick==1){
                     this.standard16tick = 0;
-                    console.log("full second");
                 }
                 note = this.beatmap[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 form = this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 stage = this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2);
                 this.standard4tick=0;
-                console.log("quarter second  " + this.standardALLtick + " " + this.battlestage[this.linetime].substring(this.songtime*2, (this.songtime*2)+2) + " " + this.battleform[this.linetime].substring(this.songtime*2, (this.songtime*2)+2))
                 if(note == "gG"){
                     this.play = false;
                     this.songend = true;

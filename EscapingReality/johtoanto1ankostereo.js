@@ -9,11 +9,11 @@ let songs = {
                  "T1T2T1T2", "T1T2T1T2", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", //10s, 40qs
                  "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "L1dDR1dD", "L1L2pPdD", //15s, 60qs
                  "pPL1R1dD", "pPR2L2dD", "pPdDL1L3", "pPdDpPdD", "pPdDpPdD", //20s, 80qs
-                 "pPdDL1L1", "pPdDpPR1", "R1dDpPL1", "pPR1pPL1", "pPR1pPL1", //25s, 100qs
-                 "pPdDS1S1", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
-                 "R2R2pPdD", "pPdDpPdD", "pPL1L1R1", "R1dDpPdD", "pPdDpPdD", //35s, 140qs
-                 "L1L1L1L2", "L2dDpPL1", "L1L1L2dD", "pPdDL1dD", "L1dDL1dD", //40s, 160qs 112 176
-                 "pPL1pPR1", "R1dDpPL1", "pPR1R1dD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
+                 "pPdDL1L1", "R1R1L1R1", "pPdDpPdD", "L1dDL1R1", "pPdDpPdD", //25s, 100qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "K1K2K3dD", "pPdDL1R1", //30s, 120qs
+                 "R2R2pPdD", "pPdDpPdD", "L4L3L2L2", "pPL1pPR1", "R1dDpPdD", //35s, 140qs
+                 "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "pPdDpPdD", "L1L2R2R2", //40s, 160qs 112 176
+                 "L1L2L2dD", "pPLKLKLK", "LKdDpPdD", "pPdDpPdD", "pPdDpPdD", //45s, 180qs
                  "pPdDpPdD", "pPpPS1S1", "S1dDpPdD", "S1S1S1dD", "pPR1R1S1", //50s, 200qs
                  "pPL1L1S1", "pPdDL1L1", "R1R1pPdD", "pPdDpPdD", "pPdDL1dD", //55s, 220qs 
                  "L1R1pPdD", "R1R2pPdD", "R1R2pPdD", "T1T2pPdD", "L1R2pPdD", //60s, 240qs 216 240
