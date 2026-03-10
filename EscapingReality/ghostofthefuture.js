@@ -2,7 +2,8 @@ class ghostofthefuture{
     constructor(){
         this.character = document.getElementById("character");
         this.characterCopy = this.character.cloneNode(true);
-        this.characterCopy.setAttribute("position", "0 5 -5");
+        this.characterCopy.setAttribute("position", "3.5 13 5");
+        this.characterCopy.setAttribute("scale", ".08 .08 .08");
         this.trueBase = this.characterCopy.children;
         this.centerMass = this.trueBase[0].children; this.centerMass2 = this.centerMass[0].children;
         this.hipL = this.centerMass2[0].children; this.hipR = this.centerMass2[1].children;
@@ -37,25 +38,25 @@ class ghostofthefuture{
         this.neck[2].setAttribute("color", "#CDDEEC"); this.neck[3].setAttribute("color", "#CDDEEC");
         this.head[0].setAttribute("color", "#CDDEEC"); this.head[1].setAttribute("color", "#CDDEEC");
 
-        this.centerMass2[0].setAttribute("opacity", ".25")
-        this.centerMass2[1].setAttribute("opacity", ".25")
-        this.thighL[0].setAttribute("opacity", ".25"); this.thighR[0].setAttribute("opacity", ".25")
-        this.thighL[1].setAttribute("opacity", ".25"); this.thighR[1].setAttribute("opacity", ".25")
-        this.thighL[2].setAttribute("opacity", ".25"); this.thighR[2].setAttribute("opacity", ".25")
-        this.calfL[0].setAttribute("opacity", ".25"); this.calfR[0].setAttribute("opacity", ".25")
-        this.calfL[1].setAttribute("opacity", ".25"); this.calfR[1].setAttribute("opacity", ".25")
-        this.calfL[2].setAttribute("opacity", ".25"); this.calfR[2].setAttribute("opacity", ".25")
-        this.centerMass2[2].setAttribute("opacity", ".25")
-        this.chest[0].setAttribute("opacity", ".25")
-        this.chest[1].setAttribute("opacity", ".25"); this.chest[2].setAttribute("opacity", ".25")
-        this.upperarmL[0].setAttribute("opacity", ".25"); this.upperarmR[0].setAttribute("opacity", ".25")
-        this.upperarmL[1].setAttribute("opacity", ".25"); this.upperarmR[1].setAttribute("opacity", ".25")
-        this.forearmL[0].setAttribute("opacity", ".25"); this.forearmR[0].setAttribute("opacity", ".25")
-        this.wristL[0].setAttribute("opacity", ".25"); this.wristR[0].setAttribute("opacity", ".25");
-        this.footL[0].setAttribute("opacity", ".25"); this.footR[0].setAttribute("opacity", ".25"); 
-        this.neck[0].setAttribute("opacity", ".25"); this.neck[1].setAttribute("opacity", ".25");
-        this.neck[2].setAttribute("opacity", ".25"); this.neck[3].setAttribute("opacity", ".25");
-        this.head[0].setAttribute("opacity", ".25"); this.head[1].setAttribute("opacity", "0");
+        this.centerMass2[0].setAttribute("opacity", "1")
+        this.centerMass2[1].setAttribute("opacity", "1")
+        this.thighL[0].setAttribute("opacity", "1"); this.thighR[0].setAttribute("opacity", "1")
+        this.thighL[1].setAttribute("opacity", "1"); this.thighR[1].setAttribute("opacity", "1")
+        this.thighL[2].setAttribute("opacity", "1"); this.thighR[2].setAttribute("opacity", "1")
+        this.calfL[0].setAttribute("opacity", "1"); this.calfR[0].setAttribute("opacity", "1")
+        this.calfL[1].setAttribute("opacity", "1"); this.calfR[1].setAttribute("opacity", "1")
+        this.calfL[2].setAttribute("opacity", "1"); this.calfR[2].setAttribute("opacity", "1")
+        this.centerMass2[2].setAttribute("opacity", "1")
+        this.chest[0].setAttribute("opacity", "1")
+        this.chest[1].setAttribute("opacity", "1"); this.chest[2].setAttribute("opacity", "1")
+        this.upperarmL[0].setAttribute("opacity", "1"); this.upperarmR[0].setAttribute("opacity", "1")
+        this.upperarmL[1].setAttribute("opacity", "1"); this.upperarmR[1].setAttribute("opacity", "1")
+        this.forearmL[0].setAttribute("opacity", "1"); this.forearmR[0].setAttribute("opacity", "1")
+        this.wristL[0].setAttribute("opacity", "1"); this.wristR[0].setAttribute("opacity", "1");
+        this.footL[0].setAttribute("opacity", "1"); this.footR[0].setAttribute("opacity", "1"); 
+        this.neck[0].setAttribute("opacity", "1"); this.neck[1].setAttribute("opacity", "1");
+        this.neck[2].setAttribute("opacity", "1"); this.neck[3].setAttribute("opacity", "1");
+        this.head[0].setAttribute("opacity", "1"); this.head[1].setAttribute("opacity", "0");
 
         //
         //Hip Joint L is this.hipL[0], Hip Joint R is this.hipR[0]

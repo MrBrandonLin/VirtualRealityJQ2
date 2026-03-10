@@ -11,12 +11,12 @@ loading = 0;
 
 window.addEventListener("DOMContentLoaded",function() {
     scene = document.querySelector("a-scene");
-    timin = new timer();
-    ohmymy = new menu();
     secamMain = document.getElementById("secamMain");
     secamMenu = document.getElementById("secamMenu");
     this.setInterval(unnatural, 10)
     this.setInterval(natural, 62.5)
+    timin = new timer();
+    ohmymy = new menu();
     shinji = new enemy();
     gorilla = new player();
     ghost = new ghostofthefuture();
@@ -45,24 +45,19 @@ function natural(){
     if(inmenu==false){
         timin.timering();
         if(stage=="aA"){
-            shinji.stance(attacks[form][note]);
-            ghost.stance(attacks[formf][notef]);
-            gorilla.stance(defends[hwai][poki]);
-            hitRegister();
-            jinsen.hudtrack();
+            shinji.stance(attacks[form][note]); gorilla.stance(defends[hwai][poki]);
+            hitRegister(); jinsen.hudtrack();
         } else if(stage=="dD"){
-            shinji.stance(defends[form][note]);
-            ghost.stance(defends[formf][notef]);
-            gorilla.stance(attacks[hwai][poki]);
-            hitRegister();
-            jinsen.hudtrack();
-        } else if(stage=="eU" || "uE"){
-            shinji.stance(defends[form][note]);
-            ghost.stance(defends[formf][notef]);
-            gorilla.stance(defends[hwai][poki]);
-            hitRegister();
-            jinsen.hudtrack();
+            shinji.stance(defends[form][note]); gorilla.stance(attacks[hwai][poki]);
+            hitRegister(); jinsen.hudtrack();
+        } else if(stage=="eU" || stage=="uE"){
+            shinji.stance(defends[form][note]); gorilla.stance(defends[hwai][poki]);
+            hitRegister(); jinsen.hudtrack();
         }
+        if(stagef=="aA"){ ghost.stance(attacks[formf][notef]); } 
+        else if(stagef=="dD"){ ghost.stance(defends[formf][notef]); } 
+        else if(stagef=="eU" || stagef=="uE"){ ghost.stance(defends[formf][notef]); }
+        
         stagend.audienceCheer();
     }
     dead = jinsen.healthgone;
@@ -109,33 +104,27 @@ function unnatural(){
         ohmymy.couch.components.sound.stopSound();
     }   
 }
-
 function attackread(esoteric){
     for(let i=0; i<playerActInput.length;i++){
         if(esoteric == playerActInput[i] && jinsen.playerstamina > 0 && jinsen.staminaready){
-            notas = playerActOutput[i];
-            spacecowboy = true
-            break;
-        } else { notas = "pP"; }
+            notas = playerActOutput[i]; 
+            spacecowboy = true; break;
+        } else { notas = "pP" }
     }
     return notas;
 }
 function formread(esoteric){
     for(let i=0; i<playerFormInput.length;i++){
         if(esoteric == playerFormInput[i]){
-            fotas = playerFormOutput[i];
-            spacecowboy = true
-            iroow = playerFormOutput[i];
-            break;
+            fotas = playerFormOutput[i]; iroow = playerFormOutput[i];
+            spacecowboy = true; break;
         } else { fotas = iroow; }
     }
     return fotas;
 }
-
 function nothinginator(){
     nothing = nothing;
 }
-
 function sTc(a, b){
     let c;
     if(b == 0){
@@ -151,26 +140,18 @@ function sTc(a, b){
     }
     return c;
 }
-
 function hitRegister(){
     if(stage=="aA"){
         let axlementamen = eAu[form][note][hwai];
         for(let axle of axlementamen){
-            if(axle == poki){
-                jinsen.playerhealth -= 1;
-            } else {
-                jinsen.playerhealth = jinsen.playerhealth;
-            }
+            if(axle == poki){ jinsen.playerhealth -= 1; } 
+            else { jinsen.playerhealth = jinsen.playerhealth; }
         }
     } else if(stage=="dD"){
         let tonkotsu = uAe[hwai][poki][form];
         for(let ton of tonkotsu){
-            if(ton == note){
-                jinsen.enemyhealth -= 1;
-                console.log("hit")
-            } else {
-                jinsen.enemyhealth = jinsen.enemyhealth;
-            }
+            if(ton == note){ jinsen.enemyhealth -= 1;
+            } else { jinsen.enemyhealth = jinsen.enemyhealth; }
         }
     } else {
         nothinginator();
