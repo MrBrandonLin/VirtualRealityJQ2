@@ -4,12 +4,12 @@ class headsupdisplay{
         this.playerstaminabar = document.createElement("a-text");
         this.enemyhealthbar = document.createElement("a-text");
         this.statusupdates = document.createElement("a-image");
-        this.playerhealth = 500;
-        this.playerhealthpercent = (this.playerhealth/500)*100;
-        this.playerstamina = 500;
-        this.playerstaminapercent = (this.playerstamina/500)*100;
-        this.enemyhealth = 500;
-        this.enemyhealthpercent = (this.enemyhealth/500)*100;
+        this.playerhealth = 251;
+        this.playerhealthpercent = (this.playerhealth/251)*100;
+        this.playerstamina = 251;
+        this.playerstaminapercent = (this.playerstamina/251)*100;
+        this.enemyhealth = 251;
+        this.enemyhealthpercent = (this.enemyhealth/251)*100;
         this.staminadrain = 2;
         this.staminarecovery = 1;
         this.staminaready = true;
@@ -31,18 +31,18 @@ class headsupdisplay{
         secamMain.append(this.statusupdates);
     }
     hudtrack(){
-        this.playerhealthpercent = (this.playerhealth/500)*100;
-        this.playerstaminapercent = (this.playerstamina/500)*100;
-        this.enemyhealthpercent = (this.enemyhealth/500)*100;
+        this.playerhealthpercent = (this.playerhealth/251)*100;
+        this.playerstaminapercent = (this.playerstamina/251)*100;
+        this.enemyhealthpercent = (this.enemyhealth/251)*100;
         if(notas != "pP"){
             if(this.playerstamina > 0){ this.playerstamina -= this.staminadrop; } 
             else { this.playerstamina += 0; }
-        } else if(this.playerstamina<500){ this.playerstamina += 1; }
+        } else if(this.playerstamina<251){ this.playerstamina += 1; }
         
         this.playerhealthbar.setAttribute("value", `${this.playerhealthpercent.toFixed(2)}%`)
         this.playerstaminabar.setAttribute("value", `${this.playerstaminapercent.toFixed(2)}%`)
         this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent.toFixed(2)}%`)
-        if(this.playerstamina < 100){
+        if(this.playerstamina < 38){
             this.playerstaminabar.setAttribute("color", `#ff0000`)
             this.staminadrop = 4;
         } else {

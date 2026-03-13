@@ -221,7 +221,19 @@ let attacks = {
             leftForearmJoint: [-12, 0, 0], rightForearmJoint: [-12, 0, 0],
             neckJoint: [0, 5, 0], headJoint: [0, 30, 0]
         }, 
-        
+        SP:{
+            trueBasePos: [0, -1, 6],
+            trueBase: [0, 0, 0], centerMass: [20, 30, 0],
+            hipJointL: [-80, 0, -20], hipJointR: [20, -20, 0], 
+            leftThighJoint: [30, 0, 0], rightThighJoint: [30, 0, 0], 
+            leftCalfJoint: [0, -30, 0], rightCalfJoint: [20, 0, 0], 
+            gut: [12, 0, 0], 
+            leftKneeJoint: [0, 0, 0], rightKneeJoint: [0, 0, 0], 
+            leftShoulderJoint: [-40, -10, 0], rightShoulderJoint: [-140, 30, -25],
+            leftUpperarmJoint: [-130, -40, 0], rightUpperarmJoint: [0, 0, 0],
+            leftForearmJoint: [-12, 0, 0], rightForearmJoint: [0, 0, 0],
+            neckJoint: [0, -5, 0], headJoint: [0, -30, 0]
+        },
     },
     aA:{
         pP:{
