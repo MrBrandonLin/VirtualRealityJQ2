@@ -75,9 +75,9 @@ function natural(){
             inmenu = true;
             ohmymy.menudepth1 = 1;
             jinsen.healthgone = false;
-            jinsen.playerhealth = 251;
+            jinsen.playerhealth = 301;
             jinsen.playerstamina = 251;
-            jinsen.enemyhealth = 251;
+            jinsen.enemyhealth = 201;
             loading = 0;
         }
     }

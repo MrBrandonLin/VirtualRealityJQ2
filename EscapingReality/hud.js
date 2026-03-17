@@ -4,12 +4,12 @@ class headsupdisplay{
         this.playerstaminabar = document.createElement("a-text");
         this.enemyhealthbar = document.createElement("a-text");
         this.statusupdates = document.createElement("a-image");
-        this.playerhealth = 251;
-        this.playerhealthpercent = (this.playerhealth/251)*100;
+        this.playerhealth = 301;
+        this.playerhealthpercent = (this.playerhealth/301)*100;
         this.playerstamina = 251;
         this.playerstaminapercent = (this.playerstamina/251)*100;
-        this.enemyhealth = 251;
-        this.enemyhealthpercent = (this.enemyhealth/251)*100;
+        this.enemyhealth = 201;
+        this.enemyhealthpercent = (this.enemyhealth/201)*100;
         this.staminadrain = 2;
         this.staminarecovery = 1;
         this.staminaready = true;
@@ -31,13 +31,13 @@ class headsupdisplay{
         secamMain.append(this.statusupdates);
     }
     hudtrack(){
-        this.playerhealthpercent = (this.playerhealth/251)*100;
+        this.playerhealthpercent = (this.playerhealth/301)*100;
         this.playerstaminapercent = (this.playerstamina/251)*100;
-        this.enemyhealthpercent = (this.enemyhealth/251)*100;
+        this.enemyhealthpercent = (this.enemyhealth/201)*100;
         if(notas != "pP"){
             if(this.playerstamina > 0){ this.playerstamina -= this.staminadrop; } 
             else { this.playerstamina += 0; }
-        } else if(this.playerstamina<251){ this.playerstamina += 1; }
+        } else if(this.playerstamina<251){ this.playerstamina += 2; }
         
         this.playerhealthbar.setAttribute("value", `${this.playerhealthpercent.toFixed(2)}%`)
         this.playerstaminabar.setAttribute("value", `${this.playerstaminapercent.toFixed(2)}%`)
