@@ -9,13 +9,34 @@ class player{
         this.hipL = this.centerMass2[0].children; this.hipR = this.centerMass2[1].children;
         this.thighL = this.hipL[0].children; this.thighR = this.hipR[0].children;
         this.calfL = this.thighL[3].children; this.calfR = this.thighR[3].children;
+        this.footL = this.calfL[3].children; this.footR = this.calfR[3].children;
         this.gut = this.centerMass2[2].children; this.chest = this.gut[0].children;
         this.shoulderL = this.chest[1].children; this.shoulderR = this.chest[2].children;
         this.upperarmL = this.shoulderL[0].children; this.upperarmR = this.shoulderR[0].children;
         this.forearmL = this.upperarmL[2].children; this.forearmR = this.upperarmR[2].children;
-        this.neck = this.chest[3].children;
+        this.wristL = this.forearmL[1].children; this.wristR = this.forearmR[1].children;
+        this.neck = this.chest[3].children; this.head = this.neck[4].children;
         this.s = 5;
-        console.log(this.calfL)
+        
+        this.centerMass2[0].setAttribute("color", "#A4BE5C")
+        this.centerMass2[1].setAttribute("color", "#A4BE5C")
+        this.thighL[0].setAttribute("color", "#A4BE5C"); this.thighR[0].setAttribute("color", "#A4BE5C")
+        this.thighL[1].setAttribute("color", "#A4BE5C"); this.thighR[1].setAttribute("color", "#A4BE5C")
+        this.thighL[2].setAttribute("color", "#A4BE5C"); this.thighR[2].setAttribute("color", "#A4BE5C")
+        this.calfL[0].setAttribute("color", "#CCAB8B"); this.calfR[0].setAttribute("color", "#CCAB8B")
+        this.calfL[1].setAttribute("color", "#CCAB8B"); this.calfR[1].setAttribute("color", "#CCAB8B")
+        this.calfL[2].setAttribute("color", "#CCAB8B"); this.calfR[2].setAttribute("color", "#CCAB8B")
+        this.centerMass2[2].setAttribute("color", "#CCAB8B")
+        this.chest[0].setAttribute("color", "#CCAB8B")
+        this.chest[1].setAttribute("color", "#CCAB8B"); this.chest[2].setAttribute("color", "#CCAB8B")
+        this.upperarmL[0].setAttribute("color", "#CCAB8B"); this.upperarmR[0].setAttribute("color", "#CCAB8B")
+        this.upperarmL[1].setAttribute("color", "#CCAB8B"); this.upperarmR[1].setAttribute("color", "#CCAB8B")
+        this.forearmL[0].setAttribute("color", "#CCAB8B"); this.forearmR[0].setAttribute("color", "#CCAB8B")
+        this.wristL[0].setAttribute("color", "#E8282B"); this.wristR[0].setAttribute("color", "#E8282B");
+        this.footL[0].setAttribute("color", "#808000"); this.footR[0].setAttribute("color", "#808000"); 
+        this.neck[0].setAttribute("color", "#CCAB8B"); this.neck[1].setAttribute("color", "#CCAB8B");
+        this.neck[2].setAttribute("color", "#CCAB8B"); this.neck[3].setAttribute("color", "#CCAB8B");
+        this.head[0].setAttribute("color", "#CCAB8B");
 
         scene.append(this.characterCopy);
     }

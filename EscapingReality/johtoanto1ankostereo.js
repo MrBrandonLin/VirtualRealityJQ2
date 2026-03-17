@@ -942,7 +942,7 @@ let songs = {
                  "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //175s, 700qs
                  "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", "aAaAaAaA", //178s, 712qs 
         ],
-        stageColors:[ "#705A86", "#F48319", "#FDD4E4", "#FFFFFF" ],
+        stageColors:[ "#1F4221", "#39AF65", "#0EED56", "#3B9BA8" ],
         modelColors:[ "#facemap7", "#003E96",  "#F8CFC0", "#E12D1E", "#00AFEB" ]
     },
     songtest:{

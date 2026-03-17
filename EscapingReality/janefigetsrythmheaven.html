@@ -69,7 +69,7 @@
                 <a-image src="textures/deathscreen.png" id="deathScreen"></a-image>
                 <a-image src="textures/winscreen.png" id="winScreen"></a-image>
                 <a-image src="textures/audience.png" id="audience"></a-image>
-                <a-image src="textures/heaven360.jpg" id="heaven360"></a-image>
+                <a-image src="textures/heaven360.webp" id="heaven360"></a-image>
             </a-assets>
             <a-sky color="#1865ee"></a-sky>
             <a-camera position="4 14 8" id="secamMain" active="false" look-controls wasd-controls="fly: true">
@@ -170,7 +170,9 @@
               <a-image position="-32 15 0" rotation="0 270 0" scale="20 5 5" color="#ff0000" src="#audience"></a-image>
               <a-image position="-36 18 0" rotation="0 270 0" scale="20 5 5" color="#ff0000" src="#audience"></a-image>
               <a-image position="-40 21 0" rotation="0 270 0" scale="20 5 5" color="#ff0000" src="#audience"></a-image>
-              <a-sphere scale="120 120 120" side="double" src="#heaven360"></a-sphere>
+              <a-box position="-22 5" scale="1 8 20" color="#6082B6"></a-box>
+              <a-box position="-32 9" rotation="0 0 45" scale="1 40 20" color="#6082B6"></a-box>
+              <a-cylinder position="0 20 0" scale="120 188.4 120" side="double" src="#heaven360"></a-cylinder>
             </a-entity>
         </a-scene>
     </body>

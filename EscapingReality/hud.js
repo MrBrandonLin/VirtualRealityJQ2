@@ -74,7 +74,7 @@ class headsupdisplay{
             this.gamewin == true;
         } else {
             this.enemyhealthbar.setAttribute("position", ".45 .30 -.6")
-            this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent}%`)
+            this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent.toFixed(2)}%`)
         }
         if(timin.songend == true && this.gamewin == true){
             this.statusupdates.setAttribute("src", "#winScreen");
