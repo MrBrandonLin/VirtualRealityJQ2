@@ -21,7 +21,7 @@ class headsupdisplay{
         this.playerstaminabar.setAttribute("value", `${this.playerstaminapercent}%`)
         this.playerstaminabar.setAttribute("position", "-.85 -.22 -.6")
         this.playerstaminabar.setAttribute("color", "#00a7f5")
-        this.enemyhealthbar.setAttribute("position", ".45 .30 -.6")
+        this.enemyhealthbar.setAttribute("position", ".15 .35 -.6")
         this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent}%`)
         this.statusupdates.setAttribute("src", "#deathScreen")
         this.statusupdates.setAttribute("position", "0 -10 -.49"); this.statusupdates.setAttribute("scale", "1.75 1"); 
@@ -73,7 +73,7 @@ class headsupdisplay{
             this.enemyhealthbar.setAttribute("position", `-1.4 .65 -1.2`);
             this.gamewin == true;
         } else {
-            this.enemyhealthbar.setAttribute("position", ".45 .30 -.6")
+            this.enemyhealthbar.setAttribute("position", ".15 .35 -.6")
             this.enemyhealthbar.setAttribute("value", `${this.enemyhealthpercent.toFixed(2)}%`)
         }
         if(timin.songend == true && this.gamewin == true){
