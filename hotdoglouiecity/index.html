@@ -9,9 +9,13 @@
             <a-assets>
 
             </a-assets>
-            <a-sky color="#000000"></a-sky>
+            <a-sky src="stars.avif"></a-sky>
             <a-camera position="0 0 0" id="cameraMain" active="true" look-controls wasd-controls="fly: true"></a-camera>
-            <a-sphere position="0 -51 0"scale="50 50 50" src="globe.jpg"></a-sphere>
+            <a-entity id="globe">
+                <a-sphere position="0 -51 0" rotation="5 0 0" scale="50 50 50" src="globe.jpg"></a-sphere>
+                <a-box position="10 0 0" rotation="0 0 -45" scale="5 10 5" src="buildingtext.jpg"></a-box>
+                <a-sphere position="120 0 0" scale="20 20 20"></a-sphere>
+            </a-entity>
 
         </a-scene>
     </body>
